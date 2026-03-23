@@ -20,11 +20,11 @@ A publicação original é um instrumento abrangente que cobre desde conceitos d
 
 | Material | Descrição | Tempo de leitura |
 |----------|-----------|-----------------|
-| [Guia Completo](edtechs/guia-edtechs.md) | Como entender o comprador, atender requisitos e diferenciar sua solução | ~20 min |
+| [Guia de Modalidades de Contratação](edtechs/guia-modalidades-contratacao.md) | Pregão, registro de preço, inexigibilidade, dispensa, CPSI e ETEC — guia prático | ~20 min |
 | [Checklist de Prontidão](edtechs/checklist-edtechs.md) | 35+ itens para verificar antes de abordar redes públicas | ~10 min |
 | [Perguntas Frequentes](edtechs/faq-edtechs.md) | 16 respostas sobre mercado, requisitos, processo de venda e riscos | ~15 min |
 | [Resumo Executivo](edtechs/one-pager-edtechs.md) | Visão geral em 1 página: cenário, oportunidade, 5 ações imediatas | ~3 min |
-| [Guia para EdTechs Internacionais](edtechs/guia-edtechs-internacionais.md) | Para empresas estrangeiras: presença jurídica, LGPD internacional, adaptação cultural, tributação | ~15 min |
+| [Guia para EdTechs Internacionais](edtechs/internacional/guia-internacionais.md) | Para empresas estrangeiras: presença jurídica, LGPD internacional, adaptação cultural, tributação | ~15 min |
 
 ---
 
