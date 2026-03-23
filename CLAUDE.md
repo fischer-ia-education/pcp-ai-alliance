@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Aliança de IA para a Educação — a persona-driven educational content platform about responsible AI procurement in Brazilian public education. Content is authored in Markdown and published as a static site via Netlify.
+Aliança de IA para a Educação — a persona-driven educational content platform about responsible AI procurement in Brazilian public education. Content is authored in Markdown inside the `conteudo/` directory and published as a static site via Netlify.
 
 Five personas: **edtechs**, **gestores**, **intermediarios**, **legisladores**, **educadores**. EdTechs has sub-personas by maturity stage (estagio-inicial, entrada-setor-publico, escala, internacional).
 
@@ -35,8 +35,8 @@ System dependencies for build.sh: pandoc (required), weasyprint or xelatex (for 
 ### Content Pipeline
 
 ```
-materiais/[persona]/*.md  →  site/generate.py  →  output/site/*.html
-     (source)              (Jinja2 templates)     (static site)
+conteudo/[persona]/*.md  →  site/generate.py  →  output/site/*.html
+     (source)             (Jinja2 templates)     (static site)
 ```
 
 - **Source of truth**: Markdown files with YAML frontmatter (`title`, `subtitle`, `persona`, `tipo`)

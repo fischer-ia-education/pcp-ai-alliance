@@ -20,6 +20,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+CONTENT_DIR="$SCRIPT_DIR/conteudo"
 CSS_FILE="$SCRIPT_DIR/style.css"
 OUTPUT_DIR="$SCRIPT_DIR/output"
 HTML_DIR="$OUTPUT_DIR/html"
@@ -131,7 +132,7 @@ md_to_pdf_direct() {
 # Processar uma pasta de persona
 process_persona() {
     local persona="$1"
-    local persona_dir="$SCRIPT_DIR/$persona"
+    local persona_dir="$CONTENT_DIR/$persona"
 
     if [[ ! -d "$persona_dir" ]]; then
         warn "Diretório não encontrado: $persona_dir"

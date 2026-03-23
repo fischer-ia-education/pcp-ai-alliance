@@ -27,6 +27,7 @@ from jinja2 import Environment, FileSystemLoader
 
 # ── Diretórios ────────────────────────────────────────────────
 BASE_DIR = Path(__file__).resolve().parent.parent  # materiais/
+CONTENT_DIR = BASE_DIR / "conteudo"                 # materiais/conteudo/
 SITE_DIR = Path(__file__).resolve().parent          # materiais/site/
 TEMPLATE_DIR = SITE_DIR / "templates"
 ASSETS_DIR = SITE_DIR / "assets"
@@ -240,7 +241,7 @@ def discover_materials() -> dict[str, list[dict]]:
     materials: dict[str, list[dict]] = {p: [] for p in PERSONAS}
 
     for persona_key in PERSONAS:
-        persona_dir = BASE_DIR / persona_key
+        persona_dir = CONTENT_DIR / persona_key
         if not persona_dir.is_dir():
             continue
 
@@ -267,7 +268,7 @@ def discover_materials() -> dict[str, list[dict]]:
 
     # Seções extras (recursos, etc.)
     for section_key in SECTIONS:
-        section_dir = BASE_DIR / section_key
+        section_dir = CONTENT_DIR / section_key
         materials[section_key] = []
         if not section_dir.is_dir():
             continue

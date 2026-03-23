@@ -12,6 +12,12 @@ A publicação original é um instrumento abrangente que cobre desde conceitos d
 
 ---
 
+## Para Editores de Conteúdo
+
+Todo o conteúdo editável está na pasta [`conteudo/`](conteudo/). Veja o guia [`conteudo/COMO-EDITAR.md`](conteudo/COMO-EDITAR.md) para instruções de como criar e editar materiais.
+
+---
+
 ## Navegação por Persona
 
 ### EdTechs (Empreendedores)
@@ -20,11 +26,11 @@ A publicação original é um instrumento abrangente que cobre desde conceitos d
 
 | Material | Descrição | Tempo de leitura |
 |----------|-----------|-----------------|
-| [Guia de Modalidades de Contratação](edtechs/guia-modalidades-contratacao.md) | Pregão, registro de preço, inexigibilidade, dispensa, CPSI e ETEC — guia prático | ~20 min |
-| [Checklist de Prontidão](edtechs/checklist-edtechs.md) | 35+ itens para verificar antes de abordar redes públicas | ~10 min |
-| [Perguntas Frequentes](edtechs/faq-edtechs.md) | 16 respostas sobre mercado, requisitos, processo de venda e riscos | ~15 min |
-| [Resumo Executivo](edtechs/one-pager-edtechs.md) | Visão geral em 1 página: cenário, oportunidade, 5 ações imediatas | ~3 min |
-| [Guia para EdTechs Internacionais](edtechs/internacional/guia-internacionais.md) | Para empresas estrangeiras: presença jurídica, LGPD internacional, adaptação cultural, tributação | ~15 min |
+| [Guia de Modalidades de Contratação](conteudo/edtechs/guia-modalidades-contratacao.md) | Pregão, registro de preço, inexigibilidade, dispensa, CPSI e ETEC — guia prático | ~20 min |
+| [Checklist de Prontidão](conteudo/edtechs/checklist-edtechs.md) | 35+ itens para verificar antes de abordar redes públicas | ~10 min |
+| [Perguntas Frequentes](conteudo/edtechs/faq-edtechs.md) | 16 respostas sobre mercado, requisitos, processo de venda e riscos | ~15 min |
+| [Resumo Executivo](conteudo/edtechs/one-pager-edtechs.md) | Visão geral em 1 página: cenário, oportunidade, 5 ações imediatas | ~3 min |
+| [Guia para EdTechs Internacionais](conteudo/edtechs/internacional/guia-internacionais.md) | Para empresas estrangeiras: presença jurídica, LGPD internacional, adaptação cultural, tributação | ~15 min |
 
 ---
 
@@ -34,10 +40,10 @@ A publicação original é um instrumento abrangente que cobre desde conceitos d
 
 | Material | Descrição | Tempo de leitura |
 |----------|-----------|-----------------|
-| [Guia Completo](gestores/guia-gestores.md) | Da compreensão de IA ao guia antes/durante/após contratação | ~25 min |
-| [Checklist da Jornada](gestores/checklist-gestores.md) | Itens acionáveis por fase: antes, durante e após a contratação | ~10 min |
-| [Framework de Decisão](gestores/framework-decisao-gestores.md) | Árvore de decisão, matriz de risco, comparativo de modalidades, RACI | ~15 min |
-| [Resumo Executivo](gestores/one-pager-gestores.md) | Visão geral em 1 página: problema, riscos, solução, próximos passos | ~3 min |
+| [Guia Completo](conteudo/gestores/guia-gestores.md) | Da compreensão de IA ao guia antes/durante/após contratação | ~25 min |
+| [Checklist da Jornada](conteudo/gestores/checklist-gestores.md) | Itens acionáveis por fase: antes, durante e após a contratação | ~10 min |
+| [Framework de Decisão](conteudo/gestores/framework-decisao-gestores.md) | Árvore de decisão, matriz de risco, comparativo de modalidades, RACI | ~15 min |
+| [Resumo Executivo](conteudo/gestores/one-pager-gestores.md) | Visão geral em 1 página: problema, riscos, solução, próximos passos | ~3 min |
 
 ---
 
@@ -47,8 +53,8 @@ A publicação original é um instrumento abrangente que cobre desde conceitos d
 
 | Material | Descrição | Tempo de leitura |
 |----------|-----------|-----------------|
-| [Guia Completo](intermediarios/guia-intermediarios.md) | Modelos de intermediação, critérios de curadoria, letramento algorítmico | ~15 min |
-| [Resumo Executivo](intermediarios/one-pager-intermediarios.md) | Oportunidade de atuação, 3 modelos, checklist de curadoria | ~3 min |
+| [Guia Completo](conteudo/intermediarios/guia-intermediarios.md) | Modelos de intermediação, critérios de curadoria, letramento algorítmico | ~15 min |
+| [Resumo Executivo](conteudo/intermediarios/one-pager-intermediarios.md) | Oportunidade de atuação, 3 modelos, checklist de curadoria | ~3 min |
 
 ---
 
@@ -58,8 +64,8 @@ A publicação original é um instrumento abrangente que cobre desde conceitos d
 
 | Material | Descrição | Tempo de leitura |
 |----------|-----------|-----------------|
-| [Policy Brief](legisladores/policy-brief-legisladores.md) | Lacunas regulatórias, benchmarks internacionais, 7 recomendações | ~15 min |
-| [Resumo Executivo](legisladores/one-pager-legisladores.md) | Problema, 5 recomendações, dados de impacto | ~3 min |
+| [Policy Brief](conteudo/legisladores/policy-brief-legisladores.md) | Lacunas regulatórias, benchmarks internacionais, 7 recomendações | ~15 min |
+| [Resumo Executivo](conteudo/legisladores/one-pager-legisladores.md) | Problema, 5 recomendações, dados de impacto | ~3 min |
 
 ---
 
@@ -69,8 +75,8 @@ A publicação original é um instrumento abrangente que cobre desde conceitos d
 
 | Material | Descrição | Tempo de leitura |
 |----------|-----------|-----------------|
-| [Guia Prático](educadores/guia-educadores.md) | O que é IA, como ajuda, riscos, supervisão humana, perguntas essenciais | ~15 min |
-| [Resumo Executivo](educadores/one-pager-educadores.md) | 5 benefícios, 5 alertas, 3 perguntas para a coordenação | ~3 min |
+| [Guia Prático](conteudo/educadores/guia-educadores.md) | O que é IA, como ajuda, riscos, supervisão humana, perguntas essenciais | ~15 min |
+| [Resumo Executivo](conteudo/educadores/one-pager-educadores.md) | 5 benefícios, 5 alertas, 3 perguntas para a coordenação | ~3 min |
 
 ---
 
