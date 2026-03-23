@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia para Gestores Públicos: Contratação Responsável de IA na Educação · Gestores Públicos</title>
+    <meta name="description" content="Materiais para contratação responsável de IA na educação pública brasileira">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+    
+</head>
+<body class="page-document">
+
+    <div class="site-disclaimer">
+        <p><strong>Atenção:</strong> Este site é um conceito em desenvolvimento. O conteúdo ainda não foi revisado e pode conter imprecisões.</p>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html" class="header-logo">
+                <span class="header-logo-mark" aria-hidden="true"></span>
+                <span class="header-title">Aliança de IA</span>
+            </a>
+            <nav class="header-nav" id="header-nav">
+                
+                <a href="../edtechs/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #2b6cb0">
+                    <span class="nav-dot"></span>
+                    EdTechs
+                </a>
+                
+                <a href="../gestores/index.html"
+                   class="nav-persona active"
+                   style="--persona-color: #2f855a">
+                    <span class="nav-dot"></span>
+                    Gestores Públicos
+                </a>
+                
+                <a href="../intermediarios/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #9f7aea">
+                    <span class="nav-dot"></span>
+                    Organizações Intermediárias
+                </a>
+                
+                <a href="../legisladores/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #c05621">
+                    <span class="nav-dot"></span>
+                    Legisladores
+                </a>
+                
+                <a href="../educadores/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #d69e2e">
+                    <span class="nav-dot"></span>
+                    Educadores
+                </a>
+                
+                
+                
+                <a href="../recursos/index.html"
+                   class="nav-section">
+                    🧰 Recursos
+                </a>
+                
+                
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        
+<div class="document-layout" style="--persona-color: #2f855a">
+
+    
+    <aside class="doc-sidebar" id="doc-sidebar">
+        <button class="sidebar-close" aria-label="Fechar menu" id="sidebar-close">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <nav class="doc-toc">
+            <div class="toc-persona-tag">
+                <span class="toc-dot"></span>
+                Gestores Públicos
+            </div>
+            <h3 class="toc-title">Neste documento</h3>
+            <ul>
+                
+                <li><a href="#ia-versus-software-convencional" class="toc-link">IA versus software convencional</a></li>
+                
+                <li><a href="#tres-frentes-de-valor-da-ia-na-educacao" class="toc-link">Três frentes de valor da IA na educação</a></li>
+                
+                <li><a href="#riscos-educacionais" class="toc-link">Riscos educacionais</a></li>
+                
+                <li><a href="#riscos-especificos-da-contratacao" class="toc-link">Riscos específicos da contratação</a></li>
+                
+                <li><a href="#governanca-como-fundacao" class="toc-link">Governança como fundação</a></li>
+                
+                <li><a href="#o-contrato-como-instrumento-de-governanca" class="toc-link">O contrato como instrumento de governança</a></li>
+                
+                <li><a href="#alfabetizacao-algoritmica-e-cultura-institucional" class="toc-link">Alfabetização algorítmica e cultura institucional</a></li>
+                
+                <li><a href="#defina-o-proposito-pedagogico" class="toc-link">Defina o propósito pedagógico</a></li>
+                
+                <li><a href="#diagnostique-a-capacidade-institucional" class="toc-link">Diagnostique a capacidade institucional</a></li>
+                
+                <li><a href="#componha-equipe-multissetorial" class="toc-link">Componha equipe multissetorial</a></li>
+                
+                <li><a href="#mapeie-a-infraestrutura-escolar" class="toc-link">Mapeie a infraestrutura escolar</a></li>
+                
+                <li><a href="#reconheca-o-mercado" class="toc-link">Reconheça o mercado</a></li>
+                
+                <li><a href="#considere-pilotos-antes-de-escalar" class="toc-link">Considere pilotos antes de escalar</a></li>
+                
+                <li><a href="#realize-analise-de-riscos-e-impactos" class="toc-link">Realize análise de riscos e impactos</a></li>
+                
+                <li><a href="#modelagem-da-contratacao-e-criterios-tecnicos" class="toc-link">Modelagem da contratação e critérios técnicos</a></li>
+                
+                <li><a href="#salvaguardas-a-definir-no-contrato" class="toc-link">Salvaguardas a definir no contrato</a></li>
+                
+                <li><a href="#casos-brasileiros" class="toc-link">Casos brasileiros</a></li>
+                
+                <li><a href="#casos-internacionais" class="toc-link">Casos internacionais</a></li>
+                
+                <li><a href="#municipio-pequeno-ate-50-mil-habitantes" class="toc-link">Município pequeno (até 50 mil habitantes)</a></li>
+                
+                <li><a href="#municipio-medio-50-a-500-mil-habitantes" class="toc-link">Município médio (50 a 500 mil habitantes)</a></li>
+                
+                <li><a href="#municipio-grande-500-mil-ou-estado" class="toc-link">Município grande (500 mil+) ou estado</a></li>
+                
+                <li><a href="#referencias-de-custo" class="toc-link">Referências de custo</a></li>
+                
+                <li><a href="#fontes-de-financiamento" class="toc-link">Fontes de financiamento</a></li>
+                
+                <li><a href="#principios-de-protecao" class="toc-link">Princípios de proteção</a></li>
+                
+                <li><a href="#documentacao-minima-para-auditoria" class="toc-link">Documentação mínima para auditoria</a></li>
+                
+                <li><a href="#rede-de-apoio" class="toc-link">Rede de apoio</a></li>
+                
+            </ul>
+            <div class="toc-back">
+                <a href="../gestores/index.html" class="toc-back-link">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M3 7l4-4M3 7l4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Todos os materiais
+                </a>
+            </div>
+        </nav>
+    </aside>
+    
+
+    <article class="doc-content">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span class="sep">/</span>
+            
+            <a href="../gestores/index.html">Gestores Públicos</a>
+            
+            <span class="sep">/</span>
+            <span class="current">Guia Completo</span>
+        </nav>
+
+        <header class="doc-header">
+            <div class="doc-header-meta">
+                <span class="doc-tipo-badge">Guia Completo</span>
+                <span class="doc-reading-time">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    ~22 min de leitura
+                </span>
+            </div>
+        </header>
+
+        <div class="doc-body markdown-body">
+            <blockquote>
+<p><strong>Nota:</strong> Este guia foi elaborado a partir da publicação <em>Contratação Pública de Soluções de IA na Educação</em>, desenvolvida pela Aliança de IA para a Educação em parceria com o Instituto Jataí (2026). O material original abrange múltiplos públicos e oferece uma visão completa sobre o tema. Aqui, reorganizamos e adaptamos o conteúdo para atender especificamente às necessidades de gestores públicos de educação (secretários, diretores de tecnologia, coordenadores pedagógicos e equipes de licitação) que precisam tomar decisões de compra seguras e pedagogicamente intencionais.</p>
+</blockquote>
+<hr />
+<h1 id="1-introducao-por-que-a-contratacao-de-ia-exige-atencao-especial">1. Introdução: Por que a Contratação de IA Exige Atenção Especial</h1>
+<p>A inteligência artificial já faz parte do cotidiano das escolas brasileiras. Segundo a pesquisa TIC Educação 2024, <strong>37% dos alunos</strong> do ensino fundamental e médio utilizam alguma ferramenta de IA nas atividades escolares e <strong>43% dos professores</strong> usam IA generativa na preparação de conteúdos didáticos. Esse uso, porém, ocorre frequentemente sem diretrizes, sem mediação e sem formação específica.</p>
+<p>A IA não é um software comum. Softwares convencionais operam por regras fixas e respostas determinísticas: quando erram, o erro está no código e pode ser corrigido diretamente. Soluções de IA, por sua vez, são <strong>tecnologias de inferência probabilística</strong>: aprendem com grandes volumes de dados, detectam padrões e geram previsões ou recomendações. Quando erram, a origem da falha pode estar nos dados de treinamento, na inferência estatística ou na interpretação contextual, o que torna o rastreio da causa muito mais difícil.</p>
+<p>Há ainda o problema da <strong>"IA embutida"</strong>: plataformas digitais que incorporam algoritmos de aprendizado de máquina sem que isso seja explicitado nos contratos, nos manuais ou nas formações. A IA aparece como "plataforma inteligente", "avaliação adaptativa" ou "personalização", mais como atributo comercial do que como critério de contratação. <strong>De 15 processos de contratação mapeados no Portal Nacional de Contratações Públicas (PNCP) entre 2024 e fevereiro de 2026, nenhum trazia documentação com especificidades relacionadas à IA.</strong></p>
+<p>A forma como o poder público compra tecnologia tem poder de moldar o mercado. Compras orientadas por critérios pedagógicos claros, com supervisão humana e transparência, podem alavancar a educação pública. Compras mal conduzidas podem aprofundar desigualdades, violar direitos de crianças e adolescentes e desperdiçar recursos públicos. Este guia existe para apoiar você nessa jornada.</p>
+<hr />
+<h1 id="2-entendendo-a-ia-na-educacao-o-minimo-que-voce-precisa-saber">2. Entendendo a IA na Educação: O Mínimo que Você Precisa Saber</h1>
+<h2 id="ia-versus-software-convencional">IA versus software convencional</h2>
+<table>
+<thead>
+<tr>
+<th>Tecnologia convencional</th>
+<th>Inteligência Artificial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opera por regras fixas e lógicas determinísticas</td>
+<td>Refina seu desempenho à medida que analisa mais dados</td>
+</tr>
+<tr>
+<td>Quando erra, o erro está no código</td>
+<td>Quando erra, a origem pode estar nos dados, na inferência ou no contexto</td>
+</tr>
+<tr>
+<td>Ferramenta de execução</td>
+<td>Ferramenta de inferência e interpretação</td>
+</tr>
+</tbody>
+</table>
+<p>A principal diferença: enquanto tecnologias convencionais operam com base em regras fixas e respostas predeterminadas, a IA interpreta, aprende e infere com base em dados, aperfeiçoando-se ao longo do tempo.</p>
+<h2 id="tres-frentes-de-valor-da-ia-na-educacao">Três frentes de valor da IA na educação</h2>
+<p><strong>Para os estudantes: aprendizado adaptativo e tutoria inteligente:</strong><br />
+A IA pode proporcionar aprendizagem personalizada, adaptando exercícios, conteúdos e feedback ao perfil de cada aluno. Sistemas de tutoria inteligente mantêm conversas flexíveis, ajustam a linguagem e o nível de dificuldade, e oferecem feedback formativo imediato. A IA também pode atuar como tecnologia assistiva, convertendo texto em fala, gerando legendas em tempo real ou traduzindo conteúdos para estudantes com barreiras linguísticas.</p>
+<p><strong>Para os professores: automação de tarefas e recomposição do tempo pedagógico:</strong><br />
+A IA funciona como um "copiloto" do professor. Tarefas repetitivas (correção de atividades padronizadas, lançamento de dados, criação de devolutivas básicas) podem ser automatizadas. Tarefas de maior valor pedagógico (análise de trajetórias individuais, apoio ao feedback qualitativo, sugestões de sequências didáticas) podem ser ampliadas com a assistência da IA. Isso libera tempo para o que mais importa: mentoria individualizada, mediação, acolhimento socioemocional.</p>
+<p><strong>Para a gestão escolar: automação de processos e análises preditivas:</strong><br />
+Na gestão, a IA automatiza processos administrativos (matrículas, frequência, grades horárias, logística) e oferece análises preditivas, como sistemas de alerta antecipado contra evasão escolar, diagnósticos de lacunas de aprendizagem em nível de rede e previsão de demanda por habilidades.</p>
+<p><strong>Atenção:</strong> o valor pedagógico da IA <strong>não se realiza automaticamente</strong>. Ele depende de condições adequadas de implementação, de educadores preparados para interpretar e supervisionar os resultados e de produtos desenhados com intencionalidade pedagógica. Sem capacidade institucional, a IA não gera valor; gera risco.</p>
+<hr />
+<h1 id="3-riscos-que-voce-precisa-conhecer">3. Riscos que Você Precisa Conhecer</h1>
+<h2 id="riscos-educacionais">Riscos educacionais</h2>
+<p><strong>Impacto no desenvolvimento cognitivo:</strong></p>
+<ul>
+<li><strong>"Preguiça" cognitiva e dependência:</strong> o uso acrítico pode levar o estudante a terceirizar o esforço intelectual à máquina, prejudicando pensamento crítico, escrita autônoma e resolução de problemas.</li>
+<li><strong>Falsa maestria:</strong> resultados impressionantes gerados pela IA podem mascarar a falta de competência real, criando uma ilusão de aprendizado.</li>
+<li><strong>Ancoragem cognitiva:</strong> uma vez que a IA gera uma estrutura inicial, o estudante pode ter dificuldade para pensar fora desse padrão, limitando criatividade e originalidade.</li>
+</ul>
+<p><strong>Riscos éticos:</strong></p>
+<ul>
+<li><strong>Discriminação algorítmica:</strong> modelos treinados com dados históricos podem perpetuar vieses de raça, gênero, cultura e linguagem.</li>
+<li><strong>Aprofundamento do hiato digital:</strong> a IA pode exacerbar desigualdades existentes entre escolas urbanas e rurais, públicas e privadas.</li>
+<li><strong>Homogeneização cultural:</strong> o predomínio de dados em inglês e de padrões do Norte Global pode apagar culturas locais e saberes regionais.</li>
+</ul>
+<p><strong>Privacidade e vigilância:</strong></p>
+<ul>
+<li><strong>Hipervigilância:</strong> tecnologias de reconhecimento facial para controle de frequência podem ser intrusivas e desproporcionais.</li>
+<li><strong>Vazamento de dados:</strong> coleta massiva de dados sensíveis (biometria, desempenho, comportamento) sem salvaguardas expõe crianças e adolescentes.</li>
+<li><strong>"Caixa-preta":</strong> a natureza opaca dos algoritmos impede que professores e alunos compreendam o porquê de uma recomendação ou nota.</li>
+</ul>
+<p><strong>Esvaziamento pedagógico:</strong></p>
+<ul>
+<li><strong>Desumanização do ensino:</strong> substituição de interações humanas por tutores automatizados pode eliminar empatia e vínculo social.</li>
+<li><strong>Erosão da autonomia docente:</strong> o professor corre o risco de ser reduzido a um aplicador de <em>scripts</em> algorítmicos.</li>
+<li><strong>Profecias autorrealizáveis:</strong> sistemas preditivos que rotulam alunos como "em risco" podem levar professores a diminuir expectativas, consolidando o fracasso escolar antes que ele ocorra.</li>
+</ul>
+<h2 id="riscos-especificos-da-contratacao">Riscos específicos da contratação</h2>
+<p><strong>Opacidade algorítmica (a "caixa-preta"):</strong><br />
+Os mecanismos internos de processamento podem conter vieses e gerar decisões injustas. Quando o contrato não descreve o comportamento da IA, gestores e professores atuam sem clareza sobre o que a tecnologia realmente está fazendo.</p>
+<blockquote>
+<p><em>"...vieses de gênero, vieses de raça, vieses de condição socioeconômica, (...) que de alguma forma podem conduzir à replicação de preconceitos."</em><br />
+Representante da Advocacia Pública</p>
+</blockquote>
+<p><strong>Assimetria de informação:</strong><br />
+As empresas possuem domínio técnico sobre o funcionamento dos sistemas muito superior ao dos gestores que os contratam. Isso dificulta a avaliação do custo-benefício real e o monitoramento do desempenho.</p>
+<blockquote>
+<p><em>"Quando vamos ver, não tem IA nenhuma. É automação vendida como IA."</em><br />
+Gestora pública de Secretaria Municipal de Educação</p>
+</blockquote>
+<p><strong>Lock-in tecnológico (dependência de fornecedor):</strong><br />
+A administração pública pode se tornar excessivamente dependente da tecnologia, dos formatos de dados ou da infraestrutura proprietária de um fornecedor, tornando a mudança proibitiva.</p>
+<blockquote>
+<p><em>"Os contratos não trazem esses parâmetros de treinamento ou potenciais falhas. Isso não deve estar claro nem para os usuários."</em><br />
+Gestora pública de Secretaria Estadual de Educação</p>
+</blockquote>
+<hr />
+<h1 id="4-governanca-os-pilares-de-uma-boa-jornada">4. Governança: Os Pilares de uma Boa Jornada</h1>
+<h2 id="governanca-como-fundacao">Governança como fundação</h2>
+<p>A governança da contratação de IA não é apenas uma etapa administrativa, é o alicerce que garante que a IA na educação seja ética, consciente, segura e alinhada ao interesse público. Ela se sustenta em quatro princípios:</p>
+<ul>
+<li><strong>Abordagem multissetorial:</strong> decisões de compra não podem ser restritas a um único departamento. A contratação deve reunir especialistas em tecnologia, direito, ética, pedagogia e segurança da informação.</li>
+<li><strong>Supervisão humana (<em>human-in-the-loop</em>):</strong> a governança deve assegurar que a tecnologia atue como suporte, nunca como substituto, da decisão humana. O professor deve poder anular ou corrigir decisões automatizadas.</li>
+<li><strong>Transparência e prestação de contas (<em>accountability</em>):</strong> contratos devem exigir documentação clara sobre a lógica do modelo e os dados utilizados, além de prever avaliações de impacto algorítmico.</li>
+<li><strong>Gestão do ciclo de vida e soberania:</strong> evitar que o poder público perca o controle sobre seus processos educacionais, combatendo o lock-in tecnológico e estabelecendo critérios para descontinuação.</li>
+</ul>
+<h2 id="o-contrato-como-instrumento-de-governanca">O contrato como instrumento de governança</h2>
+<p>Mais do que um documento burocrático, o contrato é um instrumento de governança. Países que avançaram no uso seguro da IA adotaram uma prática comum: todo contrato deve responder a <strong>oito perguntas fundamentais</strong>:</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Pergunta</th>
+<th>O que significa</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Para quê?</strong></td>
+<td>Qual a finalidade pedagógica e o propósito da solução?</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Com o quê?</strong></td>
+<td>Quais dados, bases e métodos de validação são utilizados?</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Como?</strong></td>
+<td>Com base em quais métricas, logs e evidências de rastreabilidade?</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Para quem?</strong></td>
+<td>Quem supervisiona, com que autoridade e poder de revisão?</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Com que segurança?</strong></td>
+<td>Como serão garantidas proteção de dados, privacidade e mitigação de vieses?</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Até quando?</strong></td>
+<td>Como a solução será mantida, atualizada e descontinuada com segurança?</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>E se falhar?</strong></td>
+<td>Como serão implementadas reversibilidade, auditoria e correção?</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Com que legado?</strong></td>
+<td>Como os dados públicos, aprendizados e modelos retornam à rede?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="alfabetizacao-algoritmica-e-cultura-institucional">Alfabetização algorítmica e cultura institucional</h2>
+<p>A governança só se torna efetiva quando existe capacidade técnica interna. É fundamental avançar no letramento algorítmico de gestores e fiscais de contrato, para que possam reconhecer, questionar e supervisionar as soluções adquiridas. O desafio central, muitas vezes, não é a ausência de tecnologia, mas a escassez de capacidades institucionais para avaliar criticamente contratos, termos de referência e políticas de privacidade no momento da compra.</p>
+<blockquote>
+<p><strong>Caso Recife:</strong> A Secretaria de Educação do Recife optou por desenvolver internamente sua solução de IA. Entre as razões estão a soberania sobre os dados, a adequação ao contexto local e a preservação da autoria docente. Os dados e o conhecimento curricular permanecem sob guarda pública, e a IA foi construída de forma alinhada ao currículo e às especificidades culturais da rede. As ferramentas incluem correção automatizada de produções estudantis, assistente pedagógico generativo e o aplicativo Revisa, voltado à leitura e ao estudo.</p>
+</blockquote>
+<hr />
+<h1 id="5-antes-da-contratacao">5. Antes da Contratação</h1>
+<h2 id="defina-o-proposito-pedagogico">Defina o propósito pedagógico</h2>
+<p>A IA deve ser um meio, não um fim. Antes de buscar a tecnologia, identifique as questões pedagógicas que deseja resolver. A Unesco recomenda que toda decisão envolvendo IA responda: para quem, para quê e em que condições.</p>
+<h2 id="diagnostique-a-capacidade-institucional">Diagnostique a capacidade institucional</h2>
+<p>A rede precisa ter clareza sobre sua estrutura interna para contratar, monitorar e avaliar a solução de IA. Isso envolve: pessoal disponível, necessidade de letramento algorítmico da equipe, clareza sobre os dados existentes na rede e situação da infraestrutura escolar (conexão e hardware).</p>
+<h2 id="componha-equipe-multissetorial">Componha equipe multissetorial</h2>
+<p>É indispensável compor uma equipe multissetorial e multidisciplinar (TI, jurídica e pedagógica) capaz de analisar as soluções disponíveis e emitir pareceres. A falta de diversidade na equipe cria "pontos cegos" no processo.</p>
+<h2 id="mapeie-a-infraestrutura-escolar">Mapeie a infraestrutura escolar</h2>
+<p>A depender do diagnóstico de conectividade e hardware, pode fazer mais sentido optar por modelos de IA que funcionem <em>offline</em> ou com internet limitada.</p>
+<h2 id="reconheca-o-mercado">Reconheça o mercado</h2>
+<p>Busque compreender os modelos de IA disponíveis e avaliá-los quanto à qualidade dos dados, riscos, transparência, explicabilidade e adequação ao contexto local. Procure evidências empíricas de que a ferramenta melhora a aprendizagem.</p>
+<h2 id="considere-pilotos-antes-de-escalar">Considere pilotos antes de escalar</h2>
+<p>Sempre que possível, utilize instrumentos como o <em>Sandbox</em> Regulatório para realizar pilotos controlados antes de uma implementação em larga escala. Contratar IA como se fosse um software comum é um erro que fragiliza a proteção dos direitos e o valor educacional da solução.</p>
+<h2 id="realize-analise-de-riscos-e-impactos">Realize análise de riscos e impactos</h2>
+<p>Antes da publicação do edital, realize uma avaliação de potenciais impactos: identificação de usuários e comunidades afetadas, análise de cenários de consequências não intencionais, formas de mitigação e definição clara de critérios de sucesso e de falha.</p>
+<blockquote>
+<p><strong>Perguntas úteis nesta fase:</strong><br />
+- Qual problema pedagógico específico queremos resolver?<br />
+- Quais resultados esperamos obter?<br />
+- Nossa rede tem a estrutura mínima para usar essa solução?<br />
+- De que profissionais dispomos para compor uma equipe multidisciplinar?<br />
+- A IA é mesmo a solução mais adequada, ou existem alternativas convencionais?<br />
+- Como podemos testar com segurança antes de lançar formalmente o processo de compra?</p>
+</blockquote>
+<hr />
+<h1 id="6-durante-a-contratacao">6. Durante a Contratação</h1>
+<h2 id="modelagem-da-contratacao-e-criterios-tecnicos">Modelagem da contratação e critérios técnicos</h2>
+<p><strong>Planejamento da modelagem de compra:</strong> consolide as informações levantadas em um Estudo Técnico Preliminar (ETP), defina a modalidade de licitação, elabore o Termo de Referência (TR) ou Edital e defina o modelo econômico-financeiro da contratação. Os documentos devem refletir a legislação pertinente: Estatuto da Criança e do Adolescente, LGPD, Lei de Licitações (14.133/2021), entre outros.</p>
+<p><strong>Critérios técnicos a exigir:</strong></p>
+<ul>
+<li>Tipo de modelo e grau de autonomia</li>
+<li>Fontes de dados e critérios de treinamento</li>
+<li>Métodos de validação e métricas de desempenho</li>
+<li>Mecanismos de mitigação de vieses e limitações técnicas</li>
+<li>Treinamentos que o fornecedor deve oferecer à equipe da rede</li>
+<li>Possibilidade de vincular pagamento ao desempenho técnico e pedagógico efetivo</li>
+</ul>
+<h2 id="salvaguardas-a-definir-no-contrato">Salvaguardas a definir no contrato</h2>
+<p><strong>Transparência e explicabilidade:</strong><br />
+O edital deve exigir documentação técnica detalhando fontes de dados, forma de treinamento, lógica do algoritmo e limitações. O sistema deve informar ao usuário que ele interage com IA e quais são os riscos de erro.</p>
+<p><strong>Governança de dados e privacidade de menores:</strong><br />
+Dado que o público é de crianças e adolescentes (categoria de máxima proteção), os contratos devem prever:<br />
+- Consentimento explícito dos pais ou responsáveis<br />
+- Relatórios de Impacto à Proteção de Dados (RIPD) e Avaliações de Impacto Algorítmico<br />
+- Definição de que os dados pertencem à rede de ensino<br />
+- Direito à portabilidade e exclusão segura ao fim do vínculo<br />
+- Conformidade estrita com a LGPD</p>
+<p><strong>Mecanismos de supervisão humana:</strong><br />
+O sistema não deve tomar decisões de alto impacto (aprovação, reprovação, sanções disciplinares) de forma autônoma. O professor deve ter ferramentas para anular ou corrigir sugestões da IA. Devem ser definidos logs, painéis de observabilidade e prazos para auditorias.</p>
+<p><strong>Equidade e prevenção de vieses:</strong><br />
+Exija comprovação de que o sistema foi testado contra discriminação algorítmica de raça, gênero, regionalismos e deficiências. Verifique se os modelos refletem a língua portuguesa e a realidade cultural brasileira.</p>
+<p><strong>Reversibilidade, interoperabilidade e plano de saída:</strong><br />
+- Possibilidade de extração de dados para migração futura<br />
+- Exclusão segura dos dados após o fim do contrato<br />
+- Interoperabilidade garantida por API e padrões abertos<br />
+- Plano de saída e reversibilidade contratual, com condições para descontinuação caso a solução apresente falhas ou perda de valor pedagógico</p>
+<blockquote>
+<p><strong>Perguntas úteis nesta fase:</strong><br />
+- Temos clareza sobre os dados que serão usados e quem é responsável por eles?<br />
+- Como o raciocínio da IA será documentado? Para quem e com que periodicidade?<br />
+- Quais as políticas de anonimização, retenção e descarte?<br />
+- O edital está de acordo com a LGPD e outras legislações?<br />
+- Quem validará os resultados? Como serão tratados erros?<br />
+- Quais são as condições de saída ou de troca de fornecedor?</p>
+</blockquote>
+<hr />
+<h1 id="7-apos-a-contratacao">7. Após a Contratação</h1>
+<p>O trabalho não se encerra com a assinatura do contrato. Pelo contrário, inicia-se a fase mais crítica. A IA é um "sistema vivo" e mutável, que exige vigilância contínua.</p>
+<p><strong>Monitoramento pedagógico contínuo:</strong><br />
+Realize testes periódicos para verificar se a IA está gerando aprendizado real ou apenas uma "ilusão de desempenho" (o efeito muleta, em que o aluno acerta com ajuda mas não retém o conhecimento). Realize auditorias pedagógicas para garantir alinhamento com a BNCC e a visão pedagógica da rede.</p>
+<p><strong>Verificação ativa da supervisão humana:</strong><br />
+Observe se, com o tempo, os professores vêm cedendo de forma acrítica às sugestões da IA. Caso essa terceirização esteja ocorrendo, revise o desenho de implementação da ferramenta.</p>
+<p><strong>Auditorias de governança de dados e cibersegurança:</strong><br />
+Realize auditorias anuais de segurança, testes de penetração e verifique continuamente quem acessa os dados dos estudantes. Mantenha registros atualizados de consentimento dos pais ou responsáveis.</p>
+<p><strong>Mecanismos de contestação (direito ao recurso):</strong><br />
+Estabeleça canais claros e acessíveis para que usuários possam apelar contra decisões da IA, garantindo o devido processo legal e a revisão humana. Atualize regularmente a avaliação de impacto algorítmico.</p>
+<p><strong>Formação e comunidades de prática:</strong><br />
+O letramento não deve ser um evento único. Mantenha acompanhamento contínuo que ajude o professor a lidar com erros, alucinações e vieses no dia a dia. Crie comunidades de prática para troca de experiências, identificação de falhas pedagógicas e desenvolvimento conjunto de melhorias.</p>
+<hr />
+<h1 id="8-o-que-exigir-das-edtechs">8. O que Exigir das EdTechs</h1>
+<p>Ao avaliar fornecedores, utilize os cinco pontos abaixo como exigências mínimas:</p>
+<p><strong>1. O problema pedagógico resolvido deve estar claro.</strong><br />
+Exija que a empresa demonstre qual desafio real da escola ou da secretaria a solução endereça, quais tarefas serão automatizadas ou assistidas e quais resultados educacionais são esperados, com evidências, quando possível.</p>
+<p><strong>2. A compatibilidade com a infraestrutura da rede deve ser avaliada.</strong><br />
+A <em>edtech</em> deve fazer uma avaliação prévia de conectividade, hardware e rotina pedagógica. Soluções que exigem infraestrutura incompatível com a realidade das escolas geram frustração e desperdício.</p>
+<p><strong>3. Deve ser possível explicar, de forma simples, como a IA funciona e quais dados utiliza.</strong><br />
+Exija <em>Model Cards</em> ou fichas técnicas que expliquem como o modelo foi treinado, quais dados são coletados e quais são os limites e riscos de erro. Combata a lógica da "caixa-preta".</p>
+<p><strong>4. Dashboards de monitoramento e trilhas de auditoria devem ser oferecidos.</strong><br />
+A plataforma deve permitir que professores e gestores visualizem o caminho de decisão da IA, intervenham quando necessário e contem com canais claros para contestar erros.</p>
+<p><strong>5. O modelo de contratação deve ser viável para o setor público.</strong><br />
+Discuta formatos contratuais compatíveis (licitação, piloto, parceria), modelos de custos sustentáveis e documentos técnicos e jurídicos que a <em>edtech</em> pode fornecer para facilitar o processo (como RIPD e atestados de capacidade técnica).</p>
+<hr />
+<h1 id="9-referencias-casos-nacionais-e-internacionais">9. Referências: Casos Nacionais e Internacionais</h1>
+<h2 id="casos-brasileiros">Casos brasileiros</h2>
+<p><strong>Joinville/SC: Letrus (Inexigibilidade de licitação):</strong><br />
+A Secretaria Municipal contratou o Programa Letrus para fortalecer habilidades de leitura e escrita nos anos finais do ensino fundamental. A contratação foi por inexigibilidade (art. 74, Lei 14.133/2021), com valor de R$ 2,1 milhões (Contrato 1207/2024). A solução inclui plataforma digital com análise automatizada de produções textuais e relatórios pedagógicos. O contrato prevê níveis mínimos de serviço (disponibilidade de 95% da plataforma e 90% de atendimento ao suporte).</p>
+<p><strong>Rio Verde/GO: Herby Vision (Pregão eletrônico):</strong><br />
+A Secretaria Municipal contratou sistema de correção digital de gabaritos via pregão eletrônico (menor preço), no valor de R$ 211 mil (Contrato 038/2025). A solução apoia o processamento das avaliações do sistema municipal (SAERV/IDERV), com leitura automática de cartões-resposta, geração de resultados em tempo real e relatórios por turma, escola e rede.</p>
+<p><strong>Rio Grande do Norte: LIZE via Sebrae (Arranjo intermediado):</strong><br />
+No município de Itajá/RN, a contratação ocorreu por meio do Sebrae/RN, que atua como executor institucional do programa IA Lab Sebrae. A startup LIZE, selecionada por edital de credenciamento, opera a plataforma IDES, uma ferramenta de gestão educacional orientada por dados, com avaliações diagnósticas e uso de IA para planos de ação. Valor: R$ 15 mil (contrato de 4 meses, dispensa de licitação com base no art. 75, XV, Lei 14.133/2021).</p>
+<p><strong>Recife: Desenvolvimento interno:</strong><br />
+A Secretaria de Educação do Recife optou por desenvolver internamente suas soluções de IA, priorizando soberania de dados, adequação ao contexto local e preservação da autoria docente. As ferramentas incluem correção automatizada de produções, assistente pedagógico generativo alinhado à BNCC e o aplicativo Revisa.</p>
+<h2 id="casos-internacionais">Casos internacionais</h2>
+<p><strong>Reino Unido: Governança ativa e aprendizado institucional:</strong><br />
+Em vez de comprar produtos prontos, o governo britânico financia ciclos de desenvolvimento e testes iterativos por meio do <em>Pre-Commercial Procurement</em> (PCP). Cada etapa exige que o fornecedor demonstre governança de dados, explicabilidade e impacto pedagógico antes de avançar. O Ofsted (órgão supervisor de qualidade educacional) estabeleceu um <em>framework</em> de salvaguardas baseado em supervisão humana, explicabilidade, proporcionalidade e reversibilidade. O governo também adotou o <em>Algorithmic Transparency Recording Standard</em> (ATRS), transformando o uso de IA em processo auditável e transparente.</p>
+<p><strong>Chile: Contrato como instrumento técnico e de governança:</strong><br />
+O governo chileno exige que cada licitação contenha um <strong>anexo de IA obrigatório</strong> descrevendo o modelo, a fonte de dados, o grau de autonomia, as métricas e o plano de reversibilidade. O projeto "Algoritmos Éticos" (parceria entre ChileCompra, Universidade Adolfo Ibáñez e BID Lab) produziu modelos padronizados de editais com cláusulas específicas para IA. O país mantém um <strong>Inventário Público de Algoritmos</strong>, repositório pesquisável para escrutínio da sociedade e órgãos de controle.</p>
+<p><strong>Canadá: Avaliação de Impacto Algorítmico:</strong><br />
+A Diretriz Canadense sobre Tomada de Decisão Automatizada é considerada o primeiro marco regulatório do mundo para automação responsável por IA no setor público. Seu instrumento central é a <strong>Avaliação de Impacto Algorítmico (AIA)</strong>, um questionário obrigatório que gera uma pontuação de risco (1 a 4), definindo o nível de governança exigido. O governo mantém uma lista de fornecedores pré-aprovados e criou uma <strong>Academia Digital</strong> para alfabetização em dados e IA dos servidores públicos.</p>
+<hr />
+<h1 id="11-orientacoes-por-porte-de-municipio">11. Orientações por Porte de Município</h1>
+<p>A realidade de Recife (1,5 milhão de habitantes, equipe robusta) é radicalmente diferente da de Itajá/RN (7 mil habitantes). Estas orientações ajudam a calibrar a jornada:</p>
+<h2 id="municipio-pequeno-ate-50-mil-habitantes">Município pequeno (até 50 mil habitantes)</h2>
+<p><strong>Sua realidade:</strong> Equipe de TI reduzida ou inexistente. Orçamento limitado. Pouca familiaridade com IA.</p>
+<p><strong>Caminho recomendado:</strong><br />
+- <strong>Comece por parceria intermediada</strong> (Sebrae, universidade, fundação), como fez Itajá/RN (R$ 15 mil, 4 meses)<br />
+- <strong>Busque adesão a atas de registro de preço</strong> de municípios maiores que já licitaram soluções de IA<br />
+- <strong>Participe de consórcios intermunicipais</strong> para dividir custos de capacitação e contratação<br />
+- <strong>Priorize soluções que funcionem offline</strong> ou com internet limitada<br />
+- <strong>Foque no checklist mínimo:</strong> problema pedagógico definido + LGPD + supervisão humana</p>
+<h2 id="municipio-medio-50-a-500-mil-habitantes">Município médio (50 a 500 mil habitantes)</h2>
+<p><strong>Sua realidade:</strong> Equipe básica de TI. Orçamento moderado. Capacidade de conduzir processo próprio com apoio.</p>
+<p><strong>Caminho recomendado:</strong><br />
+- <strong>Conduza processo próprio</strong> com apoio jurídico e pedagógico<br />
+- <strong>Comece com piloto em escolas selecionadas</strong> antes de escalar<br />
+- <strong>Monte equipe multissetorial mínima:</strong> 1 pessoa de TI + 1 de pedagógico + apoio jurídico da procuradoria<br />
+- <strong>Use o Framework de Decisão</strong> completo para avaliar soluções</p>
+<h2 id="municipio-grande-500-mil-ou-estado">Município grande (500 mil+) ou estado</h2>
+<p><strong>Sua realidade:</strong> Equipe estruturada. Orçamento significativo. Capacidade de governança robusta.</p>
+<p><strong>Caminho recomendado:</strong><br />
+- <strong>Considere desenvolvimento interno</strong> (como Recife) para soluções de alta criticidade<br />
+- <strong>Implante governança completa:</strong> comitê de IA, auditorias regulares, formação docente contínua<br />
+- <strong>Utilize todas as salvaguardas</strong> descritas neste guia<br />
+- <strong>Seja referência:</strong> compartilhe aprendizados e atas de registro de preço com municípios menores</p>
+<hr />
+<h1 id="12-quanto-custa-e-onde-buscar-recursos">12. Quanto Custa e Onde Buscar Recursos</h1>
+<h2 id="referencias-de-custo">Referências de custo</h2>
+<table>
+<thead>
+<tr>
+<th>Tipo de solução</th>
+<th>Faixa de investimento</th>
+<th>Exemplo real</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Diagnóstico/avaliação com IA (MVP)</td>
+<td>R$ 10 mil – R$ 50 mil</td>
+<td>Itajá/RN: R$ 15 mil (4 meses, via Sebrae)</td>
+</tr>
+<tr>
+<td>Correção automática de avaliações</td>
+<td>R$ 100 mil – R$ 300 mil</td>
+<td>Rio Verde/GO: R$ 211 mil (12 meses, pregão)</td>
+</tr>
+<tr>
+<td>Plataforma pedagógica completa</td>
+<td>R$ 500 mil – R$ 3 milhões</td>
+<td>Joinville/SC: R$ 1,79M (12+ meses, inexigibilidade)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Atenção:</strong> O custo total vai além da licença. Considere:<br />
+- Formação de professores e gestores (estimar 10–15% do valor do contrato)<br />
+- Infraestrutura (conectividade, dispositivos)<br />
+- Equipe interna de acompanhamento<br />
+- Auditorias periódicas</p>
+<h2 id="fontes-de-financiamento">Fontes de financiamento</h2>
+<ul>
+<li><strong>Recursos próprios municipais (LOA):</strong> incluir no planejamento orçamentário do ano anterior</li>
+<li><strong>FNDE / PDDE:</strong> verificar programas federais de apoio à tecnologia educacional</li>
+<li><strong>Fundeb:</strong> IA educacional pode ser enquadrada como recurso pedagógico</li>
+<li><strong>Emendas parlamentares:</strong> articular com bancada do município</li>
+<li><strong>Parcerias com fundações e institutos:</strong> Lemann, Itaú Social, Sebrae, universidades</li>
+<li><strong>Programa de Conectividade nas Escolas (Lei 14.172/2021):</strong> para infraestrutura</li>
+</ul>
+<hr />
+<h1 id="13-como-se-proteger-perante-orgaos-de-controle">13. Como se Proteger Perante Órgãos de Controle</h1>
+<p>A contratação de IA na educação é recente e pode gerar questionamentos de TCUs, TCEs e Ministério Público. A melhor proteção é a <strong>documentação rigorosa de cada decisão</strong>.</p>
+<h2 id="principios-de-protecao">Princípios de proteção</h2>
+<ol>
+<li><strong>Documente a motivação pedagógica:</strong> Registre por escrito qual problema educacional a IA resolve e por que uma solução convencional não seria suficiente</li>
+<li><strong>Demonstre pesquisa de mercado:</strong> Registre as soluções avaliadas, os critérios de comparação e a justificativa da escolha</li>
+<li><strong>Exija e arquive documentação técnica:</strong> Model Cards, RIPD, relatórios de teste de vieses</li>
+<li><strong>Monitore e registre resultados:</strong> Relatórios periódicos de impacto pedagógico são sua melhor defesa</li>
+<li><strong>Mantenha parecer jurídico:</strong> Para cada decisão-chave (modalidade de licitação, aprovação de salvaguardas, aditivos)</li>
+</ol>
+<h2 id="documentacao-minima-para-auditoria">Documentação mínima para auditoria</h2>
+<ul>
+<li class="task-item"><input type="checkbox" disabled> Justificativa pedagógica documentada (por que IA, não software convencional?)</li>
+<li class="task-item"><input type="checkbox" disabled> Estudo Técnico Preliminar com análise de mercado</li>
+<li class="task-item"><input type="checkbox" disabled> Parecer jurídico sobre modalidade de contratação</li>
+<li class="task-item"><input type="checkbox" disabled> Contrato com cláusulas específicas de IA (transparência, LGPD, supervisão, saída)</li>
+<li class="task-item"><input type="checkbox" disabled> Relatórios periódicos de execução contratual</li>
+<li class="task-item"><input type="checkbox" disabled> Evidências de impacto pedagógico</li>
+<li class="task-item"><input type="checkbox" disabled> Registro de incidentes e como foram tratados</li>
+<li class="task-item"><input type="checkbox" disabled> Atas de reuniões da equipe multissetorial</li>
+</ul>
+<h2 id="rede-de-apoio">Rede de apoio</h2>
+<p>Você não precisa fazer isso sozinho:<br />
+- <strong>Aliança de IA para a Educação:</strong> <a href="http://iaparaeducacao.org.br">iaparaeducacao.org.br</a>: orientações e conexão com especialistas<br />
+- <strong>Undime (União dos Dirigentes Municipais de Educação):</strong> rede de pares para troca de experiências<br />
+- <strong>NTEs (Núcleos de Tecnologia Educacional):</strong> apoio técnico em nível estadual<br />
+- <strong>Universidades locais:</strong> parcerias para avaliação e pesquisa<br />
+- <strong>TCU / TCE:</strong> antes de contratar, consulte orientações do tribunal sobre contratação de tecnologia (ex.: Acórdão 1.739/2015-TCU sobre contratação de TI)</p>
+<hr />
+<h1 id="14-consideracoes-finais">14. Considerações Finais</h1>
+<p>A presença da inteligência artificial nas redes educacionais é incontornável. O papel do gestor público não se limita a decidir se adota ou não a tecnologia: trata-se de <strong>transitar de uma adoção difusa para uma governança intencional e estratégica</strong>.</p>
+<p>A contratação de IA na educação é, antes de tudo, uma <strong>escolha pedagógica e ética</strong>. Cada decisão de compra define não apenas quais ferramentas entrarão nas escolas, mas que tipo de educação será ofertada às crianças e adolescentes. Um edital bem elaborado, com salvaguardas claras, sinaliza ao mercado o que a rede valoriza: transparência, equidade, supervisão humana e aprendizado real.</p>
+<p>É igualmente necessário garantir que os modelos de linguagem e de dados reflitam a diversidade cultural e linguística brasileira, protegendo os direitos fundamentais e a privacidade de crianças e adolescentes. Para que os benefícios da IA cheguem a todas as escolas, as redes devem buscar garantir conectividade e infraestrutura, ou, onde isso ainda não for possível, considerar soluções que funcionem sem conexão à internet.</p>
+<p>Nunca foi tão fundamental assegurar a supervisão humana qualificada. <strong>A IA oferece suporte e assistência, mas nunca deve substituir ou reduzir a agência pedagógica e a dimensão humana do acolhimento, da empatia e do desenvolvimento socioemocional.</strong> É essa convicção que deve orientar cada decisão de contratação.</p>
+<p>Enquanto o país não dispõe de referenciais mais consolidados para a incorporação da IA ao ambiente pedagógico, cabe às redes municipais e estaduais realizar compras conscientes, planejadas em profundidade e orientadas pela responsabilidade, pela segurança e pelo compromisso pedagógico com seus alunos e alunas. Uma contratação responsável não é apenas boa prática de gestão pública, é uma escolha em favor da educação.</p>
+        </div>
+
+        <footer class="doc-footer">
+            <a href="../gestores/index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8l5-5M3 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Voltar para Gestores Públicos
+            </a>
+            
+            <div class="doc-footer-personas">
+                <span class="doc-footer-label">Outros perfis:</span>
+                
+                <a href="../edtechs/index.html" class="doc-footer-persona-link" style="--persona-color: #2b6cb0">💡 EdTechs</a>
+                
+                <a href="../intermediarios/index.html" class="doc-footer-persona-link" style="--persona-color: #9f7aea">🤝 Organizações Intermediárias</a>
+                
+                <a href="../legisladores/index.html" class="doc-footer-persona-link" style="--persona-color: #c05621">⚖️ Legisladores</a>
+                
+                <a href="../educadores/index.html" class="doc-footer-persona-link" style="--persona-color: #d69e2e">📚 Educadores</a>
+                
+            </div>
+            
+        </footer>
+    </article>
+
+    
+    <button class="toc-toggle" id="toc-toggle" aria-label="Índice do documento">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 4h14M3 8h10M3 12h12M3 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+    
+
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-mark" aria-hidden="true"></span>
+                <div>
+                    <p class="footer-org">Aliança de IA para a Educação · Instituto Jataí</p>
+                    <p class="footer-note">Materiais de referência para contratação pública responsável de IA na educação</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    
+</body>
+</html>

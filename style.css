@@ -1,0 +1,182 @@
+/* Estilo para materiais da Aliança de IA para a Educação */
+/* Usado pelo build.sh via pandoc para gerar HTML e PDF */
+
+:root {
+  --cor-primaria: #1a365d;
+  --cor-secundaria: #2b6cb0;
+  --cor-destaque: #e53e3e;
+  --cor-fundo: #f7fafc;
+  --cor-borda: #e2e8f0;
+  --cor-texto: #2d3748;
+  --cor-texto-claro: #718096;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, sans-serif;
+  color: var(--cor-texto);
+  line-height: 1.7;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  color: var(--cor-primaria);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  line-height: 1.3;
+}
+
+h1 {
+  font-size: 1.8rem;
+  border-bottom: 3px solid var(--cor-secundaria);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--cor-borda);
+  padding-bottom: 0.3rem;
+}
+
+h3 { font-size: 1.15rem; }
+
+/* Metadados do documento */
+.subtitle, .author, .date {
+  color: var(--cor-texto-claro);
+  font-size: 0.95rem;
+}
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  font-size: 0.9rem;
+}
+
+th {
+  background: var(--cor-primaria);
+  color: #fff;
+  padding: 0.75rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 0.6rem 0.75rem;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+tr:nth-child(even) {
+  background: var(--cor-fundo);
+}
+
+/* Blockquotes para destaques */
+blockquote {
+  border-left: 4px solid var(--cor-secundaria);
+  margin: 1.5rem 0;
+  padding: 1rem 1.5rem;
+  background: var(--cor-fundo);
+  font-style: italic;
+  color: var(--cor-texto);
+}
+
+blockquote strong {
+  color: var(--cor-primaria);
+  font-style: normal;
+}
+
+/* Listas com checkboxes */
+ul {
+  padding-left: 1.5rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5rem;
+  transform: scale(1.2);
+}
+
+/* Links */
+a {
+  color: var(--cor-secundaria);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Caixas de destaque */
+.destaque {
+  background: #ebf8ff;
+  border: 1px solid #bee3f8;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+.alerta {
+  background: #fff5f5;
+  border: 1px solid #fed7d7;
+  border-radius: 6px;
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+/* Código / termos técnicos */
+code {
+  background: var(--cor-fundo);
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+/* Header e footer para PDF */
+header {
+  border-bottom: 2px solid var(--cor-secundaria);
+  padding-bottom: 0.5rem;
+  margin-bottom: 2rem;
+  font-size: 0.85rem;
+  color: var(--cor-texto-claro);
+}
+
+footer {
+  border-top: 1px solid var(--cor-borda);
+  padding-top: 1rem;
+  margin-top: 3rem;
+  font-size: 0.8rem;
+  color: var(--cor-texto-claro);
+  text-align: center;
+}
+
+/* Responsividade para tela */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+    font-size: 15px;
+  }
+  h1 { font-size: 1.5rem; }
+  h2 { font-size: 1.2rem; }
+}
+
+/* Ajustes para impressão / PDF */
+@media print {
+  body {
+    max-width: 100%;
+    padding: 0;
+    font-size: 11pt;
+  }
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  table, blockquote {
+    page-break-inside: avoid;
+  }
+}

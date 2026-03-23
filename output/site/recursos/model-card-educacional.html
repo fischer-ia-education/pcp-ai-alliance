@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model Card Educacional: Template para Documentação de Soluções de IA na Educação Brasileira · Recursos</title>
+    <meta name="description" content="Materiais para contratação responsável de IA na educação pública brasileira">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+    
+</head>
+<body class="page-document">
+
+    <div class="site-disclaimer">
+        <p><strong>Atenção:</strong> Este site é um conceito em desenvolvimento. O conteúdo ainda não foi revisado e pode conter imprecisões.</p>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html" class="header-logo">
+                <span class="header-logo-mark" aria-hidden="true"></span>
+                <span class="header-title">Aliança de IA</span>
+            </a>
+            <nav class="header-nav" id="header-nav">
+                
+                <a href="../edtechs/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #2b6cb0">
+                    <span class="nav-dot"></span>
+                    EdTechs
+                </a>
+                
+                <a href="../gestores/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #2f855a">
+                    <span class="nav-dot"></span>
+                    Gestores Públicos
+                </a>
+                
+                <a href="../intermediarios/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #9f7aea">
+                    <span class="nav-dot"></span>
+                    Organizações Intermediárias
+                </a>
+                
+                <a href="../legisladores/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #c05621">
+                    <span class="nav-dot"></span>
+                    Legisladores
+                </a>
+                
+                <a href="../educadores/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #d69e2e">
+                    <span class="nav-dot"></span>
+                    Educadores
+                </a>
+                
+                
+                
+                <a href="../recursos/index.html"
+                   class="nav-section">
+                    🧰 Recursos
+                </a>
+                
+                
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        
+<div class="document-layout" style="--persona-color: #718096">
+
+    
+    <aside class="doc-sidebar" id="doc-sidebar">
+        <button class="sidebar-close" aria-label="Fechar menu" id="sidebar-close">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <nav class="doc-toc">
+            <div class="toc-persona-tag">
+                <span class="toc-dot"></span>
+                Recursos
+            </div>
+            <h3 class="toc-title">Neste documento</h3>
+            <ul>
+                
+                <li><a href="#model-card-nome-da-solucao" class="toc-link">MODEL CARD: [Nome da Solução]</a></li>
+                
+                <li><a href="#1-visao-geral" class="toc-link">1. Visão geral</a></li>
+                
+                <li><a href="#2-dados" class="toc-link">2. Dados</a></li>
+                
+                <li><a href="#3-arquitetura-e-funcionamento" class="toc-link">3. Arquitetura e funcionamento</a></li>
+                
+                <li><a href="#4-desempenho-e-avaliacao" class="toc-link">4. Desempenho e avaliação</a></li>
+                
+                <li><a href="#5-limitacoes-e-riscos-conhecidos" class="toc-link">5. Limitações e riscos conhecidos</a></li>
+                
+                <li><a href="#6-supervisao-humana" class="toc-link">6. Supervisão humana</a></li>
+                
+                <li><a href="#7-portabilidade-e-encerramento" class="toc-link">7. Portabilidade e encerramento</a></li>
+                
+                <li><a href="#8-historico-de-versoes" class="toc-link">8. Histórico de versões</a></li>
+                
+                <li><a href="#quem-usa-este-template-e-como" class="toc-link">Quem usa este template e como</a></li>
+                
+            </ul>
+            <div class="toc-back">
+                <a href="../recursos/index.html" class="toc-back-link">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M3 7l4-4M3 7l4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Todos os materiais
+                </a>
+            </div>
+        </nav>
+    </aside>
+    
+
+    <article class="doc-content">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span class="sep">/</span>
+            
+            <a href="../recursos/index.html">Recursos</a>
+            
+            <span class="sep">/</span>
+            <span class="current">Template</span>
+        </nav>
+
+        <header class="doc-header">
+            <div class="doc-header-meta">
+                <span class="doc-tipo-badge">Template</span>
+                <span class="doc-reading-time">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    ~3 min de leitura
+                </span>
+            </div>
+        </header>
+
+        <div class="doc-body markdown-body">
+            <h1 id="model-card-educacional-template-para-documentacao-de-solucoes-de-ia-na-educacao-brasileira">Model Card Educacional: Template para Documentação de Soluções de IA na Educação Brasileira</h1>
+<p>O Model Card é uma ficha técnica padronizada que descreve como um modelo de IA funciona, para que serve, quais são seus limites e como foi avaliado. No contexto educacional brasileiro, tem duas funções: para a edtech, é um instrumento de responsabilidade e diferenciação. Para o gestor público, permite avaliar se a solução é adequada, segura e auditável.</p>
+<p>Nem todos os campos serão aplicáveis a todas as soluções. Preencha o que for pertinente e indique "Não aplicável" nos demais.</p>
+<h2 id="model-card-nome-da-solucao">MODEL CARD: [Nome da Solução]</h2>
+<p>Versão: [ex.: 2.1] | Data: [ex.: março/2026] | Empresa: [nome] | Contato técnico: [nome e e-mail]</p>
+<h2 id="1-visao-geral">1. Visão geral</h2>
+<p>1.1 Descrição da solução: [O que faz, para quem, que problema pedagógico resolve. 2-3 parágrafos, linguagem acessível.]</p>
+<p>1.2 Tipo de IA utilizada: [ML supervisionado / não supervisionado / por reforço / PLN / IA generativa / recomendação / preditiva / outro.]</p>
+<p>1.3 Grau de autonomia: [Assistiva / Semiautônoma / Autônoma. Especifique por funcionalidade.]</p>
+<p>1.4 Público-alvo: [Série/etapa, disciplina, perfil.]</p>
+<p>1.5 Alinhamento curricular: [Relação com a BNCC: áreas, competências, habilidades.]</p>
+<h2 id="2-dados">2. Dados</h2>
+<p>2.1 Dados de treinamento: [Fontes, idioma, período, volume, diversidade regional e socioeconômica.]</p>
+<p>2.2 Dados de operação: [O que a solução coleta durante o uso e para que finalidade.]</p>
+<p>2.3 Tratamento de dados de menores: [Consentimento, minimização, pseudonimização, retenção, exclusão.]</p>
+<p>2.4 Localização dos dados: [País/região de armazenamento e processamento. Provedor de nuvem.]</p>
+<h2 id="3-arquitetura-e-funcionamento">3. Arquitetura e funcionamento</h2>
+<p>3.1 Modelo utilizado: [Descrição em linguagem acessível da arquitetura. Não exige revelar código proprietário, mas deve permitir compreensão da lógica geral.]</p>
+<p>3.2 Processo de inferência: [Como vai dos dados de entrada ao resultado. Variáveis que mais influenciam.]</p>
+<p>3.3 Atualizações: [Frequência de retreinamento, dados utilizados, validação antes de deploy.]</p>
+<h2 id="4-desempenho-e-avaliacao">4. Desempenho e avaliação</h2>
+<p>4.1 Métricas: [Acurácia, precisão, recall, F1, kappa de Cohen, ou outras pertinentes. Apresente valores.]</p>
+<p>4.2 Avaliação por subgrupo: [Resultados por região, série, gênero, raça, escola urbana/rural, nível socioeconômico.]</p>
+<p>4.3 Testes de viés: [Testes realizados e resultados. Se não realizados, plano para fazê-lo.]</p>
+<p>4.4 Evidências de impacto pedagógico: [Metodologia, escala, contexto, limitações.]</p>
+<h2 id="5-limitacoes-e-riscos-conhecidos">5. Limitações e riscos conhecidos</h2>
+<p>5.1 Cenários de falha: [Quando o modelo erra ou tem desempenho inferior.]</p>
+<p>5.2 Risco de alucinação: [Para generativos: risco e medidas de mitigação.]</p>
+<p>5.3 Risco de dependência cognitiva: [Como a solução mitiga.]</p>
+<p>5.4 Riscos não mitigados: [Lista honesta.]</p>
+<h2 id="6-supervisao-humana">6. Supervisão humana</h2>
+<p>6.1 Pontos de decisão humana: [Quando o professor/gestor intervém. O que pode ser anulado.]</p>
+<p>6.2 Mecanismos de contestação: [Como alunos/famílias contestam decisões da IA.]</p>
+<p>6.3 Formação oferecida: [Treinamento para interpretação e supervisão.]</p>
+<h2 id="7-portabilidade-e-encerramento">7. Portabilidade e encerramento</h2>
+<p>7.1 Licenciamento: [SaaS, perpétua, outro.]</p>
+<p>7.2 Portabilidade: [Formatos de exportação, procedimento, prazo.]</p>
+<p>7.3 Encerramento: [O que acontece com dados ao fim do contrato. Exclusão.]</p>
+<p>7.4 Propriedade dos dados: [Declaração de que dados pertencem à rede, não ao fornecedor.]</p>
+<h2 id="8-historico-de-versoes">8. Histórico de versões</h2>
+<table>
+<thead>
+<tr>
+<th>Versão</th>
+<th>Data</th>
+<th>Principais alterações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="quem-usa-este-template-e-como">Quem usa este template e como</h2>
+<p><strong>EdTech:</strong> preencha antes de ofertar para redes públicas. Seja honesto sobre limitações. Anexe à proposta técnica.</p>
+<p><strong>Gestor:</strong> use como referência para avaliar soluções. Exija documentação equivalente no TR.</p>
+<p><strong>Intermediário:</strong> use como parte da rubrica de credenciamento. Campos essenciais para triagem: 1, 2.1-2.3, 4.1, 5, 6.</p>
+        </div>
+
+        <footer class="doc-footer">
+            <a href="../recursos/index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8l5-5M3 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Voltar para Recursos
+            </a>
+            
+            <div class="doc-footer-personas">
+                <span class="doc-footer-label">Outros perfis:</span>
+                
+                <a href="../edtechs/index.html" class="doc-footer-persona-link" style="--persona-color: #2b6cb0">💡 EdTechs</a>
+                
+                <a href="../gestores/index.html" class="doc-footer-persona-link" style="--persona-color: #2f855a">🏛️ Gestores Públicos</a>
+                
+                <a href="../intermediarios/index.html" class="doc-footer-persona-link" style="--persona-color: #9f7aea">🤝 Organizações Intermediárias</a>
+                
+                <a href="../legisladores/index.html" class="doc-footer-persona-link" style="--persona-color: #c05621">⚖️ Legisladores</a>
+                
+                <a href="../educadores/index.html" class="doc-footer-persona-link" style="--persona-color: #d69e2e">📚 Educadores</a>
+                
+            </div>
+            
+        </footer>
+    </article>
+
+    
+    <button class="toc-toggle" id="toc-toggle" aria-label="Índice do documento">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 4h14M3 8h10M3 12h12M3 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+    
+
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-mark" aria-hidden="true"></span>
+                <div>
+                    <p class="footer-org">Aliança de IA para a Educação · Instituto Jataí</p>
+                    <p class="footer-note">Materiais de referência para contratação pública responsável de IA na educação</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    
+</body>
+</html>

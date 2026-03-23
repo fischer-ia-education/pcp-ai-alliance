@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ site_title }}{% endblock %}</title>
+    <meta name="description" content="Materiais para contratação responsável de IA na educação pública brasileira">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ root }}/assets/style.css">
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="{% block body_class %}{% endblock %}">
+
+    <div class="site-disclaimer">
+        <p><strong>Atenção:</strong> Este site é um conceito em desenvolvimento. O conteúdo ainda não foi revisado e pode conter imprecisões.</p>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="{{ root }}/index.html" class="header-logo">
+                <span class="header-logo-mark" aria-hidden="true"></span>
+                <span class="header-title">Aliança de IA</span>
+            </a>
+            <nav class="header-nav" id="header-nav">
+                {% for key, p in personas.items() %}
+                <a href="{{ root }}/{{ key }}/index.html"
+                   class="nav-persona{% if persona_key is defined and persona_key == key %} active{% elif parent_persona_key is defined and parent_persona_key == key %} active{% endif %}"
+                   style="--persona-color: {{ p.cor }}">
+                    <span class="nav-dot"></span>
+                    {{ p.nome }}
+                </a>
+                {% endfor %}
+                {% if sections is defined %}
+                {% for key, s in sections.items() %}
+                <a href="{{ root }}/{{ key }}/index.html"
+                   class="nav-section{% if section_key is defined and section_key == key %} active{% endif %}">
+                    {{ s.icone }} {{ s.nome }}
+                </a>
+                {% endfor %}
+                {% endif %}
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-mark" aria-hidden="true"></span>
+                <div>
+                    <p class="footer-org">{{ site_subtitle }}</p>
+                    <p class="footer-note">Materiais de referência para contratação pública responsável de IA na educação</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ root }}/assets/script.js"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

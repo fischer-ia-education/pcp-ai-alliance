@@ -1,0 +1,94 @@
+{% extends "base.html" %}
+
+{% block title %}{{ section.nome }} · {{ site_title }}{% endblock %}
+
+{% block body_class %}page-persona{% endblock %}
+
+{% block content %}
+<div class="persona-hub" style="--persona-color: {{ section.cor }}">
+
+    <nav class="breadcrumb">
+        <a href="{{ root }}/index.html">Início</a>
+        <span class="sep">/</span>
+        <span class="current">{{ section.nome }}</span>
+    </nav>
+
+    <header class="persona-header">
+        <div class="persona-header-accent" aria-hidden="true"></div>
+        <span class="persona-icon">{{ section.icone }}</span>
+        <h1>{{ section.nome }}</h1>
+        <p class="persona-description">{{ section.descricao }}</p>
+    </header>
+
+    {% if categorias.comece %}
+    <section class="material-section" data-section="comece">
+        <div class="section-label-wrap">
+            <span class="section-number">01</span>
+            <h2 class="section-label">Templates</h2>
+        </div>
+        <div class="material-list material-list--featured">
+            {% for doc in categorias.comece %}
+            <a href="{{ root }}/{{ section_key }}/{{ doc.filename }}" class="material-card material-card--featured">
+                <div class="material-card-inner">
+                    <span class="material-tipo">{{ doc.tipo_label }}</span>
+                    <h3>{{ doc.title }}</h3>
+                    {% if doc.subtitle %}<p class="material-subtitle">{{ doc.subtitle }}</p>{% endif %}
+                    <div class="material-meta">
+                        <span class="material-time">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            ~{{ doc.reading_time }} min
+                        </span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    {% if categorias.aprofunde %}
+    <section class="material-section" data-section="aprofunde">
+        <div class="section-label-wrap">
+            <span class="section-number">02</span>
+            <h2 class="section-label">Aprofunde</h2>
+        </div>
+        <div class="material-list">
+            {% for doc in categorias.aprofunde %}
+            <a href="{{ root }}/{{ section_key }}/{{ doc.filename }}" class="material-card">
+                <div class="material-card-inner">
+                    <span class="material-tipo">{{ doc.tipo_label }}</span>
+                    <h3>{{ doc.title }}</h3>
+                    {% if doc.subtitle %}<p class="material-subtitle">{{ doc.subtitle }}</p>{% endif %}
+                    <div class="material-meta">
+                        <span class="material-time">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                            ~{{ doc.reading_time }} min
+                        </span>
+                        <span class="material-arrow">→</span>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+    {% endif %}
+
+    <section class="outras-personas">
+        <h2 class="section-label">Explore os perfis</h2>
+        <div class="outras-list">
+            {% for op in outras_personas %}
+            <a href="{{ root }}/{{ op.key }}/index.html" class="outra-card" style="--persona-color: {{ op.cor }}">
+                <span class="outra-icon">{{ op.icone }}</span>
+                <div class="outra-info">
+                    <span class="outra-nome">{{ op.nome }}</span>
+                    <span class="outra-desc">{{ op.descricao }}</span>
+                </div>
+                <span class="outra-arrow">→</span>
+            </a>
+            {% endfor %}
+        </div>
+    </section>
+
+</div>
+{% endblock %}

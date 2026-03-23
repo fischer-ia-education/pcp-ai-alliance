@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework de Decisão para Contratação de IA na Educação · Gestores Públicos</title>
+    <meta name="description" content="Materiais para contratação responsável de IA na educação pública brasileira">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;0,8..60,800;1,8..60,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+    
+</head>
+<body class="page-document">
+
+    <div class="site-disclaimer">
+        <p><strong>Atenção:</strong> Este site é um conceito em desenvolvimento. O conteúdo ainda não foi revisado e pode conter imprecisões.</p>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html" class="header-logo">
+                <span class="header-logo-mark" aria-hidden="true"></span>
+                <span class="header-title">Aliança de IA</span>
+            </a>
+            <nav class="header-nav" id="header-nav">
+                
+                <a href="../edtechs/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #2b6cb0">
+                    <span class="nav-dot"></span>
+                    EdTechs
+                </a>
+                
+                <a href="../gestores/index.html"
+                   class="nav-persona active"
+                   style="--persona-color: #2f855a">
+                    <span class="nav-dot"></span>
+                    Gestores Públicos
+                </a>
+                
+                <a href="../intermediarios/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #9f7aea">
+                    <span class="nav-dot"></span>
+                    Organizações Intermediárias
+                </a>
+                
+                <a href="../legisladores/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #c05621">
+                    <span class="nav-dot"></span>
+                    Legisladores
+                </a>
+                
+                <a href="../educadores/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #d69e2e">
+                    <span class="nav-dot"></span>
+                    Educadores
+                </a>
+                
+                
+                
+                <a href="../recursos/index.html"
+                   class="nav-section">
+                    🧰 Recursos
+                </a>
+                
+                
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        
+<div class="document-layout" style="--persona-color: #2f855a">
+
+    
+    <aside class="doc-sidebar" id="doc-sidebar">
+        <button class="sidebar-close" aria-label="Fechar menu" id="sidebar-close">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <nav class="doc-toc">
+            <div class="toc-persona-tag">
+                <span class="toc-dot"></span>
+                Gestores Públicos
+            </div>
+            <h3 class="toc-title">Neste documento</h3>
+            <ul>
+                
+                <li><a href="#1-arvore-de-decisao-devo-contratar-ia" class="toc-link">1. Árvore de Decisão: Devo Contratar IA?</a></li>
+                
+                <li><a href="#2-matriz-de-classificacao-de-risco" class="toc-link">2. Matriz de Classificação de Risco</a></li>
+                
+                <li><a href="#3-comparativo-de-modalidades-de-contratacao" class="toc-link">3. Comparativo de Modalidades de Contratação</a></li>
+                
+                <li><a href="#4-as-8-perguntas-do-contrato-como-governanca" class="toc-link">4. As 8 Perguntas do Contrato como Governança</a></li>
+                
+                <li><a href="#5-matriz-de-responsabilidades-raci" class="toc-link">5. Matriz de Responsabilidades (RACI)</a></li>
+                
+                <li><a href="#6-indicadores-de-sucesso-e-sinais-de-alerta-por-fase" class="toc-link">6. Indicadores de Sucesso e Sinais de Alerta por Fase</a></li>
+                
+            </ul>
+            <div class="toc-back">
+                <a href="../gestores/index.html" class="toc-back-link">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M3 7l4-4M3 7l4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Todos os materiais
+                </a>
+            </div>
+        </nav>
+    </aside>
+    
+
+    <article class="doc-content">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span class="sep">/</span>
+            
+            <a href="../gestores/index.html">Gestores Públicos</a>
+            
+            <span class="sep">/</span>
+            <span class="current">Framework de Decisão</span>
+        </nav>
+
+        <header class="doc-header">
+            <div class="doc-header-meta">
+                <span class="doc-tipo-badge">Framework de Decisão</span>
+                <span class="doc-reading-time">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    ~7 min de leitura
+                </span>
+            </div>
+        </header>
+
+        <div class="doc-body markdown-body">
+            <h1 id="framework-de-decisao-para-contratacao-de-ia-na-educacao">Framework de Decisão para Contratação de IA na Educação</h1>
+<blockquote>
+<p>Material derivado da publicação <em>"Contratação Pública de Soluções de IA na Educação"</em>, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.</p>
+</blockquote>
+<hr />
+<h2 id="1-arvore-de-decisao-devo-contratar-ia">1. Árvore de Decisão: Devo Contratar IA?</h2>
+<p>Use esta sequência de perguntas para avaliar se a contratação de IA é o caminho adequado:</p>
+<div class="highlight"><pre><span></span><code>┌─────────────────────────────────────────────────────┐
+│ Há um problema pedagógico claramente definido?       │
+└──────────┬──────────────────────────┬───────────────┘
+           │ SIM                      │ NÃO
+           ▼                          ▼
+┌──────────────────────┐   ┌──────────────────────────┐
+│ Uma solução           │   │ PARE: Defina primeiro o   │
+│ convencional resolve? │   │ problema pedagógico.      │
+└────┬─────────────┬───┘   │ IA é meio, não fim.       │
+     │ SIM         │ NÃO   └──────────────────────────┘
+     ▼             ▼
+┌────────────┐  ┌────────────────────────────────────┐
+│ Use a       │  │ A rede tem capacidade institucional │
+│ solução     │  │ mínima? (equipe, letramento, infra) │
+│ convencional│  └────┬──────────────────────┬────────┘
+└────────────┘       │ SIM                   │ NÃO
+                     ▼                       ▼
+          ┌─────────────────────┐  ┌─────────────────────┐
+          │ A infraestrutura     │  │ INVISTA primeiro em  │
+          │ escolar é adequada?  │  │ capacitação e        │
+          │ (conectividade,      │  │ letramento           │
+          │ hardware)            │  │ algorítmico.         │
+          └──┬───────────────┬──┘  └─────────────────────┘
+             │ SIM           │ NÃO
+             ▼               ▼
+  ┌────────────────────┐  ┌────────────────────────────┐
+  │ PROSSIGA com a     │  │ Considere soluções de IA   │
+  │ contratação.       │  │ offline/desplugada ou      │
+  │ Use o Checklist    │  │ invista em infraestrutura  │
+  │ da Jornada.        │  │ antes de contratar.        │
+  └────────────────────┘  └────────────────────────────┘
+</code></pre></div>
+
+<hr />
+<h2 id="2-matriz-de-classificacao-de-risco">2. Matriz de Classificação de Risco</h2>
+<p>Inspirada na Avaliação de Impacto Algorítmico (AIA) canadense, esta matriz ajuda a definir o nível de governança necessário para cada tipo de solução.</p>
+<table>
+<thead>
+<tr>
+<th>Nível</th>
+<th>Impacto</th>
+<th>Exemplos</th>
+<th>Governança Exigida</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>1. Baixo</strong></td>
+<td>Decisões reversíveis, impacto breve</td>
+<td>Chatbot para dúvidas administrativas, organização de grades horárias</td>
+<td>Documentação técnica básica, monitoramento leve</td>
+</tr>
+<tr>
+<td><strong>2. Moderado</strong></td>
+<td>Influência sobre processo de aprendizagem, mas com supervisão humana direta</td>
+<td>Recomendação de exercícios, sugestões de plano de aula, feedback formativo</td>
+<td>Model Card, LGPD verificada, dashboards para professores, auditoria anual</td>
+</tr>
+<tr>
+<td><strong>3. Alto</strong></td>
+<td>Decisões que afetam trajetórias escolares</td>
+<td>Correção automatizada de avaliações, diagnósticos de aprendizagem que orientam intervenções</td>
+<td>Tudo do nível 2 + RIPD, auditorias pedagógicas e técnicas semestrais, mecanismos de contestação, supervisão humana obrigatória</td>
+</tr>
+<tr>
+<td><strong>4. Crítico</strong></td>
+<td>Decisões irreversíveis ou com impacto permanente</td>
+<td>Sistemas preditivos que rotulam alunos "em risco", ferramentas que influenciam aprovação/reprovação, reconhecimento facial</td>
+<td>Tudo do nível 3 + avaliação de impacto algorítmico completa, revisão por especialistas externos, testes rigorosos de vieses, plano de reversibilidade obrigatório</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Regra geral:</strong> quanto maior o impacto sobre os direitos e as trajetórias dos estudantes, maior deve ser o escrutínio técnico e ético.</p>
+<hr />
+<h2 id="3-comparativo-de-modalidades-de-contratacao">3. Comparativo de Modalidades de Contratação</h2>
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>Inexigibilidade</th>
+<th>Pregão Eletrônico</th>
+<th>Parceria Intermediada</th>
+<th>CPSI (Inovação)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Quando usar</strong></td>
+<td>Solução exclusiva (fornecedor único)</td>
+<td>Especificações objetivamente definidas</td>
+<td>Quando há instituição parceira qualificada (Sebrae, universidade, fundação)</td>
+<td>Quando a solução ainda não existe no mercado</td>
+</tr>
+<tr>
+<td><strong>Base legal</strong></td>
+<td>Art. 74, Lei 14.133/2021</td>
+<td>Lei 14.133/2021</td>
+<td>Art. 75, XV, Lei 14.133/2021</td>
+<td>Art. 29, Lei 14.133/2021</td>
+</tr>
+<tr>
+<td><strong>Vantagens</strong></td>
+<td>Agilidade, acesso a soluções especializadas</td>
+<td>Competitividade de preço, transparência</td>
+<td>Curadoria e validação prévia, menor risco</td>
+<td>Foco no problema (não na solução), aprendizado institucional</td>
+</tr>
+<tr>
+<td><strong>Riscos</strong></td>
+<td>Sem competição, risco de lock-in, preço não otimizado</td>
+<td>Pode priorizar preço sobre qualidade pedagógica</td>
+<td>Depende da qualidade do intermediário</td>
+<td>Processo mais longo e complexo</td>
+</tr>
+<tr>
+<td><strong>Caso real</strong></td>
+<td>Joinville/SC: Letrus (R$2,1M)</td>
+<td>Rio Verde/GO: Herby Vision (R$211K)</td>
+<td>RN: Sebrae/LIZE (R$15K)</td>
+<td>Inspiração: UK Pre-Commercial Procurement</td>
+</tr>
+<tr>
+<td><strong>Recomendação</strong></td>
+<td>Use com análise jurídica rigorosa e com salvaguardas contratuais reforçadas</td>
+<td>Adequado quando há múltiplos fornecedores e requisitos objetivos</td>
+<td>Bom para municípios com menor capacidade institucional</td>
+<td>Ideal para soluções inovadoras em teste</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="4-as-8-perguntas-do-contrato-como-governanca">4. As 8 Perguntas do Contrato como Governança</h2>
+<p>Um contrato de IA bem estruturado deve responder a estas 8 perguntas. Para cada uma, descrevemos o que esperar como "boa resposta" e os sinais de alerta.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>Pergunta</th>
+<th>Boa Resposta</th>
+<th>Sinal de Alerta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td><strong>Para quê?</strong> Qual a finalidade pedagógica?</td>
+<td>Propósito específico e mensurável (ex.: "reduzir defasagem em leitura no 5º ano")</td>
+<td>Respostas genéricas ("melhorar a educação", "modernizar a rede")</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Com o quê?</strong> Quais dados, bases e métodos de validação?</td>
+<td>Fontes de dados documentadas, métodos de validação explícitos, dados em português</td>
+<td>"Dados proprietários" sem detalhamento, treinamento exclusivamente em inglês</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>Como?</strong> Com base em quais métricas e logs?</td>
+<td>Métricas claras de desempenho, logs acessíveis, trilhas de auditoria</td>
+<td>Sem métricas definidas, "caixa-preta"</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>Para quem?</strong> Quem supervisiona, com que autoridade?</td>
+<td>Papéis definidos (gestor, professor, fiscal de contrato), poder de revisão/anulação</td>
+<td>Ninguém designado, professor sem poder de intervenção</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Com que segurança?</strong> Proteção de dados e mitigação de vieses?</td>
+<td>LGPD verificada, RIPD disponível, testes de vieses, criptografia</td>
+<td>Sem menção a proteção de dados, sem testes de vieses</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>Até quando?</strong> Manutenção, atualização, descontinuação?</td>
+<td>Plano de atualizações, critérios para descontinuação, plano de saída</td>
+<td>Contrato sem prazo de revisão, sem previsão de saída</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>E se falhar?</strong> Reversibilidade e correção?</td>
+<td>Mecanismos de contestação, reversibilidade de decisões, plano de incidentes</td>
+<td>"Garantimos 99% de acurácia" sem plano para os 1% de erro</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>Com que legado?</strong> Dados e aprendizados retornam à rede?</td>
+<td>Dados pertencem à rede, exportação garantida, compartilhamento de aprendizados</td>
+<td>Dados ficam com o fornecedor, lock-in contratual</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="5-matriz-de-responsabilidades-raci">5. Matriz de Responsabilidades (RACI)</h2>
+<p><strong>R</strong> = Responsável | <strong>A</strong> = Aprovador | <strong>C</strong> = Consultado | <strong>I</strong> = Informado</p>
+<table>
+<thead>
+<tr>
+<th>Atividade</th>
+<th style="text-align: center;">Gestor / Secretário</th>
+<th style="text-align: center;">Equipe TI</th>
+<th style="text-align: center;">Equipe Pedagógica</th>
+<th style="text-align: center;">Jurídico</th>
+<th style="text-align: center;">Fornecedor (EdTech)</th>
+<th style="text-align: center;">Professores</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Definir problema pedagógico</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+</tr>
+<tr>
+<td>Diagnosticar capacidade institucional</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">I</td>
+</tr>
+<tr>
+<td>Elaborar Termo de Referência</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">I</td>
+</tr>
+<tr>
+<td>Avaliar soluções disponíveis</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">C</td>
+</tr>
+<tr>
+<td>Definir salvaguardas contratuais</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">I</td>
+</tr>
+<tr>
+<td>Validar conformidade LGPD</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">I</td>
+</tr>
+<tr>
+<td>Treinar professores</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">R</td>
+</tr>
+<tr>
+<td>Monitorar impacto pedagógico</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">R</td>
+</tr>
+<tr>
+<td>Realizar auditorias técnicas</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">I</td>
+</tr>
+<tr>
+<td>Realizar auditorias pedagógicas</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">R</td>
+</tr>
+<tr>
+<td>Gerenciar dados e segurança</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">I</td>
+</tr>
+<tr>
+<td>Processar contestações</td>
+<td style="text-align: center;">A</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">I</td>
+</tr>
+<tr>
+<td>Decidir sobre descontinuação</td>
+<td style="text-align: center;">R</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">C</td>
+<td style="text-align: center;">I</td>
+<td style="text-align: center;">I</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="6-indicadores-de-sucesso-e-sinais-de-alerta-por-fase">6. Indicadores de Sucesso e Sinais de Alerta por Fase</h2>
+<h3 id="primeiros-3-meses-implantacao">Primeiros 3 meses (Implantação)</h3>
+<table>
+<thead>
+<tr>
+<th>Indicador de Sucesso</th>
+<th>Sinal de Alerta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Professores treinados e usando a ferramenta</td>
+<td>Professores não foram capacitados ou resistem ao uso</td>
+</tr>
+<tr>
+<td>SLAs sendo cumpridos (disponibilidade, suporte)</td>
+<td>Plataforma instável, suporte lento</td>
+</tr>
+<tr>
+<td>Dados de uso sendo gerados e acessíveis</td>
+<td>Sem acesso a relatórios ou métricas</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-meses-consolidacao">6 meses (Consolidação)</h3>
+<table>
+<thead>
+<tr>
+<th>Indicador de Sucesso</th>
+<th>Sinal de Alerta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primeiras evidências de impacto pedagógico</td>
+<td>Nenhuma melhora mensurável na aprendizagem</td>
+</tr>
+<tr>
+<td>Professores usando dashboards e intervindo quando necessário</td>
+<td>Professores delegando decisões acriticamente à IA</td>
+</tr>
+<tr>
+<td>Nenhum incidente de segurança de dados</td>
+<td>Vazamentos, acesso não autorizado ou dados expostos</td>
+</tr>
+</tbody>
+</table>
+<h3 id="12-meses-avaliacao">12 meses (Avaliação)</h3>
+<table>
+<thead>
+<tr>
+<th>Indicador de Sucesso</th>
+<th>Sinal de Alerta</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Impacto pedagógico documentado e positivo</td>
+<td>Evidências de "preguiça cognitiva" ou aprendizado superficial</td>
+</tr>
+<tr>
+<td>Auditorias realizadas sem achados críticos</td>
+<td>Vieses detectados, falhas não corrigidas</td>
+</tr>
+<tr>
+<td>Comunidades de prática ativas entre professores</td>
+<td>Ferramenta subutilizada ou abandonada</td>
+</tr>
+<tr>
+<td>Decisão informada sobre renovação/descontinuação</td>
+<td>Renovação automática sem avaliação</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><em>Aliança de IA para a Educação | Instituto Jataí | 2026</em></p>
+        </div>
+
+        <footer class="doc-footer">
+            <a href="../gestores/index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8l5-5M3 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Voltar para Gestores Públicos
+            </a>
+            
+            <div class="doc-footer-personas">
+                <span class="doc-footer-label">Outros perfis:</span>
+                
+                <a href="../edtechs/index.html" class="doc-footer-persona-link" style="--persona-color: #2b6cb0">💡 EdTechs</a>
+                
+                <a href="../intermediarios/index.html" class="doc-footer-persona-link" style="--persona-color: #9f7aea">🤝 Organizações Intermediárias</a>
+                
+                <a href="../legisladores/index.html" class="doc-footer-persona-link" style="--persona-color: #c05621">⚖️ Legisladores</a>
+                
+                <a href="../educadores/index.html" class="doc-footer-persona-link" style="--persona-color: #d69e2e">📚 Educadores</a>
+                
+            </div>
+            
+        </footer>
+    </article>
+
+    
+    <button class="toc-toggle" id="toc-toggle" aria-label="Índice do documento">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 4h14M3 8h10M3 12h12M3 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+    
+
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <span class="footer-mark" aria-hidden="true"></span>
+                <div>
+                    <p class="footer-org">Aliança de IA para a Educação · Instituto Jataí</p>
+                    <p class="footer-note">Materiais de referência para contratação pública responsável de IA na educação</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    
+</body>
+</html>
