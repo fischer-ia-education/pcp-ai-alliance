@@ -40,35 +40,35 @@ PERSONAS = {
         "cor": "#2b6cb0",
         "pergunta": "Como vendo IA de forma responsável para o setor público?",
         "descricao": "Empreendedores de tecnologia educacional",
-        "icone": "💡",
+        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg>',
     },
     "gestores": {
         "nome": "Gestores Públicos",
         "cor": "#2f855a",
         "pergunta": "Como compro IA com segurança e intencionalidade pedagógica?",
         "descricao": "Secretários e equipes de redes públicas de educação",
-        "icone": "🏛️",
+        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="5" width="22" height="9" fill="#A725FF"/><rect x="8" y="18" width="22" height="9" fill="#BBD634"/></svg>',
     },
     "intermediarios": {
         "nome": "Organizações Intermediárias",
         "cor": "#9f7aea",
         "pergunta": "Como facilitar contratações de IA mais responsáveis?",
         "descricao": "Institutos, fundações, universidades, Sebrae",
-        "icone": "🤝",
+        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="16,2 30,28 2,28" fill="#A725FF"/><rect x="14" y="16" width="14" height="10" fill="#BBD634"/></svg>',
     },
     "legisladores": {
         "nome": "Legisladores",
         "cor": "#c05621",
         "pergunta": "Que marcos regulatórios e incentivos são necessários?",
         "descricao": "Parlamentares e formuladores de políticas públicas",
-        "icone": "⚖️",
+        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="14" y="2" width="16" height="28" fill="#BBD634"/><polygon points="2,6 16,16 2,26" fill="#A725FF"/></svg>',
     },
     "educadores": {
         "nome": "Educadores",
         "cor": "#d69e2e",
         "pergunta": "Como uso e supervisiono IA no dia a dia da escola?",
         "descricao": "Professores e coordenadores pedagógicos",
-        "icone": "📚",
+        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="2,4 30,4 16,28" fill="#BBD634"/><rect x="8" y="11" width="16" height="12" fill="#A725FF"/></svg>',
     },
 }
 
@@ -77,25 +77,25 @@ SUB_PERSONAS = {
     "edtechs": {
         "estagio-inicial": {
             "nome": "Estágio Inicial",
-            "icone": "🌱",
+            "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="16,3 30,27 2,27" fill="#A725FF"/><rect x="12" y="15" width="8" height="12" fill="#BBD634"/></svg>',
             "pergunta": "Como construo meu produto para ser contratável pelo setor público desde o início?",
             "descricao": "Tenho um produto em desenvolvimento ou MVP e quero entender como entrar no setor público.",
         },
         "entrada-setor-publico": {
             "nome": "Entrada no Setor Público",
-            "icone": "🏛️",
+            "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="3" y="14" width="26" height="15" fill="#A725FF"/><polygon points="1,14 16,3 31,14" fill="#BBD634"/></svg>',
             "pergunta": "O que preciso adaptar no meu produto, na minha documentação e no meu modelo de negócio?",
             "descricao": "Tenho produto consolidado no setor privado e quero vender para redes públicas.",
         },
         "escala": {
             "nome": "Escala",
-            "icone": "📈",
+            "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="18" width="10" height="11" fill="#BBD634"/><rect x="12" y="12" width="10" height="17" fill="#A725FF"/><rect x="22" y="6" width="8" height="23" fill="#BBD634"/></svg>',
             "pergunta": "Como escalo minha presença no setor público sem perder qualidade e sem criar dependência?",
             "descricao": "Já vendo para redes públicas e quero expandir para mais municípios e estados.",
         },
         "internacional": {
             "nome": "Internacional",
-            "icone": "🌍",
+            "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="2" width="13" height="28" fill="#A725FF"/><rect x="17" y="2" width="13" height="28" fill="#BBD634"/><polygon points="16,8 24,16 16,24 8,16" fill="#A725FF"/></svg>',
             "pergunta": "Que pré-requisitos regulatórios, técnicos e pedagógicos preciso cumprir para entrar no Brasil?",
             "descricao": "Tenho produto fora do Brasil e quero entrar no mercado brasileiro de educação pública.",
         },
@@ -108,7 +108,7 @@ SECTIONS = {
         "nome": "Recursos",
         "cor": "#718096",
         "descricao": "Templates e ferramentas transversais para contratação de IA",
-        "icone": "🧰",
+        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="8" width="20" height="16" fill="#A725FF"/><rect x="12" y="5" width="18" height="12" transform="rotate(15,21,11)" fill="#BBD634"/></svg>',
     },
 }
 
