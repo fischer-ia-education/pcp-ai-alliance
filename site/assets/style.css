@@ -260,7 +260,7 @@ strong { font-weight: 700; }
 .footer-brand-name {
   font-family: var(--font-title);
   font-weight: 700;
-  color: var(--branco);
+  color: #FFFFFF;
   font-size: 0.95rem;
 }
 
@@ -276,14 +276,14 @@ strong { font-weight: 700; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #666;
+  color: #FFFFFF;
   margin: 0 0 0.5rem;
 }
 
 .footer-partner-desc {
   font-family: var(--font-body);
   font-size: 0.8rem;
-  color: #666;
+  color: #FFFFFF;
   margin: 0;
   line-height: 1.5;
 }
@@ -310,7 +310,7 @@ strong { font-weight: 700; }
   font-family: var(--font-title);
   font-style: italic;
   font-size: 0.85rem;
-  color: #888;
+  color: #FFFFFF;
   margin: 0 0 1rem;
   line-height: 1.6;
 }
@@ -328,7 +328,7 @@ strong { font-weight: 700; }
 .footer-copyright {
   font-family: var(--font-body);
   font-size: 0.75rem;
-  color: #444;
+  color: #AAAAAA;
   margin: 1.5rem 0 0;
 }
 
@@ -340,20 +340,22 @@ strong { font-weight: 700; }
 .landing-hero {
   background: var(--preto);
   color: var(--branco);
-  padding: 5rem 1.5rem 4rem;
+  padding: 5rem 0 4rem;
   position: relative;
   overflow: hidden;
   min-height: 480px;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .hero-content {
-  max-width: 680px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
   position: relative;
   z-index: 2;
-  margin: 0 auto;
-  width: 100%;
+  padding: 0 1.5rem;
 }
 
 .hero-overline {
@@ -398,7 +400,7 @@ strong { font-weight: 700; }
   font-family: var(--font-body);
   font-size: 1.1rem;
   color: rgba(255,255,255,0.75);
-  max-width: 520px;
+  max-width: 680px;
   line-height: 1.7;
   margin: 0 0 2rem;
 }
@@ -1410,7 +1412,8 @@ strong { font-weight: 700; }
   }
 
   .hero-decoration { display: none; }
-  .landing-hero { padding: 3rem 1.25rem; }
+  .landing-hero { padding: 3rem 0; }
+  .hero-content { padding: 0 1.25rem; }
   .hero-title { font-size: 2rem; }
 
   .persona-grid { grid-template-columns: 1fr 1fr; }
