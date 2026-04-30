@@ -171,7 +171,7 @@ strong { font-weight: 700; }
   font-family: var(--font-body);
   font-size: 0.82rem;
   font-weight: 600;
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.85);
   padding: 0.35rem 0.75rem;
   border-radius: var(--radius-sm);
   white-space: nowrap;
@@ -644,7 +644,7 @@ strong { font-weight: 700; }
 .card-question {
   font-family: var(--font-body);
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.55);
+  color: rgba(255,255,255,0.85);
   line-height: 1.5;
   font-style: italic;
   margin: 0;
@@ -653,7 +653,7 @@ strong { font-weight: 700; }
 .card-description {
   font-family: var(--font-body);
   font-size: 0.78rem;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.85);
   margin: 0;
 }
 
@@ -746,7 +746,7 @@ strong { font-weight: 700; }
 
 .persona-description {
   font-family: var(--font-body);
-  color: rgba(255,255,255,0.65);
+  color: rgba(255,255,255,0.85);
   font-size: 0.9rem;
   margin: 0;
 }
@@ -917,7 +917,7 @@ strong { font-weight: 700; }
 .sp-question {
   font-family: var(--font-body);
   font-size: 0.8rem;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.85);
   margin: 0;
   line-height: 1.4;
 }
@@ -1055,7 +1055,7 @@ strong { font-weight: 700; }
   background: none;
   border: none;
   cursor: pointer;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.85);
   padding: 0.25rem;
   margin-bottom: 1rem;
 }
@@ -1071,7 +1071,7 @@ strong { font-weight: 700; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.85);
   margin-bottom: 1rem;
 }
 
@@ -1106,7 +1106,7 @@ strong { font-weight: 700; }
   display: block;
   font-family: var(--font-body);
   font-size: 0.82rem;
-  color: rgba(255,255,255,0.5);
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
   padding: 0.35rem 0.6rem;
   border-radius: var(--radius-sm);
