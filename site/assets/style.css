@@ -530,6 +530,180 @@ strong { font-weight: 700; }
   margin-top: 2px;
 }
 
+/* ── Pillars section ─────────────────────────────────────────── */
+.landing-pillars {
+  padding: 4rem 1.5rem;
+  background: var(--preto);
+  color: var(--branco);
+}
+
+.pillars-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.landing-pillars .section-heading {
+  color: var(--branco);
+  margin-bottom: 0.5rem;
+}
+
+.section-subheading {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 2.5rem;
+}
+
+.pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.pillar-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.pillar-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pillar-title {
+  font-family: var(--font-title);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--branco);
+}
+
+.pillar-text {
+  font-family: var(--font-body);
+  font-size: 0.88rem;
+  color: rgba(255,255,255,0.7);
+  line-height: 1.6;
+}
+
+/* ── Journey section ─────────────────────────────────────────── */
+.landing-journey {
+  padding: 4rem 1.5rem;
+  background: var(--cinza-claro);
+  border-top: 1px solid var(--cinza-borda);
+}
+
+.journey-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.landing-journey .section-subheading {
+  color: var(--cinza-texto);
+}
+
+.journey-phases {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+}
+
+.journey-phase {
+  flex: 1;
+  background: var(--branco);
+  border: 1px solid var(--cinza-borda);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+}
+
+.phase-label {
+  background: var(--preto);
+  color: var(--verde);
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.5rem 1rem;
+}
+
+.journey-phase:nth-child(3) .phase-label { color: var(--roxo); }
+.journey-phase:nth-child(5) .phase-label { color: #d69e2e; }
+
+.phase-content {
+  padding: 1.25rem;
+}
+
+.phase-title {
+  font-family: var(--font-title);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: var(--preto);
+}
+
+.phase-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.phase-list li {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: var(--cinza-texto);
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.5;
+}
+
+.phase-list li::before {
+  content: "·";
+  position: absolute;
+  left: 0;
+  color: var(--verde);
+  font-weight: 700;
+}
+
+.phase-cta {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--preto);
+  text-decoration: none;
+  border-bottom: 1px solid var(--cinza-borda);
+  padding-bottom: 1px;
+  transition: color 0.15s, border-color 0.15s;
+}
+
+.phase-cta:hover {
+  color: var(--verde);
+  border-color: var(--verde);
+}
+
+.journey-connector {
+  padding: 2rem 0.75rem 0;
+  font-size: 1.25rem;
+  color: var(--cinza-texto);
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .journey-phases { flex-direction: column; }
+  .journey-connector { padding: 0.5rem 0; text-align: center; transform: rotate(90deg); }
+}
+
 /* ── Persona section ─────────────────────────────────────────── */
 .persona-section {
   padding: 4rem 1.5rem;

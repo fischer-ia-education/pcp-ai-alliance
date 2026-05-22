@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Durante a Contratação · Gestores Públicos</title>
+    <meta name="description" content="Materiais para contratação responsável de IA na educação pública brasileira">
+    <link rel="icon" type="image/png" href="../assets/logos/icone_alianca.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+    
+</head>
+<body class="page-document">
+
+    <div class="site-disclaimer">
+        <p><strong>Atenção:</strong> Este site é um conceito em desenvolvimento. O conteúdo ainda não foi revisado e pode conter imprecisões.</p>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html" class="header-logo">
+                <img src="../assets/logos/assinatura_alianca_branco.png" alt="Aliança IA para Educação" height="52" style="display:block; max-height:52px; width:auto">
+            </a>
+            <nav class="header-nav" id="header-nav">
+                
+                <a href="../gestores/index.html"
+                   class="nav-persona active"
+                   style="--persona-color: #2f855a">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="5" width="22" height="9" fill="#A725FF"/><rect x="8" y="18" width="22" height="9" fill="#BBD634"/></svg>
+                    Gestores Públicos
+                </a>
+                
+                <a href="../edtechs/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #2b6cb0">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg>
+                    EdTechs
+                </a>
+                
+                
+                
+                <a href="../recursos/index.html"
+                   class="nav-section">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="8" width="20" height="16" fill="#A725FF"/><rect x="12" y="5" width="18" height="12" transform="rotate(15,21,11)" fill="#BBD634"/></svg> Recursos
+                </a>
+                
+                <a href="../contexto-politica/index.html"
+                   class="nav-section">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="14" y="2" width="16" height="28" fill="#BBD634"/><polygon points="2,6 16,16 2,26" fill="#A725FF"/></svg> Contexto e Política
+                </a>
+                
+                <a href="../sobre-o-guia/index.html"
+                   class="nav-section">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4h14l6 6v18H6z" fill="#A725FF"/><rect x="10" y="14" width="12" height="2" fill="#BBD634"/><rect x="10" y="18" width="9" height="2" fill="#BBD634"/><rect x="10" y="22" width="11" height="2" fill="#BBD634"/></svg> Sobre o Guia
+                </a>
+                
+                
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        
+<div class="document-layout" style="--persona-color: #2f855a">
+
+    
+    <aside class="doc-sidebar" id="doc-sidebar">
+        <button class="sidebar-close" aria-label="Fechar menu" id="sidebar-close">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <nav class="doc-toc">
+            <div class="toc-persona-tag">
+                <span class="toc-dot"></span>
+                Gestores Públicos
+            </div>
+            <h3 class="toc-title">Neste documento</h3>
+            <ul>
+                
+                <li><a href="#o-que-esta-fase-inclui" class="toc-link">O Que Esta Fase Inclui</a></li>
+                
+                <li><a href="#1-criterios-tecnicos-para-ia" class="toc-link">1. Critérios Técnicos para IA</a></li>
+                
+                <li><a href="#2-escolha-a-modalidade-de-contratacao" class="toc-link">2. Escolha a Modalidade de Contratação</a></li>
+                
+                <li><a href="#3-o-termo-de-referencia-para-ia" class="toc-link">3. O Termo de Referência para IA</a></li>
+                
+                <li><a href="#4-salvaguardas-contratuais-obrigatorias" class="toc-link">4. Salvaguardas Contratuais Obrigatórias</a></li>
+                
+                <li><a href="#checklist-da-fase-durante" class="toc-link">Checklist da Fase "Durante"</a></li>
+                
+                <li><a href="#proximos-passos" class="toc-link">Próximos Passos</a></li>
+                
+            </ul>
+            <div class="toc-back">
+                <a href="../gestores/index.html" class="toc-back-link">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M3 7l4-4M3 7l4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Todos os materiais
+                </a>
+            </div>
+        </nav>
+    </aside>
+    
+
+    <article class="doc-content">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span class="sep">/</span>
+            
+            <a href="../gestores/index.html">Gestores Públicos</a>
+            
+            <span class="sep">/</span>
+            <span class="current">Durante a Contratação</span>
+        </nav>
+
+        <header class="doc-header">
+            <div class="doc-header-meta">
+                <span class="doc-tipo-badge">Durante a Contratação</span>
+                <span class="doc-reading-time">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    ~5 min de leitura
+                </span>
+            </div>
+        </header>
+
+        <div class="doc-body markdown-body">
+            <h1 id="durante-a-contratacao">Durante a Contratação</h1>
+<blockquote>
+<p>O contrato não é um documento burocrático. É o principal instrumento de governança da relação entre a rede pública e a EdTech. Um bom contrato protege alunos, garante resultados pedagógicos e define responsabilidades claras.</p>
+</blockquote>
+<hr />
+<h2 id="o-que-esta-fase-inclui">O Que Esta Fase Inclui</h2>
+<p>A fase <em>Durante a Contratação</em> compreende quatro eixos:</p>
+<ol>
+<li><strong>Definição dos critérios técnicos</strong></li>
+<li><strong>Escolha da modalidade de contratação</strong></li>
+<li><strong>Elaboração do Termo de Referência e do edital</strong></li>
+<li><strong>Definição das salvaguardas contratuais</strong></li>
+</ol>
+<hr />
+<h2 id="1-criterios-tecnicos-para-ia">1. Critérios Técnicos para IA</h2>
+<p>Diferente do software convencional, a IA exige critérios técnicos específicos que vão além de funcionalidades e preço.</p>
+<p><strong>Inclua nos requisitos técnicos:</strong></p>
+<table>
+<thead>
+<tr>
+<th>Critério</th>
+<th>O que exigir</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Transparência</strong></td>
+<td>Documentação de como a IA funciona (Model Card ou equivalente)</td>
+</tr>
+<tr>
+<td><strong>Explicabilidade</strong></td>
+<td>A IA deve ser capaz de explicar suas recomendações em linguagem acessível</td>
+</tr>
+<tr>
+<td><strong>Equidade</strong></td>
+<td>Testes de desempenho por grupos (gênero, raça, renda) para verificar vieses</td>
+</tr>
+<tr>
+<td><strong>Privacidade</strong></td>
+<td>RIPD, LGPD, criptografia, minimização de dados, prazo de retenção</td>
+</tr>
+<tr>
+<td><strong>Supervisão humana</strong></td>
+<td>Mecanismos para que professores e gestores questionem e anulem decisões da IA</td>
+</tr>
+<tr>
+<td><strong>Interoperabilidade</strong></td>
+<td>Compatibilidade com sistemas já usados pela rede (SIGEDUC, SAGA, etc.)</td>
+</tr>
+<tr>
+<td><strong>Portabilidade</strong></td>
+<td>Os dados pertencem à rede pública, não ao fornecedor</td>
+</tr>
+<tr>
+<td><strong>Reversibilidade</strong></td>
+<td>Plano claro de saída caso a contratação seja encerrada</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="2-escolha-a-modalidade-de-contratacao">2. Escolha a Modalidade de Contratação</h2>
+<p>A Lei 14.133/2021 (Nova Lei de Licitações) prevê diferentes modalidades. A escolha depende do objeto, do valor e do contexto.</p>
+<table>
+<thead>
+<tr>
+<th>Modalidade</th>
+<th>Quando usar</th>
+<th>Exemplo de uso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inexigibilidade</strong></td>
+<td>Fornecedor exclusivo ou notória especialização</td>
+<td>Solução proprietária sem equivalente no mercado (Joinville/SC)</td>
+</tr>
+<tr>
+<td><strong>Pregão Eletrônico</strong></td>
+<td>Serviços comuns com especificação clara</td>
+<td>Plataforma de aprendizado adaptativo com TR bem definido (Rio Verde/GO)</td>
+</tr>
+<tr>
+<td><strong>CPSI</strong> (Contratação Pré-Comercial)</td>
+<td>Desenvolvimento de solução inexistente no mercado</td>
+<td>Piloto com inovação tecnológica; permite testar antes de contratar em escala</td>
+</tr>
+<tr>
+<td><strong>Parceria Intermediada</strong></td>
+<td>Contratação com apoio de instituto ou fundação</td>
+<td>Organizações como Sebrae, Lize ou outros intermediários facilitam a modelagem (Itajaí/SC)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Atenção à inexigibilidade:</strong> É a modalidade mais usada nas redes públicas (80% dos casos mapeados), mas exige comprovação rigorosa da exclusividade. Use apenas quando houver justificativa técnica sólida.</p>
+<hr />
+<h2 id="3-o-termo-de-referencia-para-ia">3. O Termo de Referência para IA</h2>
+<p>O Termo de Referência (TR) é o documento que define o objeto, os requisitos técnicos, as obrigações do fornecedor e os critérios de avaliação. Para contratos de IA, ele precisa ir além do TR convencional.</p>
+<p><strong>O TR deve responder:</strong></p>
+<h3 id="as-8-perguntas-fundamentais-do-contrato-de-ia">As 8 Perguntas Fundamentais do Contrato de IA</h3>
+<blockquote>
+<p>Essas perguntas devem estar respondidas, explicitamente, no contrato ou em seus anexos.</p>
+</blockquote>
+<ol>
+<li>
+<p><strong>Para quê?</strong><br />
+   — Qual é o propósito pedagógico da solução? Que problema ela resolve e como?</p>
+</li>
+<li>
+<p><strong>Com que dados?</strong><br />
+   — Que dados serão coletados, processados e armazenados? Por quanto tempo? Em que base legal (LGPD)?</p>
+</li>
+<li>
+<p><strong>Como?</strong><br />
+   — Como a IA funciona? Que tipo de algoritmo? Que dados de treinamento foram usados? A IA pode discriminar algum grupo?</p>
+</li>
+<li>
+<p><strong>Para quem?</strong><br />
+   — Quem terá acesso aos dados e às saídas da IA? Professores? Gestores? O fornecedor?</p>
+</li>
+<li>
+<p><strong>Com que segurança?</strong><br />
+   — Quais são as medidas de segurança da informação? O que acontece em caso de incidente de dados?</p>
+</li>
+<li>
+<p><strong>Até quando?</strong><br />
+   — Qual é o prazo contratual? Há renovação automática? Quais são as condições para rescisão?</p>
+</li>
+<li>
+<p><strong>E se falhar?</strong><br />
+   — Quais são as métricas de desempenho? O que acontece se as metas não forem atingidas? Há multas contratuais?</p>
+</li>
+<li>
+<p><strong>Com que legado?</strong><br />
+   — Ao final do contrato, como serão portados os dados? O fornecedor deve garantir continuidade pedagógica ou plano de transição.</p>
+</li>
+</ol>
+<hr />
+<h2 id="4-salvaguardas-contratuais-obrigatorias">4. Salvaguardas Contratuais Obrigatórias</h2>
+<p><strong>Inclua cláusulas específicas para:</strong></p>
+<h3 id="transparencia-algoritmica">Transparência Algorítmica</h3>
+<blockquote>
+<p>O fornecedor deve entregar documentação técnica da IA (equivalente ao Model Card) e atualizar essa documentação a cada atualização significativa do modelo.</p>
+</blockquote>
+<h3 id="supervisao-humana">Supervisão Humana</h3>
+<blockquote>
+<p>Nenhuma decisão da IA com impacto direto sobre a trajetória escolar do aluno (aprovação, retenção, encaminhamento) pode ser automatizada. O professor ou gestor sempre tem a palavra final.</p>
+</blockquote>
+<h3 id="governanca-de-dados">Governança de Dados</h3>
+<blockquote>
+<p>Os dados gerados no âmbito do contrato pertencem à rede pública. O fornecedor não pode usar esses dados para treinar seus modelos sem consentimento explícito da rede e dos responsáveis pelos alunos.</p>
+</blockquote>
+<h3 id="reversibilidade-e-portabilidade">Reversibilidade e Portabilidade</h3>
+<blockquote>
+<p>Ao final do contrato (ou em caso de rescisão), o fornecedor tem prazo definido para entregar todos os dados em formato aberto e interoperável, sem custo adicional.</p>
+</blockquote>
+<h3 id="mecanismos-de-contestacao">Mecanismos de Contestação</h3>
+<blockquote>
+<p>Deve haver canal formal para que professores, alunos e responsáveis contestem recomendações ou classificações feitas pela IA.</p>
+</blockquote>
+<hr />
+<h2 id="checklist-da-fase-durante">Checklist da Fase "Durante"</h2>
+<ul>
+<li class="task-item"><input type="checkbox" disabled> Critérios técnicos específicos de IA incluídos no TR</li>
+<li class="task-item"><input type="checkbox" disabled> Modalidade de contratação definida e justificada</li>
+<li class="task-item"><input type="checkbox" disabled> As 8 perguntas fundamentais respondidas no contrato</li>
+<li class="task-item"><input type="checkbox" disabled> Cláusula de transparência algorítmica incluída</li>
+<li class="task-item"><input type="checkbox" disabled> Cláusula de supervisão humana obrigatória incluída</li>
+<li class="task-item"><input type="checkbox" disabled> Cláusula de propriedade dos dados da rede incluída</li>
+<li class="task-item"><input type="checkbox" disabled> Cláusula de portabilidade e plano de saída incluída</li>
+<li class="task-item"><input type="checkbox" disabled> Métricas de desempenho pedagógico definidas</li>
+<li class="task-item"><input type="checkbox" disabled> Mecanismos de contestação previstos</li>
+<li class="task-item"><input type="checkbox" disabled> Equipe pedagógica envolvida na avaliação das propostas</li>
+</ul>
+<hr />
+<h2 id="proximos-passos">Próximos Passos</h2>
+<ul>
+<li><strong>Após a Contratação</strong> — Como monitorar, auditar e garantir o bom uso da IA ao longo do contrato</li>
+<li><strong>Checklist da Jornada</strong> — Lista completa de verificação por fase</li>
+</ul>
+<hr />
+<p><em>Aliança de IA para a Educação | Instituto Jataí | 2026</em></p>
+        </div>
+
+        <footer class="doc-footer">
+            <a href="../gestores/index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8l5-5M3 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Voltar para Gestores Públicos
+            </a>
+            
+            <div class="doc-footer-personas">
+                <span class="doc-footer-label">Outros perfis:</span>
+                
+                <a href="../edtechs/index.html" class="doc-footer-persona-link" style="--persona-color: #2b6cb0"><svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg> EdTechs</a>
+                
+            </div>
+            
+        </footer>
+    </article>
+
+    
+    <button class="toc-toggle" id="toc-toggle" aria-label="Índice do documento">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 4h14M3 8h10M3 12h12M3 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+    
+
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-top-brand">
+                <img src="../assets/logos/icone_alianca.png" height="72" alt="">
+                <span class="footer-brand-name">Aliança IA para Educação</span>
+            </div>
+            <div class="footer-top-partner">
+                <p class="footer-section-label">Em parceria com</p>
+                <img src="../assets/logos/logo_jatai_branco.png" height="24" alt="Instituto Jataí" style="display:block; margin-bottom:0.5rem;">
+                <p class="footer-partner-desc">Apoiamos governos a inovar no uso de recursos públicos para promover uma sociedade sustentável e justa</p>
+            </div>
+            <div class="footer-top-social">
+                <p class="footer-section-label">Siga-nos</p>
+                <a href="https://www.linkedin.com/company/alian%C3%A7a-ia-educa%C3%A7%C3%A3o/" target="_blank" rel="noopener" aria-label="LinkedIn da Aliança IA para Educação">
+                    <img src="../assets/logos/logo_linkedin.png" alt="LinkedIn" height="36" style="display:block">
+                </a>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p class="footer-section-label">Realização</p>
+            <p class="footer-realizacao-desc">A Aliança IA para Educação é uma iniciativa conjunta da Fundação Lemann, Telles Foundation e VélezReyes+ que visa fomentar o uso de Inteligência Artificial na educação pública brasileira.</p>
+            <div class="footer-logos">
+                <img src="../assets/logos/lemann_logo_branca.png" height="28" alt="Fundação Lemann">
+                <img src="../assets/logos/telles_branca.png" height="48" alt="Telles Foundation">
+                <img src="../assets/logos/velezreyes_logo_branca.png" height="24" alt="VélezReyes+">
+            </div>
+            <p class="footer-copyright">© 2026 Aliança IA para Educação · Instituto Jataí</p>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    
+</body>
+</html>

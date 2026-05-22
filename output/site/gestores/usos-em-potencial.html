@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA na Educação: Usos em Potencial · Gestores Públicos</title>
+    <meta name="description" content="Materiais para contratação responsável de IA na educação pública brasileira">
+    <link rel="icon" type="image/png" href="../assets/logos/icone_alianca.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+    
+</head>
+<body class="page-document">
+
+    <div class="site-disclaimer">
+        <p><strong>Atenção:</strong> Este site é um conceito em desenvolvimento. O conteúdo ainda não foi revisado e pode conter imprecisões.</p>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html" class="header-logo">
+                <img src="../assets/logos/assinatura_alianca_branco.png" alt="Aliança IA para Educação" height="52" style="display:block; max-height:52px; width:auto">
+            </a>
+            <nav class="header-nav" id="header-nav">
+                
+                <a href="../gestores/index.html"
+                   class="nav-persona active"
+                   style="--persona-color: #2f855a">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="5" width="22" height="9" fill="#A725FF"/><rect x="8" y="18" width="22" height="9" fill="#BBD634"/></svg>
+                    Gestores Públicos
+                </a>
+                
+                <a href="../edtechs/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #2b6cb0">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg>
+                    EdTechs
+                </a>
+                
+                
+                
+                <a href="../recursos/index.html"
+                   class="nav-section">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="8" width="20" height="16" fill="#A725FF"/><rect x="12" y="5" width="18" height="12" transform="rotate(15,21,11)" fill="#BBD634"/></svg> Recursos
+                </a>
+                
+                <a href="../contexto-politica/index.html"
+                   class="nav-section">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="14" y="2" width="16" height="28" fill="#BBD634"/><polygon points="2,6 16,16 2,26" fill="#A725FF"/></svg> Contexto e Política
+                </a>
+                
+                <a href="../sobre-o-guia/index.html"
+                   class="nav-section">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4h14l6 6v18H6z" fill="#A725FF"/><rect x="10" y="14" width="12" height="2" fill="#BBD634"/><rect x="10" y="18" width="9" height="2" fill="#BBD634"/><rect x="10" y="22" width="11" height="2" fill="#BBD634"/></svg> Sobre o Guia
+                </a>
+                
+                
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        
+<div class="document-layout" style="--persona-color: #2f855a">
+
+    
+    <aside class="doc-sidebar" id="doc-sidebar">
+        <button class="sidebar-close" aria-label="Fechar menu" id="sidebar-close">
+            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        </button>
+        <nav class="doc-toc">
+            <div class="toc-persona-tag">
+                <span class="toc-dot"></span>
+                Gestores Públicos
+            </div>
+            <h3 class="toc-title">Neste documento</h3>
+            <ul>
+                
+                <li><a href="#por-que-comecar-pelos-usos" class="toc-link">Por Que Começar Pelos Usos?</a></li>
+                
+                <li><a href="#para-alunos" class="toc-link">Para Alunos</a></li>
+                
+                <li><a href="#para-professores" class="toc-link">Para Professores</a></li>
+                
+                <li><a href="#para-a-escola-e-a-rede" class="toc-link">Para a Escola e a Rede</a></li>
+                
+                <li><a href="#os-tres-perfis-de-usuario-resumo-visual" class="toc-link">Os Três Perfis de Usuário: Resumo Visual</a></li>
+                
+                <li><a href="#antes-de-seguir-as-perguntas-certas" class="toc-link">Antes de Seguir: As Perguntas Certas</a></li>
+                
+                <li><a href="#proximo-passo" class="toc-link">Próximo Passo</a></li>
+                
+            </ul>
+            <div class="toc-back">
+                <a href="../gestores/index.html" class="toc-back-link">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M3 7l4-4M3 7l4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Todos os materiais
+                </a>
+            </div>
+        </nav>
+    </aside>
+    
+
+    <article class="doc-content">
+        <nav class="breadcrumb">
+            <a href="../index.html">Início</a>
+            <span class="sep">/</span>
+            
+            <a href="../gestores/index.html">Gestores Públicos</a>
+            
+            <span class="sep">/</span>
+            <span class="current">Usos em Potencial</span>
+        </nav>
+
+        <header class="doc-header">
+            <div class="doc-header-meta">
+                <span class="doc-tipo-badge">Usos em Potencial</span>
+                <span class="doc-reading-time">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    ~4 min de leitura
+                </span>
+            </div>
+        </header>
+
+        <div class="doc-body markdown-body">
+            <h1 id="ia-na-educacao-usos-em-potencial">IA na Educação: Usos em Potencial</h1>
+<blockquote>
+<p>Antes de contratar qualquer solução de IA, é fundamental ter clareza sobre <em>para quê</em> ela serve. A IA é meio, não fim.</p>
+</blockquote>
+<hr />
+<h2 id="por-que-comecar-pelos-usos">Por Que Começar Pelos Usos?</h2>
+<p>A maioria das contratações públicas de tecnologia começa pela solução, não pelo problema. Com IA, esse equívoco é especialmente custoso: sem um propósito pedagógico claro, a rede corre o risco de contratar uma tecnologia que não resolve nenhuma necessidade real, cria dependência e ainda coloca dados de alunos em risco.</p>
+<p>Esta seção apresenta os principais usos da IA na educação agrupados por perfil de usuário — não para que você escolha um produto, mas para que você <strong>defina o problema que quer resolver</strong> antes de ir ao mercado.</p>
+<hr />
+<h2 id="para-alunos">Para Alunos</h2>
+<table>
+<thead>
+<tr>
+<th>Uso</th>
+<th>O que faz</th>
+<th>Benefício potencial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Aprendizado adaptativo</strong></td>
+<td>A IA ajusta a sequência e o nível das atividades ao ritmo de cada aluno</td>
+<td>Redução de defasagem; personalização em escala</td>
+</tr>
+<tr>
+<td><strong>Tutoria inteligente</strong></td>
+<td>Assistente que responde dúvidas, dá dicas e orienta tarefas fora do horário de aula</td>
+<td>Ampliação do tempo de aprendizagem</td>
+</tr>
+<tr>
+<td><strong>Acessibilidade</strong></td>
+<td>Transcrição automática, tradução de Libras, leitura em voz alta, legendagem</td>
+<td>Inclusão de alunos com deficiência</td>
+</tr>
+<tr>
+<td><strong>Avaliação formativa</strong></td>
+<td>Análise automática de redações, exercícios e respostas abertas com feedback imediato</td>
+<td>Maior frequência de avaliação sem sobrecarga docente</td>
+</tr>
+<tr>
+<td><strong>Prevenção de evasão</strong></td>
+<td>Modelos preditivos que identificam alunos em risco de abandono escolar</td>
+<td>Intervenção precoce; redução de evasão</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Atenção:</strong> A IA <em>não substitui</em> a relação pedagógica entre professor e aluno. Ferramentas de tutoria e aprendizado adaptativo funcionam melhor como complemento, não como substituto da mediação humana.</p>
+<hr />
+<h2 id="para-professores">Para Professores</h2>
+<table>
+<thead>
+<tr>
+<th>Uso</th>
+<th>O que faz</th>
+<th>Benefício potencial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Recomposição do tempo pedagógico</strong></td>
+<td>Automatiza tarefas administrativas (chamada, relatórios, boletins) liberando tempo para ensinar</td>
+<td>Foco no que é essencial: o ensino</td>
+</tr>
+<tr>
+<td><strong>Planejamento de aulas</strong></td>
+<td>Sugestão de sequências didáticas, atividades diferenciadas e recursos alinhados à BNCC</td>
+<td>Redução de tempo de preparo; diversificação de estratégias</td>
+</tr>
+<tr>
+<td><strong>Avaliação formativa assistida</strong></td>
+<td>Análise de produções textuais com feedback automático de 1ª instância</td>
+<td>Devolução mais rápida para alunos</td>
+</tr>
+<tr>
+<td><strong>Identificação de necessidades</strong></td>
+<td>Painéis de desempenho por turma, identificando alunos que precisam de atenção</td>
+<td>Intervenção pedagógica direcionada</td>
+</tr>
+<tr>
+<td><strong>Formação continuada adaptativa</strong></td>
+<td>Plataformas que recomendam conteúdos de formação com base no perfil do professor</td>
+<td>Desenvolvimento profissional personalizado</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="para-a-escola-e-a-rede">Para a Escola e a Rede</h2>
+<table>
+<thead>
+<tr>
+<th>Uso</th>
+<th>O que faz</th>
+<th>Benefício potencial</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Automação administrativa</strong></td>
+<td>Processamento de documentos, matrículas, remanejamentos, relatórios de gestão</td>
+<td>Eficiência operacional</td>
+</tr>
+<tr>
+<td><strong>Análise preditiva</strong></td>
+<td>Modelos que antecipam demandas de vagas, necessidade de merenda, manutenção de infraestrutura</td>
+<td>Planejamento mais preciso</td>
+</tr>
+<tr>
+<td><strong>Prevenção de evasão em rede</strong></td>
+<td>Análise agregada de frequência, notas e indicadores socioeconômicos</td>
+<td>Políticas de permanência mais eficazes</td>
+</tr>
+<tr>
+<td><strong>Monitoramento de aprendizagem</strong></td>
+<td>Painéis de acompanhamento por escola, município, regional</td>
+<td>Gestão pedagógica baseada em dados</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="os-tres-perfis-de-usuario-resumo-visual">Os Três Perfis de Usuário: Resumo Visual</h2>
+<div class="highlight"><pre><span></span><code>ALUNOS                    PROFESSORES               ESCOLA / REDE
+─────────────────         ─────────────────         ─────────────────
+• Aprendizado             • Planejamento            • Automação
+  adaptativo                de aulas                 administrativa
+• Tutoria                 • Avaliação               • Análise
+  inteligente               formativa                preditiva
+• Acessibilidade          • Recomposição            • Prevenção de
+• Avaliação                 do tempo                 evasão em rede
+  formativa              • Identificação de         • Monitoramento
+• Prevenção de             necessidades               de aprendizagem
+  evasão
+</code></pre></div>
+
+<hr />
+<h2 id="antes-de-seguir-as-perguntas-certas">Antes de Seguir: As Perguntas Certas</h2>
+<p>Antes de ir ao mercado, responda:</p>
+<ul>
+<li class="task-item"><input type="checkbox" disabled> <strong>Qual problema pedagógico concreto queremos resolver?</strong> (Não: "quero usar IA". Sim: "precisamos reduzir a evasão no 6º ano".)</li>
+<li class="task-item"><input type="checkbox" disabled> <strong>Temos dados sobre esse problema?</strong> (Frequência, notas, entrevistas com professores?)</li>
+<li class="task-item"><input type="checkbox" disabled> <strong>A IA é a melhor solução para esse problema,</strong> ou há intervenções mais simples e eficazes?</li>
+<li class="task-item"><input type="checkbox" disabled> <strong>Temos capacidade institucional</strong> (infraestrutura, conectividade, formação docente) para adotar a solução?</li>
+<li class="task-item"><input type="checkbox" disabled> <strong>Os professores foram consultados</strong> sobre a solução que será implantada?</li>
+</ul>
+<p>Se você não consegue responder a essas perguntas, o próximo passo não é contratar — é <strong>diagnóstico institucional</strong>.</p>
+<hr />
+<h2 id="proximo-passo">Próximo Passo</h2>
+<p>Com o problema pedagógico definido, você está pronto para planejar a contratação. Acesse:</p>
+<ul>
+<li><strong>Antes da Contratação</strong> — Como preparar sua rede para contratar IA com segurança</li>
+<li><strong>Framework de Decisão</strong> — Uma árvore de decisão para avaliar se sua rede está pronta</li>
+</ul>
+<hr />
+<p><em>Aliança de IA para a Educação | Instituto Jataí | 2026</em></p>
+        </div>
+
+        <footer class="doc-footer">
+            <a href="../gestores/index.html" class="back-link">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8l5-5M3 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Voltar para Gestores Públicos
+            </a>
+            
+            <div class="doc-footer-personas">
+                <span class="doc-footer-label">Outros perfis:</span>
+                
+                <a href="../edtechs/index.html" class="doc-footer-persona-link" style="--persona-color: #2b6cb0"><svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg> EdTechs</a>
+                
+            </div>
+            
+        </footer>
+    </article>
+
+    
+    <button class="toc-toggle" id="toc-toggle" aria-label="Índice do documento">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <path d="M3 4h14M3 8h10M3 12h12M3 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+    </button>
+    
+
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-top-brand">
+                <img src="../assets/logos/icone_alianca.png" height="72" alt="">
+                <span class="footer-brand-name">Aliança IA para Educação</span>
+            </div>
+            <div class="footer-top-partner">
+                <p class="footer-section-label">Em parceria com</p>
+                <img src="../assets/logos/logo_jatai_branco.png" height="24" alt="Instituto Jataí" style="display:block; margin-bottom:0.5rem;">
+                <p class="footer-partner-desc">Apoiamos governos a inovar no uso de recursos públicos para promover uma sociedade sustentável e justa</p>
+            </div>
+            <div class="footer-top-social">
+                <p class="footer-section-label">Siga-nos</p>
+                <a href="https://www.linkedin.com/company/alian%C3%A7a-ia-educa%C3%A7%C3%A3o/" target="_blank" rel="noopener" aria-label="LinkedIn da Aliança IA para Educação">
+                    <img src="../assets/logos/logo_linkedin.png" alt="LinkedIn" height="36" style="display:block">
+                </a>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p class="footer-section-label">Realização</p>
+            <p class="footer-realizacao-desc">A Aliança IA para Educação é uma iniciativa conjunta da Fundação Lemann, Telles Foundation e VélezReyes+ que visa fomentar o uso de Inteligência Artificial na educação pública brasileira.</p>
+            <div class="footer-logos">
+                <img src="../assets/logos/lemann_logo_branca.png" height="28" alt="Fundação Lemann">
+                <img src="../assets/logos/telles_branca.png" height="48" alt="Telles Foundation">
+                <img src="../assets/logos/velezreyes_logo_branca.png" height="24" alt="VélezReyes+">
+            </div>
+            <p class="footer-copyright">© 2026 Aliança IA para Educação · Instituto Jataí</p>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    
+</body>
+</html>

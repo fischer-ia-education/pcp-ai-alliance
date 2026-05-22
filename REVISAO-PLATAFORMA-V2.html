@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Revisão da Plataforma — V2 | Aliança de IA para a Educação</title>
+<style>
+  :root {
+    --verde: #2f855a;
+    --azul: #2b6cb0;
+    --laranja: #c05621;
+    --cinza: #718096;
+    --roxo: #A725FF;
+    --verde-lima: #BBD634;
+    --fundo: #f7f6f3;
+    --card: #ffffff;
+    --borda: #e2e8f0;
+    --texto: #1a202c;
+    --texto-leve: #4a5568;
+    --removido: #fed7d7;
+    --removido-texto: #c53030;
+    --novo: #c6f6d5;
+    --novo-texto: #276749;
+    --revisado: #bee3f8;
+    --revisado-texto: #2b6cb0;
+    --renomeado: #fefcbf;
+    --renomeado-texto: #744210;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+  }
+  .page-header {
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+  }
+  .page-header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+  .page-header .subtitle { opacity: 0.75; font-size: 1rem; }
+  .page-header .meta {
+    display: inline-flex; gap: 2rem; margin-top: 1.5rem;
+    font-size: 0.85rem; opacity: 0.65;
+  }
+  .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+  .section-title {
+    font-size: 1.4rem; font-weight: 700; margin-bottom: 0.5rem;
+    padding-bottom: 0.75rem; border-bottom: 2px solid var(--borda);
+    display: flex; align-items: center; gap: 0.75rem;
+  }
+  .section-title .icon { font-size: 1.2rem; }
+  .section-block { margin-bottom: 3rem; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; } }
+
+  /* Architecture diagrams */
+  .arch-card {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+  .arch-title {
+    font-size: 1rem; font-weight: 700; margin-bottom: 1rem;
+    padding: 0.5rem 0.75rem; border-radius: 6px;
+    display: inline-block;
+  }
+  .arch-before .arch-title { background: #fed7d7; color: #c53030; }
+  .arch-after .arch-title { background: #c6f6d5; color: #276749; }
+
+  .nav-diagram { display: flex; flex-direction: column; gap: 0.5rem; }
+  .nav-item {
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  .nav-item.persona { background: #ebf4ff; border-left: 3px solid var(--azul); }
+  .nav-item.section { background: #f7fafc; border-left: 3px solid var(--cinza); }
+  .nav-item.removed { background: var(--removido); border-left: 3px solid #e53e3e; text-decoration: line-through; color: var(--removido-texto); }
+  .nav-item.new { background: var(--novo); border-left: 3px solid #38a169; color: var(--novo-texto); }
+  .nav-item.renamed { background: var(--renomeado); border-left: 3px solid #d69e2e; color: var(--renomeado-texto); }
+  .nav-sub { margin-left: 1.5rem; font-size: 0.82rem; color: var(--texto-leve); }
+  .nav-badge {
+    margin-left: auto; font-size: 0.7rem; font-weight: 700;
+    padding: 0.15rem 0.4rem; border-radius: 4px;
+  }
+  .badge-gestores { background: #c6f6d5; color: #276749; }
+  .badge-edtechs { background: #bee3f8; color: #2b6cb0; }
+  .badge-removed { background: #fed7d7; color: #c53030; }
+  .badge-new { background: #c6f6d5; color: #276749; }
+  .badge-renamed { background: #fefcbf; color: #744210; }
+
+  /* Flowchart */
+  .flowchart-wrap {
+    background: var(--card);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 2rem;
+    overflow-x: auto;
+  }
+  .flowchart {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    min-width: 700px;
+  }
+  .flow-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1;
+  }
+  .flow-box {
+    background: #ebf8ff;
+    border: 2px solid #bee3f8;
+    border-radius: 8px;
+    padding: 0.6rem 0.8rem;
+    text-align: center;
+    font-size: 0.82rem;
+    font-weight: 600;
+    color: #2b6cb0;
+    width: 100%;
+  }
+  .flow-box.removed { background: #fff5f5; border-color: #fed7d7; color: #c53030; }
+  .flow-box.new { background: #f0fff4; border-color: #c6f6d5; color: #276749; }
+  .flow-box.renamed { background: #fffff0; border-color: #fefcbf; color: #744210; }
+  .flow-box.section { background: #faf5ff; border-color: #e9d8fd; color: #553c9a; }
+  .flow-box.main { background: #1a202c; color: white; border-color: #1a202c; font-size: 0.9rem; }
+  .flow-header { font-weight: 700; font-size: 0.8rem; color: var(--texto-leve); text-transform: uppercase; letter-spacing: 0.05em; margin-bottom: 0.5rem; text-align: center; }
+  .flow-arrow {
+    display: flex;
+    align-items: center;
+    padding-top: 2rem;
+    color: var(--texto-leve);
+    font-size: 1.2rem;
+    padding-left: 0.25rem;
+    padding-right: 0.25rem;
+  }
+
+  /* Change log table */
+  .change-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+  .change-table th {
+    text-align: left; padding: 0.75rem 1rem;
+    background: #2d3748; color: white; font-weight: 600;
+  }
+  .change-table th:first-child { border-radius: 8px 0 0 0; }
+  .change-table th:last-child { border-radius: 0 8px 0 0; }
+  .change-table td { padding: 0.6rem 1rem; border-bottom: 1px solid var(--borda); }
+  .change-table tr:last-child td { border-bottom: none; }
+  .change-table tr:hover td { background: #f7fafc; }
+  .tag {
+    display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px;
+    font-size: 0.75rem; font-weight: 700; white-space: nowrap;
+  }
+  .tag-novo { background: var(--novo); color: var(--novo-texto); }
+  .tag-revisado { background: var(--revisado); color: var(--revisado-texto); }
+  .tag-removido { background: var(--removido); color: var(--removido-texto); }
+  .tag-renomeado { background: var(--renomeado); color: var(--renomeado-texto); }
+  .tag-mantido { background: #e2e8f0; color: #4a5568; }
+
+  /* Content matrix */
+  .matrix-wrap {
+    background: var(--card); border: 1px solid var(--borda);
+    border-radius: 12px; overflow: hidden;
+  }
+  .matrix-section { border-bottom: 2px solid var(--borda); }
+  .matrix-section:last-child { border-bottom: none; }
+  .matrix-section-title {
+    padding: 0.75rem 1.25rem; font-weight: 700; font-size: 0.9rem;
+    color: white; display: flex; align-items: center; gap: 0.5rem;
+  }
+  .matrix-section.gestores .matrix-section-title { background: var(--verde); }
+  .matrix-section.edtechs .matrix-section-title { background: var(--azul); }
+  .matrix-section.contexto .matrix-section-title { background: var(--laranja); }
+  .matrix-section.recursos .matrix-section-title { background: var(--cinza); }
+  .matrix-section.sobre .matrix-section-title { background: #4a5568; }
+  .matrix-items { display: flex; flex-wrap: wrap; gap: 0.5rem; padding: 0.75rem 1.25rem; }
+  .matrix-item {
+    display: flex; align-items: center; gap: 0.4rem;
+    padding: 0.3rem 0.6rem; border-radius: 6px; font-size: 0.82rem;
+  }
+  .matrix-item.novo { background: var(--novo); color: var(--novo-texto); }
+  .matrix-item.revisado { background: var(--revisado); color: var(--revisado-texto); }
+  .matrix-item.mantido { background: #e2e8f0; color: #4a5568; }
+  .matrix-item.avaliado { background: var(--renomeado); color: var(--renomeado-texto); }
+
+  /* Stats */
+  .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; }
+  .stat-box {
+    background: var(--card); border: 1px solid var(--borda);
+    border-radius: 10px; padding: 1rem; text-align: center;
+  }
+  .stat-box .number { font-size: 2rem; font-weight: 800; line-height: 1; }
+  .stat-box .label { font-size: 0.8rem; color: var(--texto-leve); margin-top: 0.25rem; }
+  .stat-box.green .number { color: var(--novo-texto); }
+  .stat-box.blue .number { color: var(--azul); }
+  .stat-box.orange .number { color: var(--laranja); }
+  .stat-box.red .number { color: var(--removido-texto); }
+
+  /* Legend */
+  .legend { display: flex; gap: 1rem; flex-wrap: wrap; margin-bottom: 1rem; font-size: 0.82rem; }
+  .legend-item { display: flex; align-items: center; gap: 0.35rem; }
+  .legend-dot { width: 10px; height: 10px; border-radius: 50%; }
+  .dot-novo { background: #38a169; }
+  .dot-revisado { background: #2b6cb0; }
+  .dot-removido { background: #e53e3e; }
+  .dot-renomeado { background: #d69e2e; }
+  .dot-mantido { background: #718096; }
+
+  footer {
+    text-align: center; padding: 2rem; color: var(--texto-leve);
+    font-size: 0.82rem; border-top: 1px solid var(--borda); margin-top: 2rem;
+  }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Revisão da Plataforma — V2</h1>
+  <p class="subtitle">Documentação das mudanças implementadas com base nas sugestões de revisão</p>
+  <div class="meta">
+    <span>Plataforma: pcp-ai-alliance.netlify.app</span>
+    <span>Data: Maio 2026</span>
+    <span>Versão: 2.0</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- Resumo estatístico -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">📊</span> Resumo das Mudanças</h2>
+    <div class="stats-grid">
+      <div class="stat-box green">
+        <div class="number">14</div>
+        <div class="label">Novos arquivos de conteúdo</div>
+      </div>
+      <div class="stat-box blue">
+        <div class="number">2</div>
+        <div class="label">Seções novas (Contexto e Política, Sobre o Guia)</div>
+      </div>
+      <div class="stat-box orange">
+        <div class="number">3</div>
+        <div class="label">Personas removidas do menu principal</div>
+      </div>
+      <div class="stat-box red">
+        <div class="number">2→5</div>
+        <div class="label">Personas → Nav (de 5 para 2 + 3 seções)</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Arquitetura: Antes x Depois -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">🗺</span> Arquitetura: Antes × Depois</h2>
+    <div class="two-col">
+
+      <!-- ANTES -->
+      <div class="arch-card arch-before">
+        <span class="arch-title">Estado Anterior (V1)</span>
+        <div class="nav-diagram">
+          <div class="nav-item persona">
+            <span>EdTechs</span>
+            <span class="nav-badge badge-edtechs">Persona</span>
+          </div>
+          <div class="nav-sub">↳ Estágio Inicial / Entrada / Escala / Internacional</div>
+          <div class="nav-item persona">
+            <span>Gestores Públicos</span>
+            <span class="nav-badge badge-gestores">Persona</span>
+          </div>
+          <div class="nav-item removed">
+            <span>Organizações Intermediárias</span>
+            <span class="nav-badge badge-removed">Removida</span>
+          </div>
+          <div class="nav-item removed">
+            <span>Legisladores</span>
+            <span class="nav-badge badge-removed">Removida</span>
+          </div>
+          <div class="nav-item removed">
+            <span>Educadores</span>
+            <span class="nav-badge badge-removed">Removida</span>
+          </div>
+          <div class="nav-item section">
+            <span>Recursos</span>
+            <span class="nav-badge">Seção</span>
+          </div>
+        </div>
+        <br>
+        <p style="font-size:0.8rem; color:#718096;">Home: estatísticas → problema → 5 cards de persona</p>
+      </div>
+
+      <!-- DEPOIS -->
+      <div class="arch-card arch-after">
+        <span class="arch-title">Estado Atual (V2)</span>
+        <div class="nav-diagram">
+          <div class="nav-item persona">
+            <span>Gestores Públicos</span>
+            <span class="nav-badge badge-gestores">Persona principal</span>
+          </div>
+          <div class="nav-sub">↳ Usos em Potencial · Antes · Durante · Após · Instrumentos · Guia</div>
+          <div class="nav-item persona">
+            <span>EdTechs</span>
+            <span class="nav-badge badge-edtechs">Persona principal</span>
+          </div>
+          <div class="nav-sub">↳ 5 Perguntas · Modalidades · Checklist · Guia + sub-estágios</div>
+          <div class="nav-item section">
+            <span>Recursos</span>
+            <span class="nav-badge">Seção</span>
+          </div>
+          <div class="nav-item new">
+            <span>Contexto e Política</span>
+            <span class="nav-badge badge-new">Nova seção</span>
+          </div>
+          <div class="nav-sub">↳ Como as redes contratam · Desafios · Boas práticas · Docs oficiais · Policy Brief</div>
+          <div class="nav-item new">
+            <span>Sobre o Guia</span>
+            <span class="nav-badge badge-new">Nova seção</span>
+          </div>
+        </div>
+        <br>
+        <p style="font-size:0.8rem; color:#718096;">Home: pergunta central → 3 pilares → jornada Antes/Durante/Após → 2 cards</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Fluxograma -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">🔄</span> Fluxograma da Mudança de Arquitetura</h2>
+    <div class="flowchart-wrap">
+      <div class="flowchart">
+
+        <!-- HOME -->
+        <div class="flow-col">
+          <div class="flow-header">Home</div>
+          <div class="flow-box main">Home</div>
+          <div style="font-size:0.72rem; color:#718096; text-align:center; margin-top:0.3rem;">
+            V1: Estatísticas<br>
+            <b>V2: Pergunta central + Pilares + Jornada</b>
+          </div>
+        </div>
+        <div class="flow-arrow">→</div>
+
+        <!-- PERSONAS -->
+        <div class="flow-col">
+          <div class="flow-header">Personas Principais</div>
+          <div class="flow-box">Gestores Públicos</div>
+          <div class="flow-box">EdTechs</div>
+          <div class="flow-box removed">Educadores ✕</div>
+          <div class="flow-box removed">Intermediários ✕</div>
+          <div class="flow-box renamed">Legisladores →</div>
+        </div>
+        <div class="flow-arrow">→</div>
+
+        <!-- SEÇÕES -->
+        <div class="flow-col">
+          <div class="flow-header">Seções</div>
+          <div class="flow-box section">Recursos</div>
+          <div class="flow-box new">Contexto e Política ✦</div>
+          <div class="flow-box new">Sobre o Guia ✦</div>
+        </div>
+        <div class="flow-arrow">→</div>
+
+        <!-- CONTEÚDO GESTORES -->
+        <div class="flow-col">
+          <div class="flow-header">Conteúdo Gestores</div>
+          <div class="flow-box new">Usos em Potencial ✦</div>
+          <div class="flow-box new">Antes da Contratação ✦</div>
+          <div class="flow-box new">Durante a Contratação ✦</div>
+          <div class="flow-box new">Após a Contratação ✦</div>
+          <div class="flow-box">Resumo Executivo</div>
+          <div class="flow-box">Guia Completo</div>
+        </div>
+
+      </div>
+      <div style="margin-top:1rem; display:flex; gap:1.5rem; flex-wrap:wrap; font-size:0.78rem; color:#718096;">
+        <span>✕ Removido do menu</span>
+        <span>→ Renomeado/movido</span>
+        <span>✦ Novo conteúdo</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Matriz de conteúdo -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">📋</span> Matriz de Conteúdo por Seção</h2>
+    <div class="legend">
+      <div class="legend-item"><div class="legend-dot dot-novo"></div> Novo</div>
+      <div class="legend-item"><div class="legend-dot dot-revisado"></div> Revisado</div>
+      <div class="legend-item"><div class="legend-dot dot-mantido"></div> Mantido</div>
+      <div class="legend-item"><div class="legend-dot dot-renomeado"></div> A avaliar</div>
+    </div>
+    <div class="matrix-wrap">
+      <div class="matrix-section gestores">
+        <div class="matrix-section-title">Gestores Públicos</div>
+        <div class="matrix-items">
+          <div class="matrix-item novo">✦ Usos em Potencial</div>
+          <div class="matrix-item novo">✦ Antes da Contratação</div>
+          <div class="matrix-item novo">✦ Durante a Contratação</div>
+          <div class="matrix-item novo">✦ Após a Contratação</div>
+          <div class="matrix-item mantido">↔ Resumo Executivo</div>
+          <div class="matrix-item mantido">↔ Guia Completo</div>
+          <div class="matrix-item revisado">↺ Instrumentos (checklists)</div>
+        </div>
+      </div>
+      <div class="matrix-section edtechs">
+        <div class="matrix-section-title">EdTechs</div>
+        <div class="matrix-items">
+          <div class="matrix-item novo">✦ 5 Perguntas</div>
+          <div class="matrix-item revisado">↺ Modalidades de Contratação</div>
+          <div class="matrix-item mantido">↔ Resumo Executivo</div>
+          <div class="matrix-item mantido">↔ Checklist de Prontidão</div>
+          <div class="matrix-item mantido">↔ Guia Completo</div>
+          <div class="matrix-item avaliado">? Sub-estágios (avaliar)</div>
+        </div>
+      </div>
+      <div class="matrix-section contexto">
+        <div class="matrix-section-title">Contexto e Política (nova seção, ex-Legisladores)</div>
+        <div class="matrix-items">
+          <div class="matrix-item novo">✦ Como as Redes Estão Contratando</div>
+          <div class="matrix-item novo">✦ Desafios e Riscos</div>
+          <div class="matrix-item novo">✦ Boas Práticas Internacionais</div>
+          <div class="matrix-item novo">✦ Documentos Oficiais</div>
+          <div class="matrix-item mantido">↔ Policy Brief</div>
+          <div class="matrix-item mantido">↔ Subsídios para Políticas</div>
+        </div>
+      </div>
+      <div class="matrix-section recursos">
+        <div class="matrix-section-title">Recursos</div>
+        <div class="matrix-items">
+          <div class="matrix-item novo">✦ Glossário</div>
+          <div class="matrix-item mantido">↔ Model Card Educacional</div>
+          <div class="matrix-item mantido">↔ RIPD Simplificado</div>
+          <div class="matrix-item avaliado">? Download da Publicação (PDF)</div>
+        </div>
+      </div>
+      <div class="matrix-section sobre">
+        <div class="matrix-section-title">Sobre o Guia (nova seção)</div>
+        <div class="matrix-items">
+          <div class="matrix-item novo">✦ Apresentação</div>
+          <div class="matrix-item novo">✦ Metodologia e Realização</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Log de mudanças detalhado -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">📝</span> Log de Mudanças Detalhado</h2>
+    <table class="change-table">
+      <thead>
+        <tr>
+          <th>Componente</th>
+          <th>Mudança</th>
+          <th>Status</th>
+          <th>Arquivo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Home</strong> — Hero</td>
+          <td>Substituído dados de pesquisa por pergunta central: "Como contratar IA com segurança e intencionalidade pedagógica?"</td>
+          <td><span class="tag tag-revisado">Revisado</span></td>
+          <td><code>site/templates/index.html</code></td>
+        </tr>
+        <tr>
+          <td><strong>Home</strong> — Seção Pilares</td>
+          <td>Nova seção com os 3 pilares: Governança Algorítmica, Contrato como Governança, Formação Institucional</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>site/templates/index.html</code></td>
+        </tr>
+        <tr>
+          <td><strong>Home</strong> — Jornada Antes/Durante/Após</td>
+          <td>Nova seção visual com as 3 fases da contratação responsável e links diretos para cada guia</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>site/templates/index.html</code></td>
+        </tr>
+        <tr>
+          <td><strong>Navegação</strong> — Gestores</td>
+          <td>Reordenado para primeiro item do menu; pergunta atualizada para alinhar com narrativa central</td>
+          <td><span class="tag tag-revisado">Revisado</span></td>
+          <td><code>site/generate.py</code></td>
+        </tr>
+        <tr>
+          <td><strong>Navegação</strong> — Intermediários</td>
+          <td>Removido do menu principal</td>
+          <td><span class="tag tag-removido">Removido</span></td>
+          <td><code>site/generate.py</code></td>
+        </tr>
+        <tr>
+          <td><strong>Navegação</strong> — Legisladores</td>
+          <td>Removido do menu principal; conteúdo migrado para seção "Contexto e Política"</td>
+          <td><span class="tag tag-renomeado">Renomeado</span></td>
+          <td><code>site/generate.py</code></td>
+        </tr>
+        <tr>
+          <td><strong>Navegação</strong> — Educadores</td>
+          <td>Removido do menu principal; arquivos mantidos, sem exibição na navegação</td>
+          <td><span class="tag tag-removido">Removido</span></td>
+          <td><code>site/generate.py</code></td>
+        </tr>
+        <tr>
+          <td><strong>Seção</strong> — Contexto e Política</td>
+          <td>Nova seção criada para conteúdo informativo e de contexto político</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>site/generate.py</code></td>
+        </tr>
+        <tr>
+          <td><strong>Seção</strong> — Sobre o Guia</td>
+          <td>Nova seção com apresentação, metodologia e informações sobre a publicação</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>site/generate.py</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Usos em Potencial (Gestores)</td>
+          <td>Novo guia: síntese visual dos principais usos da IA por alunos, professores e escola</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/gestores/usos-em-potencial.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Antes da Contratação (Gestores)</td>
+          <td>Novo guia de jornada: preparação, diagnóstico, mercado, riscos, alinhamento com políticas</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/gestores/antes-da-contratacao.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Durante a Contratação (Gestores)</td>
+          <td>Novo guia de jornada: TR, modalidades, as 8 perguntas fundamentais, salvaguardas contratuais</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/gestores/durante-a-contratacao.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Após a Contratação (Gestores)</td>
+          <td>Novo guia de jornada: monitoramento pedagógico, supervisão humana, auditoria, formação docente</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/gestores/apos-da-contratacao.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — 5 Perguntas (EdTechs)</td>
+          <td>Novo guia: 5 pontos de atenção para EdTechs antes de ofertar IA ao setor público</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/edtechs/cinco-perguntas.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Como as Redes Contratam</td>
+          <td>Novo: diagnóstico PNCP, IA embutida, opacidade funcional, 3 padrões de contratação + casos Joinville, Rio Verde, Itajá, Recife</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/contexto-politica/como-redes-contratam.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Desafios e Riscos</td>
+          <td>Novo: 4 riscos pedagógicos + 3 riscos de contratação com dados do playbook</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/contexto-politica/desafios-riscos.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Boas Práticas Internacionais</td>
+          <td>Novo: Reino Unido (PCP, ATRS), Chile (Anexo de IA, Algoritmos Éticos, Inventário), Canadá (AIA)</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/contexto-politica/boas-praticas-internacionais.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Documentos Oficiais</td>
+          <td>Novo: marco legal consolidado (Lei 14.133, LGPD, PBIA, ECA, MEC, CNE, UNESCO, OCDE)</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/contexto-politica/documentos-oficiais.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Glossário</td>
+          <td>Novo: IA × Tecnologia Digital Convencional + 30+ conceitos de governança, risco e direito</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/recursos/glossario.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Apresentação (Sobre o Guia)</td>
+          <td>Novo: o que é o guia, a quem se destina, problema abordado e contribuições</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/sobre-o-guia/apresentacao.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Conteúdo</strong> — Metodologia (Sobre o Guia)</td>
+          <td>Novo: pesquisa nov-dez 2025, 11 entrevistas, PNCP, literatura, realização e como citar</td>
+          <td><span class="tag tag-novo">Novo</span></td>
+          <td><code>conteudo/sobre-o-guia/metodologia.md</code></td>
+        </tr>
+        <tr>
+          <td><strong>Tipos</strong> — TIPO_PRIORIDADE</td>
+          <td>Novos tipos adicionados: usos, jornada-antes, jornada-durante, jornada-apos, cinco-perguntas, contexto, glossario, apresentacao, metodologia</td>
+          <td><span class="tag tag-revisado">Revisado</span></td>
+          <td><code>site/generate.py</code></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Itens a avaliar -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">⚠️</span> Itens Pendentes / A Avaliar</h2>
+    <table class="change-table">
+      <thead>
+        <tr><th>Item</th><th>Decisão necessária</th><th>Responsável</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Sub-estágios EdTechs (Inicial / Entrada / Escala / Internacional)</td>
+          <td>Manter como sub-personas ou simplificar para conteúdo flat?</td>
+          <td>Equipe editorial</td>
+        </tr>
+        <tr>
+          <td>Educadores como subcategoria de Gestores</td>
+          <td>Implementar como sub-persona técnica ou criar link/referência manual?</td>
+          <td>Equipe editorial + equipe técnica</td>
+        </tr>
+        <tr>
+          <td>Download da Publicação (PDF)</td>
+          <td>Disponibilizar o PDF do guia para download na seção Recursos</td>
+          <td>Equipe editorial</td>
+        </tr>
+        <tr>
+          <td>Model Card Educacional e RIPD Simplificado</td>
+          <td>Revisar e atualizar conteúdo existente com base no playbook revisado</td>
+          <td>Equipe editorial</td>
+        </tr>
+        <tr>
+          <td>Policy Brief (Legisladores → Contexto e Política)</td>
+          <td>Manter, revisar ou remover? Verificar relevância no novo contexto da seção</td>
+          <td>Equipe editorial</td>
+        </tr>
+        <tr>
+          <td>Conteúdo de Intermediários</td>
+          <td>Migrar partes relevantes para Contexto e Política ou arquivar?</td>
+          <td>Equipe editorial</td>
+        </tr>
+        <tr>
+          <td>CSS — novas classes de home (pilares, jornada)</td>
+          <td>Adicionar estilos CSS para as seções .landing-pillars, .landing-journey, .pillar-card, .journey-phase</td>
+          <td>Equipe técnica</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Alinhamento com sugestões originais -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">✅</span> Alinhamento com as Sugestões de Revisão</h2>
+    <table class="change-table">
+      <thead>
+        <tr><th>#</th><th>Sugestão Original</th><th>Implementado?</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Pergunta central: "Como contratar IA com segurança e intencionalidade pedagógica?"</td>
+          <td>✅ Implementado no hero da home</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>Home com os 3 pilares (governança, contrato, formação) e jornada Antes/Durante/Após</td>
+          <td>✅ Implementado como seções da home</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Manter Gestores e EdTechs como 2 entradas principais do menu</td>
+          <td>✅ Implementado — gestores primeiro</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Educadores como subcategoria dentro de Gestores</td>
+          <td>⚠️ Parcial — removido do menu, implementação técnica de sub-persona pendente</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Intermediários e Legisladores: seção "Contexto e Política"</td>
+          <td>✅ Implementado — seção criada com conteúdo completo</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Menos abas, conteúdo mais concentrado</td>
+          <td>✅ Nav simplificada de 5+1 para 2+3; conteúdo gestores concentrado em jornada</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Repositório de instrumentos centralizado</td>
+          <td>✅ Seção Recursos expandida com glossário</td>
+        </tr>
+        <tr>
+          <td>—</td>
+          <td>Novo conteúdo baseado no Playbook</td>
+          <td>✅ 14 novos arquivos de conteúdo baseados diretamente no playbook revisado</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<footer>
+  <strong>Aliança de IA para a Educação · Instituto Jataí</strong><br>
+  Documentação interna — Revisão V2 · Maio 2026
+</footer>
+</body>
+</html>

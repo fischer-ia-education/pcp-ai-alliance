@@ -35,40 +35,19 @@ OUTPUT_DIR = BASE_DIR / "output" / "site"
 
 # ── Personas ──────────────────────────────────────────────────
 PERSONAS = {
-    "edtechs": {
-        "nome": "EdTechs",
-        "cor": "#2b6cb0",
-        "pergunta": "Como vendo IA de forma responsável para o setor público?",
-        "descricao": "Empreendedores de tecnologia educacional",
-        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg>',
-    },
     "gestores": {
         "nome": "Gestores Públicos",
         "cor": "#2f855a",
-        "pergunta": "Como compro IA com segurança e intencionalidade pedagógica?",
+        "pergunta": "Como contratar IA com segurança e intencionalidade pedagógica?",
         "descricao": "Secretários e equipes de redes públicas de educação",
         "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="5" width="22" height="9" fill="#A725FF"/><rect x="8" y="18" width="22" height="9" fill="#BBD634"/></svg>',
     },
-    "intermediarios": {
-        "nome": "Organizações Intermediárias",
-        "cor": "#9f7aea",
-        "pergunta": "Como facilitar contratações de IA mais responsáveis?",
-        "descricao": "Institutos, fundações, universidades, Sebrae",
-        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="16,2 30,28 2,28" fill="#A725FF"/><rect x="14" y="16" width="14" height="10" fill="#BBD634"/></svg>',
-    },
-    "legisladores": {
-        "nome": "Legisladores",
-        "cor": "#c05621",
-        "pergunta": "Que marcos regulatórios e incentivos são necessários?",
-        "descricao": "Parlamentares e formuladores de políticas públicas",
-        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="14" y="2" width="16" height="28" fill="#BBD634"/><polygon points="2,6 16,16 2,26" fill="#A725FF"/></svg>',
-    },
-    "educadores": {
-        "nome": "Educadores",
-        "cor": "#d69e2e",
-        "pergunta": "Como uso e supervisiono IA no dia a dia da escola?",
-        "descricao": "Professores e coordenadores pedagógicos",
-        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="2,4 30,4 16,28" fill="#BBD634"/><rect x="8" y="11" width="16" height="12" fill="#A725FF"/></svg>',
+    "edtechs": {
+        "nome": "EdTechs",
+        "cor": "#2b6cb0",
+        "pergunta": "Como oferecer IA de forma responsável para o setor público?",
+        "descricao": "Empreendedores e equipes de tecnologia educacional",
+        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg>',
     },
 }
 
@@ -107,8 +86,20 @@ SECTIONS = {
     "recursos": {
         "nome": "Recursos",
         "cor": "#718096",
-        "descricao": "Templates e ferramentas transversais para contratação de IA",
+        "descricao": "Instrumentos, checklists, glossário e publicação para download",
         "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="8" width="20" height="16" fill="#A725FF"/><rect x="12" y="5" width="18" height="12" transform="rotate(15,21,11)" fill="#BBD634"/></svg>',
+    },
+    "contexto-politica": {
+        "nome": "Contexto e Política",
+        "cor": "#c05621",
+        "descricao": "Cenário atual, desafios, boas práticas internacionais e documentos oficiais",
+        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="14" y="2" width="16" height="28" fill="#BBD634"/><polygon points="2,6 16,16 2,26" fill="#A725FF"/></svg>',
+    },
+    "sobre-o-guia": {
+        "nome": "Sobre o Guia",
+        "cor": "#4a5568",
+        "descricao": "Apresentação, metodologia e informações sobre a publicação",
+        "icone": '<svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4h14l6 6v18H6z" fill="#A725FF"/><rect x="10" y="14" width="12" height="2" fill="#BBD634"/><rect x="10" y="18" width="9" height="2" fill="#BBD634"/><rect x="10" y="22" width="11" height="2" fill="#BBD634"/></svg>',
     },
 }
 
@@ -116,11 +107,20 @@ SECTIONS = {
 TIPO_PRIORIDADE = {
     "one-pager": ("comece", "Resumo Executivo", 0),
     "template": ("comece", "Template", 1),
-    "guia": ("aprofunde", "Guia Completo", 1),
-    "checklist": ("aprofunde", "Checklist", 2),
-    "faq": ("aprofunde", "FAQ", 3),
-    "framework": ("aprofunde", "Framework de Decisão", 4),
-    "policy-brief": ("aprofunde", "Policy Brief", 5),
+    "usos": ("aprofunde", "Usos em Potencial", 0),
+    "jornada-antes": ("aprofunde", "Antes da Contratação", 1),
+    "jornada-durante": ("aprofunde", "Durante a Contratação", 2),
+    "jornada-apos": ("aprofunde", "Após a Contratação", 3),
+    "cinco-perguntas": ("aprofunde", "5 Perguntas", 4),
+    "guia": ("aprofunde", "Guia Completo", 5),
+    "checklist": ("aprofunde", "Checklist", 6),
+    "faq": ("aprofunde", "FAQ", 7),
+    "framework": ("aprofunde", "Framework de Decisão", 8),
+    "policy-brief": ("aprofunde", "Policy Brief", 9),
+    "contexto": ("aprofunde", "Contexto", 1),
+    "glossario": ("aprofunde", "Glossário", 2),
+    "apresentacao": ("comece", "Apresentação", 0),
+    "metodologia": ("aprofunde", "Metodologia", 1),
     "guia-complementar": ("complementar", "Material Complementar", 10),
 }
 
