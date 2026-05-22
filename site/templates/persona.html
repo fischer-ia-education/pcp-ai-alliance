@@ -35,7 +35,7 @@
             {% for doc in categorias.comece %}
             <a href="{{ root }}/{{ persona_key }}/{{ doc.filename }}" class="material-card material-card--featured">
                 <div class="material-card-inner">
-                    <span class="material-tipo">{{ doc.tipo_label }}</span>
+                    <span class="material-tipo tipo-{{ doc.tipo }}">{{ doc.tipo_label }}</span>
                     <h3>{{ doc.title }}</h3>
                     {% if doc.subtitle %}<p class="material-subtitle">{{ doc.subtitle }}</p>{% endif %}
                     <div class="material-meta">
@@ -62,7 +62,7 @@
             {% for doc in categorias.aprofunde %}
             <a href="{{ root }}/{{ persona_key }}/{{ doc.filename }}" class="material-card">
                 <div class="material-card-inner">
-                    <span class="material-tipo">{{ doc.tipo_label }}</span>
+                    <span class="material-tipo tipo-{{ doc.tipo }}">{{ doc.tipo_label }}</span>
                     <h3>{{ doc.title }}</h3>
                     {% if doc.subtitle %}<p class="material-subtitle">{{ doc.subtitle }}</p>{% endif %}
                     <div class="material-meta">
@@ -89,7 +89,7 @@
             {% for doc in categorias.complementar %}
             <a href="{{ root }}/{{ persona_key }}/{{ doc.filename }}" class="material-card">
                 <div class="material-card-inner">
-                    <span class="material-tipo">{{ doc.tipo_label }}</span>
+                    <span class="material-tipo tipo-{{ doc.tipo }}">{{ doc.tipo_label }}</span>
                     <h3>{{ doc.title }}</h3>
                     {% if doc.subtitle %}<p class="material-subtitle">{{ doc.subtitle }}</p>{% endif %}
                     <div class="material-meta">

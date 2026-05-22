@@ -415,25 +415,7 @@ strong { font-weight: 700; }
   50% { transform: translateY(6px); }
 }
 
-/* Decoração hero — linhas coloridas (personas) */
-.hero-decoration {
-  position: absolute;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  width: 120px;
-  display: flex;
-  flex-direction: column;
-  z-index: 1;
-  pointer-events: none;
-}
-
-.hero-deco-line {
-  flex: 1;
-  background: var(--persona-color, var(--roxo));
-  opacity: 0.3;
-  transform: skewY(calc(var(--i, 0) * 2deg));
-}
+/* Decoração hero — formas geométricas do brandbook */
 
 /* ── Context section ─────────────────────────────────────────── */
 .landing-context {
@@ -468,14 +450,14 @@ strong { font-weight: 700; }
 
 .stat-number {
   font-family: var(--font-title);
-  font-size: 2.2rem;
+  font-size: 4rem;
   font-weight: 700;
   color: var(--roxo);
   line-height: 1;
 }
 
 .stat-number-small {
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: var(--cinza-texto);
 }
 
@@ -1347,10 +1329,15 @@ strong { font-weight: 700; }
 .doc-reading-time {
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.35rem;
   font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-size: 0.82rem;
+  font-weight: 700;
   color: var(--cinza-texto);
+  background: var(--cinza-claro);
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  border: 1px solid var(--cinza-borda);
 }
 
 /* Markdown body */
@@ -1371,24 +1358,50 @@ strong { font-weight: 700; }
 }
 
 .markdown-body h1 {
-  font-size: 1.9rem;
+  font-size: 2.2rem;
   border-bottom: 3px solid var(--verde);
   padding-bottom: 0.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .markdown-body h2 {
-  font-size: 1.35rem;
-  border-bottom: 1px solid var(--cinza-borda);
-  padding-bottom: 0.3rem;
+  font-size: 1.45rem;
+  border-bottom: 2px solid var(--verde);
+  padding-bottom: 0.35rem;
+  margin-top: 2.5rem;
+}
+
+.markdown-body h3 {
+  font-size: 1.1rem;
+  color: #2d3748;
+  border-left: 3px solid var(--roxo);
+  padding-left: 0.75rem;
+  margin-top: 1.75rem;
 }
 
 .markdown-body blockquote {
-  border-left: 4px solid var(--roxo);
+  border-left: 5px solid var(--roxo);
   background: var(--cinza-claro);
-  padding: 1rem 1.5rem;
-  margin: 1.5rem 0;
+  padding: 1.25rem 1.5rem 1.25rem 2.5rem;
+  margin: 2rem 0;
   font-style: italic;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  font-size: 1.05rem;
+  color: #2d3748;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  position: relative;
+}
+
+.markdown-body blockquote::before {
+  content: '\201C';
+  position: absolute;
+  top: -0.25rem;
+  left: 0.6rem;
+  font-family: var(--font-title);
+  font-size: 3.5rem;
+  color: var(--roxo);
+  opacity: 0.25;
+  line-height: 1;
+  pointer-events: none;
 }
 
 .markdown-body table {
@@ -1396,6 +1409,9 @@ strong { font-weight: 700; }
   border-collapse: collapse;
   margin: 1.5rem 0;
   font-size: 0.9rem;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .markdown-body th {
@@ -1599,6 +1615,115 @@ strong { font-weight: 700; }
 @media (max-width: 480px) {
   .persona-grid { grid-template-columns: 1fr; }
   .subpersona-grid { grid-template-columns: 1fr; }
+}
+
+/* ══════════════════════════════════════════════════════════════
+   BADGE COLORS POR TIPO DE MATERIAL
+   ══════════════════════════════════════════════════════════════ */
+
+/* Jornada — 3 fases com cores distintas */
+.material-tipo.tipo-jornada-antes,
+.doc-tipo-badge.tipo-jornada-antes {
+  background: #2f855a;
+}
+.material-tipo.tipo-jornada-durante,
+.doc-tipo-badge.tipo-jornada-durante {
+  background: var(--roxo);
+}
+.material-tipo.tipo-jornada-apos,
+.doc-tipo-badge.tipo-jornada-apos {
+  background: var(--azul);
+}
+
+/* Tipos de formato */
+.material-tipo.tipo-guia,
+.doc-tipo-badge.tipo-guia {
+  background: #2b6cb0;
+}
+.material-tipo.tipo-checklist,
+.doc-tipo-badge.tipo-checklist {
+  background: #2f855a;
+}
+.material-tipo.tipo-faq,
+.doc-tipo-badge.tipo-faq {
+  background: #c05621;
+}
+.material-tipo.tipo-framework,
+.doc-tipo-badge.tipo-framework {
+  background: #553c9a;
+}
+.material-tipo.tipo-policy-brief,
+.doc-tipo-badge.tipo-policy-brief {
+  background: #c05621;
+}
+.material-tipo.tipo-template,
+.doc-tipo-badge.tipo-template {
+  background: #4a5568;
+}
+.material-tipo.tipo-one-pager,
+.doc-tipo-badge.tipo-one-pager {
+  background: var(--preto);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* Tipos de seção */
+.material-tipo.tipo-usos,
+.doc-tipo-badge.tipo-usos {
+  background: var(--verde);
+  color: var(--preto);
+}
+.material-tipo.tipo-cinco-perguntas,
+.doc-tipo-badge.tipo-cinco-perguntas {
+  background: #6b46c1;
+}
+.material-tipo.tipo-glossario,
+.doc-tipo-badge.tipo-glossario {
+  background: #2c7a7b;
+}
+.material-tipo.tipo-contexto,
+.doc-tipo-badge.tipo-contexto {
+  background: #2c7a7b;
+}
+.material-tipo.tipo-metodologia,
+.doc-tipo-badge.tipo-metodologia {
+  background: #4a5568;
+}
+.material-tipo.tipo-apresentacao,
+.doc-tipo-badge.tipo-apresentacao {
+  background: var(--preto);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+/* ══════════════════════════════════════════════════════════════
+   HERO GEOMÉTRICO
+   ══════════════════════════════════════════════════════════════ */
+
+.hero-decoration {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 320px;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hero-geo {
+  width: 100%;
+  height: 100%;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   CARD SUBPERSONA HINT
+   ══════════════════════════════════════════════════════════════ */
+
+.card-sub-info {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.55);
+  margin: 0;
+  letter-spacing: 0.02em;
 }
 
 /* ══════════════════════════════════════════════════════════════
