@@ -1317,7 +1317,6 @@ strong { font-weight: 700; }
 /* Document content */
 .doc-content {
   flex: 1;
-  max-width: 740px;
   padding: 2.5rem 3rem 4rem;
   min-width: 0;
 }
