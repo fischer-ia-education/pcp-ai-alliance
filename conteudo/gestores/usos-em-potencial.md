@@ -1,6 +1,6 @@
 ---
 title: "IA na Educação: Usos em Potencial"
-subtitle: "O que a IA pode fazer por alunos, professores e escolas — e por que isso importa antes de contratar"
+subtitle: "O que a IA pode fazer por alunos, professores e escolas: e por que isso importa antes de contratar"
 author: "Aliança de IA para a Educação"
 date: "2026"
 persona: gestores
@@ -17,7 +17,7 @@ tipo: usos
 
 A maioria das contratações públicas de tecnologia começa pela solução, não pelo problema. Com IA, esse equívoco é especialmente custoso: sem um propósito pedagógico claro, a rede corre o risco de contratar uma tecnologia que não resolve nenhuma necessidade real, cria dependência e ainda coloca dados de alunos em risco.
 
-Esta seção apresenta os principais usos da IA na educação agrupados por perfil de usuário — não para que você escolha um produto, mas para que você **defina o problema que quer resolver** antes de ir ao mercado.
+Esta seção apresenta os principais usos da IA na educação agrupados por perfil de usuário: não para que você escolha um produto, mas para que você **defina o problema que quer resolver** antes de ir ao mercado.
 
 ---
 
@@ -86,7 +86,7 @@ Antes de ir ao mercado, responda:
 - [ ] **Temos capacidade institucional** (infraestrutura, conectividade, formação docente) para adotar a solução?
 - [ ] **Os professores foram consultados** sobre a solução que será implantada?
 
-Se você não consegue responder a essas perguntas, o próximo passo não é contratar — é **diagnóstico institucional**.
+Se você não consegue responder a essas perguntas, o próximo passo não é contratar: é **diagnóstico institucional**.
 
 ---
 
@@ -94,8 +94,8 @@ Se você não consegue responder a essas perguntas, o próximo passo não é con
 
 Com o problema pedagógico definido, você está pronto para planejar a contratação. Acesse:
 
-- **Antes da Contratação** — Como preparar sua rede para contratar IA com segurança
-- **Framework de Decisão** — Uma árvore de decisão para avaliar se sua rede está pronta
+- **Antes da Contratação**: Como preparar sua rede para contratar IA com segurança
+- **Framework de Decisão**: Uma árvore de decisão para avaliar se sua rede está pronta
 
 ---
 

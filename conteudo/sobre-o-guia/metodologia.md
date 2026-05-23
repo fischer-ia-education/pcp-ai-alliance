@@ -45,13 +45,13 @@ As entrevistas foram realizadas de forma semiestruturada, explorando: experiênc
 
 O guia está dividido em duas partes:
 
-**Parte I — Diagnóstico e Contexto**
-- Cap. 1: IA na educação — usos, oportunidades e como gera valor pedagógico (alunos, professores, escola)
-- Cap. 2: Como as redes públicas estão contratando — diagnóstico e casos aplicados
-- Cap. 3: Desafios e riscos da IA na educação — por que eles importam
-- Cap. 4: Boas práticas internacionais — Reino Unido, Chile e Canadá
+**Parte I: Diagnóstico e Contexto**
+- Cap. 1: IA na educação: usos, oportunidades e como gera valor pedagógico (alunos, professores, escola)
+- Cap. 2: Como as redes públicas estão contratando: diagnóstico e casos aplicados
+- Cap. 3: Desafios e riscos da IA na educação: por que eles importam
+- Cap. 4: Boas práticas internacionais: Reino Unido, Chile e Canadá
 
-**Parte II — Guia Prático de Contratação**
+**Parte II: Guia Prático de Contratação**
 - Cap. 5.1: Os pilares da boa jornada (governança algorítmica, contrato como governança, formação institucional)
 - Cap. 5.2: A jornada da contratação responsável (antes, durante, após)
 - Cap. 5.3: 5 perguntas do gestor público antes de contratar
@@ -65,7 +65,7 @@ O guia está dividido em duas partes:
 
 ### Realização
 
-**Aliança de IA para a Educação** — iniciativa conjunta de:
+**Aliança de IA para a Educação**: iniciativa conjunta de:
 - **Fundação Lemann**
 - **Telles Foundation**
 - **VélezReyes+**
@@ -86,9 +86,9 @@ Apoiamos governos a inovar no uso de recursos públicos para promover uma socied
 
 **Período de pesquisa:** novembro de 2025 a fevereiro de 2026. O campo de IA na educação evolui rapidamente; algumas referências podem ter sido atualizadas após a conclusão do guia.
 
-**Escopo do levantamento:** o mapeamento de contratações no PNCP não é exaustivo — cobriu o universo de contratos disponíveis no portal no período analisado. Contratações realizadas por outros instrumentos (convênios, contratos anteriores à Lei 14.133) podem não ter sido capturadas.
+**Escopo do levantamento:** o mapeamento de contratações no PNCP não é exaustivo: cobriu o universo de contratos disponíveis no portal no período analisado. Contratações realizadas por outros instrumentos (convênios, contratos anteriores à Lei 14.133) podem não ter sido capturadas.
 
-**Generalização dos casos:** os casos aplicados descritos (Joinville, Rio Verde, Itajá, Recife) são exemplos ilustrativos — não representam o universo de contratações de IA no Brasil, mas oferecem referências concretas para gestores.
+**Generalização dos casos:** os casos aplicados descritos (Joinville, Rio Verde, Itajá, Recife) são exemplos ilustrativos: não representam o universo de contratações de IA no Brasil, mas oferecem referências concretas para gestores.
 
 ---
 

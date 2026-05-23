@@ -15,7 +15,7 @@ tipo: cinco-perguntas
 
 ## Pergunta 1: O problema pedagógico está claro?
 
-A IA não se vende como tecnologia — ela se vende como solução para um problema pedagógico concreto.
+A IA não se vende como tecnologia: ela se vende como solução para um problema pedagógico concreto.
 
 **O que isso significa para você:**
 - Sua equipe consegue articular, em uma frase, qual problema educacional sua solução resolve?
@@ -24,13 +24,13 @@ A IA não se vende como tecnologia — ela se vende como solução para um probl
 
 **Teste de clareza:** Se um gestor público perguntar "O que o seu produto muda na aprendizagem dos alunos?", você consegue responder com dados, não com promessas?
 
-**Se a resposta for não:** Antes de ir ao mercado público, invista em pesquisa e avaliação de impacto. Gestores públicos têm obrigação de justificar cada real gasto — e precisam de evidências para isso.
+**Se a resposta for não:** Antes de ir ao mercado público, invista em pesquisa e avaliação de impacto. Gestores públicos têm obrigação de justificar cada real gasto: e precisam de evidências para isso.
 
 ---
 
 ## Pergunta 2: A rede tem estrutura mínima para receber a solução?
 
-Vender uma solução de IA para uma rede sem infraestrutura, conectividade ou capacidade institucional pode ser lucrativo no curto prazo — mas gera frustração, má reputação e devolução de contratos.
+Vender uma solução de IA para uma rede sem infraestrutura, conectividade ou capacidade institucional pode ser lucrativo no curto prazo: mas gera frustração, má reputação e devolução de contratos.
 
 **O que você deve diagnosticar antes de fechar:**
 
@@ -42,13 +42,13 @@ Vender uma solução de IA para uma rede sem infraestrutura, conectividade ou ca
 | Governança de dados | Há DPO designado e política de dados? |
 | Engajamento pedagógico | Os professores foram consultados? Há resistência institucional? |
 
-**Prática recomendada:** Proponha um diagnóstico conjunto antes da proposta. Mostre que você não quer vender a qualquer custo — quer vender onde vai funcionar.
+**Prática recomendada:** Proponha um diagnóstico conjunto antes da proposta. Mostre que você não quer vender a qualquer custo: quer vender onde vai funcionar.
 
 ---
 
 ## Pergunta 3: É possível explicar como a solução usa os dados?
 
-Esta é, provavelmente, a pergunta mais frequente em processos licitatórios de IA — e muitas EdTechs não sabem responder.
+Esta é, provavelmente, a pergunta mais frequente em processos licitatórios de IA: e muitas EdTechs não sabem responder.
 
 **Você precisa ser capaz de responder:**
 
@@ -60,7 +60,7 @@ Esta é, provavelmente, a pergunta mais frequente em processos licitatórios de 
 
 **LGPD e dados de crianças:** Se sua solução processa dados de alunos menores de 18 anos, você está sujeito a regras mais rígidas da LGPD (Art. 14). O responsável pelo tratamento deve ser a rede pública, não a EdTech.
 
-**Entregável esperado:** Ter um RIPD (Relatório de Impacto à Proteção de Dados) e um Model Card prontos para apresentar durante o processo licitatório não é diferencial — é requisito básico em contratos sérios.
+**Entregável esperado:** Ter um RIPD (Relatório de Impacto à Proteção de Dados) e um Model Card prontos para apresentar durante o processo licitatório não é diferencial: é requisito básico em contratos sérios.
 
 ---
 
@@ -114,9 +114,9 @@ O setor público não pode comprar como o setor privado. O processo de contrata�
 
 ## Próximos Passos
 
-- **Modalidades de Contratação** — Entenda cada caminho disponível na lei e qual se aplica à sua solução
-- **Checklist de Prontidão** — Avalie se sua EdTech está preparada para contratar com o setor público
-- **Guia Completo** — Aprofunde-se em cada aspecto da contratação responsável
+- **Modalidades de Contratação**: Entenda cada caminho disponível na lei e qual se aplica à sua solução
+- **Checklist de Prontidão**: Avalie se sua EdTech está preparada para contratar com o setor público
+- **Guia Completo**: Aprofunde-se em cada aspecto da contratação responsável
 
 ---
 

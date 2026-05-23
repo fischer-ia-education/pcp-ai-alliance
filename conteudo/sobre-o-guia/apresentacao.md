@@ -29,7 +29,7 @@ No entanto, **sem uma abordagem estratégica, crítica e transparente para a con
 
 ## A Quem Se Destina
 
-**Para redes públicas de ensino:** o guia oferece um retrato da realidade da contratação de soluções de IA na educação brasileira, boas práticas internacionais e, sobretudo, uma ferramenta de apoio à tomada de decisão em cada fase do processo de compra — antes, durante e depois — destacando diretrizes para ações, cuidados a serem tomados, as perguntas que o gestor precisa se fazer e as estruturas de que necessita para garantir uma contratação segura e efetiva.
+**Para redes públicas de ensino:** o guia oferece um retrato da realidade da contratação de soluções de IA na educação brasileira, boas práticas internacionais e, sobretudo, uma ferramenta de apoio à tomada de decisão em cada fase do processo de compra: antes, durante e depois: destacando diretrizes para ações, cuidados a serem tomados, as perguntas que o gestor precisa se fazer e as estruturas de que necessita para garantir uma contratação segura e efetiva.
 
 **Para EdTechs:** o guia oferece uma compreensão mais aprofundada dos desafios enfrentados pelas redes públicas de ensino, destacando os pontos de atenção para qualificar ainda mais as soluções de IA e o processo de oferta ao poder público.
 
@@ -43,9 +43,9 @@ De acordo com dados da TIC Educação 2024:
 - **37%** dos alunos do ensino fundamental e médio já utilizam alguma ferramenta de IA nas atividades escolares
 - **43%** dos professores utilizam ferramentas de IA generativa na preparação de conteúdos didáticos
 
-Este uso ocorre, em grande parte, sem diretrizes institucionais, mediação adequada e de forma desigual — concentrado em ambientes urbanos, nos sistemas privados de ensino e em escolas com melhor infraestrutura tecnológica.
+Este uso ocorre, em grande parte, sem diretrizes institucionais, mediação adequada e de forma desigual: concentrado em ambientes urbanos, nos sistemas privados de ensino e em escolas com melhor infraestrutura tecnológica.
 
-No plano das contratações, levantamento realizado no Portal Nacional de Contratações Públicas (PNCP) para o período de 2024 a fevereiro de 2026 identificou apenas 15 processos envolvendo soluções com funcionalidades de IA — e **em nenhum dos contratos analisados foram encontradas cláusulas específicas referentes à IA**.
+No plano das contratações, levantamento realizado no Portal Nacional de Contratações Públicas (PNCP) para o período de 2024 a fevereiro de 2026 identificou apenas 15 processos envolvendo soluções com funcionalidades de IA: e **em nenhum dos contratos analisados foram encontradas cláusulas específicas referentes à IA**.
 
 ---
 
@@ -61,7 +61,7 @@ Quatro riscos pedagógicos e três riscos de contratação que todo gestor preci
 Os casos do Reino Unido (modelo de "compra como aprendizado"), Chile (anexo de IA obrigatório) e Canadá (Avaliação de Impacto Algorítmico).
 
 **4. Os pilares da boa jornada de compra pública de IA**
-Governança algorítmica, contrato como instrumento de governança, e formação institucional — com passo a passo antes, durante e após a contratação.
+Governança algorítmica, contrato como instrumento de governança, e formação institucional: com passo a passo antes, durante e após a contratação.
 
 ---
 

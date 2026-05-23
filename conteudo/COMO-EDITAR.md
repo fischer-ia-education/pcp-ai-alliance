@@ -1,6 +1,6 @@
 # Como Editar os Materiais
 
-Este guia é para quem quer criar ou editar conteúdo. Você só precisa saber editar texto — não precisa entender de programação.
+Este guia é para quem quer criar ou editar conteúdo. Você só precisa saber editar texto: não precisa entender de programação.
 
 ## Onde estão os arquivos
 
@@ -95,6 +95,6 @@ Tudo que está **fora** da pasta `conteudo/` é código do sistema. Não edite:
 - `site/` (gerador do site)
 - `build.sh` (script de build)
 - `style.css` (estilos do PDF)
-- `output/` (arquivos gerados — serão sobrescritos)
+- `output/` (arquivos gerados: serão sobrescritos)
 
 Em caso de dúvida, pergunte à equipe técnica.

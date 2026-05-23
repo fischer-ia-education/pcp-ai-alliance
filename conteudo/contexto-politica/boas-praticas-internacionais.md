@@ -38,14 +38,14 @@ O ATRS é o padrão britânico de transparência algorítmica: qualquer sistema 
 ### Framework do Ofsted
 
 O Ofsted (órgão supervisor da qualidade educacional) estabeleceu um framework de salvaguardas para o uso de IA em correções e monitoramento escolar, baseado em:
-- **Supervisão humana** — nenhuma decisão delegada exclusivamente ao algoritmo
-- **Explicabilidade** — resultados devem ser compreensíveis por educadores
-- **Proporcionalidade** — uso da IA proporcional ao impacto que pode gerar
-- **Reversibilidade** — decisões podem ser contestadas e anuladas por humanos
+- **Supervisão humana**: nenhuma decisão delegada exclusivamente ao algoritmo
+- **Explicabilidade**: resultados devem ser compreensíveis por educadores
+- **Proporcionalidade**: uso da IA proporcional ao impacto que pode gerar
+- **Reversibilidade**: decisões podem ser contestadas e anuladas por humanos
 
 ### Prevenção de Lock-In
 
-O Reino Unido investe em padrões técnicos que assegurem a comunicação entre sistemas, incentivando a adoção de padrões pelas EdTechs que se integrem aos sistemas de gestão escolar existentes — prevenindo a dependência de um único fornecedor.
+O Reino Unido investe em padrões técnicos que assegurem a comunicação entre sistemas, incentivando a adoção de padrões pelas EdTechs que se integrem aos sistemas de gestão escolar existentes: prevenindo a dependência de um único fornecedor.
 
 > A OECD (2025) descreve essa prática como "governar com IA", em vez de apenas reagir a ela.
 
@@ -96,8 +96,8 @@ A **Diretriz Canadense sobre Tomada de Decisão Automatizada** é considerada o 
 Um questionário digital **obrigatório** que deve ser preenchido antes de implementar ou modificar significativamente um sistema de decisão automatizado. A AIA avalia o impacto do sistema nos direitos, na saúde, no bem-estar e nos interesses econômicos das pessoas.
 
 **Escala de risco:** ao final da avaliação, é gerada uma pontuação de 1 a 4:
-- **Nível 1:** impactos breves e reversíveis — governança mais simples
-- **Nível 4:** impactos irreversíveis e perpétuos — máximo controle, revisão por pares, notificação pública obrigatória
+- **Nível 1:** impactos breves e reversíveis: governança mais simples
+- **Nível 4:** impactos irreversíveis e perpétuos: máximo controle, revisão por pares, notificação pública obrigatória
 
 ### Requisitos por Nível de Risco
 
@@ -122,7 +122,7 @@ Um questionário digital **obrigatório** que deve ser preenchido antes de imple
 | **Chile** | Contrato como instrumento de governança | Anexo de IA obrigatório + Inventário de Algoritmos |
 | **Canadá** | Governança baseada em risco | Avaliação de Impacto Algorítmico (AIA) |
 
-Em todos os casos, o **contrato é tratado como instrumento de governança** — não como formalidade burocrática.
+Em todos os casos, o **contrato é tratado como instrumento de governança**: não como formalidade burocrática.
 
 A mensagem central é clara: é possível contratar IA de forma segura e pedagogicamente orientada. Requer intenção, capacidade institucional e instrumentos adequados.
 

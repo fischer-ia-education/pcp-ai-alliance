@@ -65,7 +65,7 @@ Antes de contratar, a rede precisa saber se tem condições de adotar, acompanha
 
 ## 3. Reconheça o Mercado
 
-Antes de lançar um edital, é fundamental conhecer o que existe no mercado — o que as soluções oferecem, como funcionam e o que custa.
+Antes de lançar um edital, é fundamental conhecer o que existe no mercado: o que as soluções oferecem, como funcionam e o que custa.
 
 **O que fazer nesta etapa:**
 - **Mapeamento de fornecedores:** Pesquise soluções disponíveis, casos de uso em outras redes e referências de implementação
@@ -118,8 +118,8 @@ Esse documento será a base para o Termo de Referência.
 
 ## Próximos Passos
 
-- **Durante a Contratação** — Como estruturar o edital, o TR e as salvaguardas contratuais
-- **Checklist da Jornada** — Lista de verificação completa por fase
+- **Durante a Contratação**: Como estruturar o edital, o TR e as salvaguardas contratuais
+- **Checklist da Jornada**: Lista de verificação completa por fase
 
 ---
 

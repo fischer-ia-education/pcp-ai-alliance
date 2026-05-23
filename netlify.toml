@@ -1,2 +1,12 @@
 [build]
   publish = "output/site"
+
+[[redirects]]
+  from = "/sobre/"
+  to = "/sobre-o-guia/"
+  status = 301
+
+[[redirects]]
+  from = "/sobre"
+  to = "/sobre-o-guia/"
+  status = 301

@@ -69,28 +69,28 @@ O Termo de Referência (TR) é o documento que define o objeto, os requisitos t�
 > Essas perguntas devem estar respondidas, explicitamente, no contrato ou em seus anexos.
 
 1. **Para quê?**
-   — Qual é o propósito pedagógico da solução? Que problema ela resolve e como?
+   - Qual é o propósito pedagógico da solução? Que problema ela resolve e como?
 
 2. **Com que dados?**
-   — Que dados serão coletados, processados e armazenados? Por quanto tempo? Em que base legal (LGPD)?
+   - Que dados serão coletados, processados e armazenados? Por quanto tempo? Em que base legal (LGPD)?
 
 3. **Como?**
-   — Como a IA funciona? Que tipo de algoritmo? Que dados de treinamento foram usados? A IA pode discriminar algum grupo?
+   - Como a IA funciona? Que tipo de algoritmo? Que dados de treinamento foram usados? A IA pode discriminar algum grupo?
 
 4. **Para quem?**
-   — Quem terá acesso aos dados e às saídas da IA? Professores? Gestores? O fornecedor?
+   - Quem terá acesso aos dados e às saídas da IA? Professores? Gestores? O fornecedor?
 
 5. **Com que segurança?**
-   — Quais são as medidas de segurança da informação? O que acontece em caso de incidente de dados?
+   - Quais são as medidas de segurança da informação? O que acontece em caso de incidente de dados?
 
 6. **Até quando?**
-   — Qual é o prazo contratual? Há renovação automática? Quais são as condições para rescisão?
+   - Qual é o prazo contratual? Há renovação automática? Quais são as condições para rescisão?
 
 7. **E se falhar?**
-   — Quais são as métricas de desempenho? O que acontece se as metas não forem atingidas? Há multas contratuais?
+   - Quais são as métricas de desempenho? O que acontece se as metas não forem atingidas? Há multas contratuais?
 
 8. **Com que legado?**
-   — Ao final do contrato, como serão portados os dados? O fornecedor deve garantir continuidade pedagógica ou plano de transição.
+   - Ao final do contrato, como serão portados os dados? O fornecedor deve garantir continuidade pedagógica ou plano de transição.
 
 ---
 
@@ -132,8 +132,8 @@ O Termo de Referência (TR) é o documento que define o objeto, os requisitos t�
 
 ## Próximos Passos
 
-- **Após a Contratação** — Como monitorar, auditar e garantir o bom uso da IA ao longo do contrato
-- **Checklist da Jornada** — Lista completa de verificação por fase
+- **Após a Contratação**: Como monitorar, auditar e garantir o bom uso da IA ao longo do contrato
+- **Checklist da Jornada**: Lista completa de verificação por fase
 
 ---
 

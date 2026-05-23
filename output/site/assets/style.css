@@ -301,9 +301,20 @@ strong { font-weight: 700; }
 }
 
 .footer-bottom {
-  padding: 1.5rem 2rem;
+  padding: 2rem 2rem 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
+  border-top: 2px solid var(--roxo);
+}
+
+.footer-realizacao-title {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #FFFFFF;
+  margin: 0 0 0.75rem;
 }
 
 .footer-realizacao-desc {
@@ -403,6 +414,40 @@ strong { font-weight: 700; }
   max-width: 680px;
   line-height: 1.7;
   margin: 0 0 2rem;
+}
+
+.hero-alianca {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  color: rgba(255,255,255,0.5);
+  max-width: 580px;
+  line-height: 1.6;
+  margin: 0 0 1.75rem;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--roxo);
+  color: var(--branco);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.875rem 1.75rem;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  transition: background 0.15s, transform 0.15s, box-shadow 0.15s;
+  box-shadow: 0 4px 16px rgba(167,37,255,0.35);
+  margin-bottom: 2rem;
+}
+
+.hero-cta:hover {
+  background: var(--roxo-escuro);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 24px rgba(167,37,255,0.45);
+  color: var(--branco);
+  text-decoration: none;
 }
 
 .hero-arrow {
@@ -986,7 +1031,7 @@ strong { font-weight: 700; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  background: var(--roxo);
+  background: var(--roxo-escuro);
   color: var(--branco);
   padding: 0.15rem 0.5rem;
   border-radius: 3px;
@@ -1030,9 +1075,25 @@ strong { font-weight: 700; }
 }
 
 .material-arrow {
-  font-size: 1rem;
+  font-size: 0.78rem;
   color: var(--persona-color, var(--roxo));
   font-weight: 700;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.material-arrow--download {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #2f855a;
+}
+
+.section-desc {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: var(--cinza-texto);
+  margin: -0.5rem 0 1.25rem;
 }
 
 /* ── Subpersona cards ────────────────────────────────────────── */
@@ -1320,7 +1381,7 @@ strong { font-weight: 700; }
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  background: var(--roxo);
+  background: var(--roxo-escuro);
   color: var(--branco);
   padding: 0.2rem 0.6rem;
   border-radius: 3px;

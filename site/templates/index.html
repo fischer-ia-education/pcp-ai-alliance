@@ -13,9 +13,11 @@
             <span class="hero-title-line hero-title-accent">com segurança e intencionalidade pedagógica?</span>
         </h1>
         <p class="hero-description">Um guia prático para gestores públicos e EdTechs navegarem a contratação responsável de inteligência artificial na educação pública brasileira.</p>
-        <div class="hero-arrow" aria-hidden="true">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12l7 7 7-7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </div>
+        <p class="hero-alianca">Iniciativa da Fundação Lemann, Telles Foundation e VélezReyes+, com Instituto Jataí, para apoiar a educação pública brasileira no uso responsável de IA.</p>
+        <a href="#selecione-perfil" class="hero-cta">
+            Comece pelo seu perfil
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
     </div>
     <div class="hero-decoration" aria-hidden="true">
         <svg class="hero-geo" viewBox="0 0 320 480" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
@@ -29,6 +31,33 @@
             <rect x="240" y="300" width="60" height="100" fill="#BBD634" opacity="0.18"/>
             <rect x="160" y="200" width="40" height="40" fill="#A725FF" opacity="0.30"/>
         </svg>
+    </div>
+</section>
+
+<section class="persona-section" id="selecione-perfil">
+    <h2 class="section-heading">Selecione seu perfil</h2>
+    <div class="persona-grid">
+        {% for p in persona_list %}
+        <a href="{{ root }}/{{ p.key }}/index.html" class="persona-card" style="--persona-color: {{ p.cor }}; --card-index: {{ loop.index0 }}">
+            <div class="card-spine">
+                <span class="card-spine-label">{{ p.nome }}</span>
+            </div>
+            <div class="card-body">
+                <div class="card-head">
+                    <span class="card-icon">{{ p.icone }}</span>
+                    <span class="card-count">{{ p.count }}</span>
+                </div>
+                <h3 class="card-title">{{ p.nome }}</h3>
+                <p class="card-question">{{ p.pergunta }}</p>
+                <p class="card-description">{{ p.descricao }}</p>
+                {% if p.key == 'edtechs' %}<p class="card-sub-info">4 estágios: Inicial · Entrada · Escala · Internacional</p>{% endif %}
+                <span class="card-cta">
+                    Ver materiais
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+            </div>
+        </a>
+        {% endfor %}
     </div>
 </section>
 
@@ -58,7 +87,7 @@
                     </svg>
                 </div>
                 <h3 class="pillar-title">Contrato como Governança</h3>
-                <p class="pillar-text">O contrato não é documento burocrático — é o principal instrumento de governança. Deve responder: para quê? com que dados? como? para quem? com que segurança? até quando? e se falhar? com que legado?</p>
+                <p class="pillar-text">O contrato não é documento burocrático: é o principal instrumento de governança. Deve responder: para quê? com que dados? como? para quem? com que segurança? até quando? e se falhar? com que legado?</p>
             </div>
             <div class="pillar-card">
                 <div class="pillar-icon" aria-hidden="true">
@@ -147,33 +176,6 @@
         <blockquote class="context-problem">
             A IA já está nas escolas, mas as compras públicas tratam essa tecnologia como software convencional: sem salvaguardas, sem transparência, sem intencionalidade pedagógica.
         </blockquote>
-    </div>
-</section>
-
-<section class="persona-section">
-    <h2 class="section-heading">Selecione seu perfil</h2>
-    <div class="persona-grid">
-        {% for p in persona_list %}
-        <a href="{{ root }}/{{ p.key }}/index.html" class="persona-card" style="--persona-color: {{ p.cor }}; --card-index: {{ loop.index0 }}">
-            <div class="card-spine">
-                <span class="card-spine-label">{{ p.nome }}</span>
-            </div>
-            <div class="card-body">
-                <div class="card-head">
-                    <span class="card-icon">{{ p.icone }}</span>
-                    <span class="card-count">{{ p.count }}</span>
-                </div>
-                <h3 class="card-title">{{ p.nome }}</h3>
-                <p class="card-question">{{ p.pergunta }}</p>
-                <p class="card-description">{{ p.descricao }}</p>
-                {% if p.key == 'edtechs' %}<p class="card-sub-info">4 estágios: Inicial · Entrada · Escala · Internacional</p>{% endif %}
-                <span class="card-cta">
-                    Ver materiais
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-            </div>
-        </a>
-        {% endfor %}
     </div>
 </section>
 {% endblock %}

@@ -9,7 +9,7 @@ tipo: jornada-apos
 
 # Após a Contratação
 
-> A assinatura do contrato não é o fim da jornada — é o início da fase mais crítica. A maioria dos riscos da IA se materializa na operação, não na contratação.
+> A assinatura do contrato não é o fim da jornada: é o início da fase mais crítica. A maioria dos riscos da IA se materializa na operação, não na contratação.
 
 ---
 
@@ -49,7 +49,7 @@ Contratar IA sem monitorar seus resultados pedagógicos é como prescrever um me
 
 ## 2. Supervisão Humana Ativa
 
-A supervisão humana não é uma cláusula contratual — é uma prática de gestão que precisa ser institucionalizada.
+A supervisão humana não é uma cláusula contratual: é uma prática de gestão que precisa ser institucionalizada.
 
 **Estrutura de supervisão recomendada:**
 
@@ -115,7 +115,7 @@ A IA na escola só funciona se os professores souberem usá-la com autonomia, pe
 | Supervisão e contestação das decisões da IA | 2h | 6 meses após implantação |
 | Atualização em caso de mudança no modelo | 2h | A cada atualização relevante |
 
-**Princípio:** A formação não é treinamento técnico — é letramento algorítmico. O professor não precisa saber programar IA; precisa saber reconhecer quando ela funciona, quando falha e quando substituir o julgamento humano pelo dela seria um erro.
+**Princípio:** A formação não é treinamento técnico: é letramento algorítmico. O professor não precisa saber programar IA; precisa saber reconhecer quando ela funciona, quando falha e quando substituir o julgamento humano pelo dela seria um erro.
 
 ---
 

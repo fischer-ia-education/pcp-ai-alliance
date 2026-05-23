@@ -9,7 +9,7 @@ tipo: contexto
 
 # Como as Redes Públicas Estão Contratando
 
-> Levantamento realizado no Portal Nacional de Contratações Públicas (PNCP) entre 2024 e fevereiro de 2026 identificou apenas 15 processos envolvendo soluções com funcionalidades de IA — e em **nenhum** dos contratos analisados foram encontradas cláusulas específicas referentes à IA.
+> Levantamento realizado no Portal Nacional de Contratações Públicas (PNCP) entre 2024 e fevereiro de 2026 identificou apenas 15 processos envolvendo soluções com funcionalidades de IA: e em **nenhum** dos contratos analisados foram encontradas cláusulas específicas referentes à IA.
 
 ---
 
@@ -36,13 +36,13 @@ O levantamento realizado no Portal Nacional de Contratações Públicas (PNCP) p
 | Contratos com salvaguardas de privacidade | 0 |
 | Contratos com indicadores de desempenho algorítmico | 0 |
 
-Redes de todas as cinco regiões do país foram identificadas no levantamento, demonstrando que o fenômeno é nacional — e não restrito a um perfil específico de município.
+Redes de todas as cinco regiões do país foram identificadas no levantamento, demonstrando que o fenômeno é nacional: e não restrito a um perfil específico de município.
 
 ---
 
 ## Opacidade Funcional
 
-O cenário descrito é conhecido como **opacidade funcional**: professores e gestores interagem com sistemas que aparentam ser softwares comuns, mas na prática tomam decisões com base em inferências estatísticas sobre trajetórias escolares — notas, diagnósticos, recomendações de conteúdo — sem que ninguém saiba exatamente como.
+O cenário descrito é conhecido como **opacidade funcional**: professores e gestores interagem com sistemas que aparentam ser softwares comuns, mas na prática tomam decisões com base em inferências estatísticas sobre trajetórias escolares: notas, diagnósticos, recomendações de conteúdo: sem que ninguém saiba exatamente como.
 
 **Problemas da contratação embutida:**
 - **Opacidade funcional:** uso desinformado e sem consciência crítica
@@ -61,7 +61,7 @@ Apesar do cenário geral de opacidade, três padrões de contratação já estã
 
 Utilizada quando a competição é considerada inviável (produto ou serviço exclusivo). Prevista no art. 74 da Lei nº 14.133/2021.
 
-**Caso de referência — Joinville (SC):** A Secretaria Municipal de Educação contratou o Programa Letrus (leitura e escrita com IA) por inexigibilidade, em dezembro de 2024. O contrato inclui análise automatizada de produções textuais e relatórios pedagógicos. Foram definidos indicadores mínimos de serviço: disponibilidade da plataforma (≥95%) e resolução de dúvidas (≥90%).
+**Caso de referência: Joinville (SC):** A Secretaria Municipal de Educação contratou o Programa Letrus (leitura e escrita com IA) por inexigibilidade, em dezembro de 2024. O contrato inclui análise automatizada de produções textuais e relatórios pedagógicos. Foram definidos indicadores mínimos de serviço: disponibilidade da plataforma (≥95%) e resolução de dúvidas (≥90%).
 
 **Ponto de atenção:** Inexigibilidade exige justificativa rigorosa de exclusividade. É a modalidade mais usada (80% dos casos), mas nem sempre a mais adequada.
 
@@ -71,7 +71,7 @@ Utilizada quando a competição é considerada inviável (produto ou serviço ex
 
 Utilizada para bens e serviços comuns, cujas especificações podem ser objetivamente definidas no edital. Julgamento pelo menor preço.
 
-**Caso de referência — Rio Verde (GO):** A Secretaria Municipal contratou, por pregão eletrônico, sistema de correção digital de gabaritos para apoiar o SAERV (Sistema de Avaliação Educacional de Rio Verde), com leitura automática de cartões de resposta, geração de resultados em tempo real e relatórios de desempenho. O contrato de 12 meses foi posteriormente prorrogado por igual período.
+**Caso de referência: Rio Verde (GO):** A Secretaria Municipal contratou, por pregão eletrônico, sistema de correção digital de gabaritos para apoiar o SAERV (Sistema de Avaliação Educacional de Rio Verde), com leitura automática de cartões de resposta, geração de resultados em tempo real e relatórios de desempenho. O contrato de 12 meses foi posteriormente prorrogado por igual período.
 
 **Ponto de atenção:** O pregão exige que o objeto seja bem especificado. Para IA, isso significa incluir critérios técnicos específicos no Termo de Referência.
 
@@ -81,7 +81,7 @@ Utilizada para bens e serviços comuns, cujas especificações podem ser objetiv
 
 Municípios contratam com instituições parceiras (institutos, fundações, Sebrae) que realizam seleção prévia de soluções e atuam como executores institucionais.
 
-**Caso de referência — Itajá (RN) via Sebrae/RN:** O Sebrae/RN realizou seleção de startups no âmbito do IA Lab Sebrae. O município de Itajá contratou o Sebrae/RN para implementar a solução IDES (Índice de Desenvolvimento Sebrae), que utiliza IA para planos de ação pedagógicos baseados em avaliações diagnósticas. Fundamento jurídico: art. 75, inciso XV, da Lei nº 14.133/2021 (dispensa de licitação para instituições sem fins lucrativos voltadas à inovação).
+**Caso de referência: Itajá (RN) via Sebrae/RN:** O Sebrae/RN realizou seleção de startups no âmbito do IA Lab Sebrae. O município de Itajá contratou o Sebrae/RN para implementar a solução IDES (Índice de Desenvolvimento Sebrae), que utiliza IA para planos de ação pedagógicos baseados em avaliações diagnósticas. Fundamento jurídico: art. 75, inciso XV, da Lei nº 14.133/2021 (dispensa de licitação para instituições sem fins lucrativos voltadas à inovação).
 
 **Ponto de atenção:** O modelo intermediado pode simplificar o processo, mas a responsabilidade pedagógica e jurídica continua sendo da rede pública.
 
