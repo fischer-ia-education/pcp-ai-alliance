@@ -206,6 +206,21 @@ strong { font-weight: 700; }
   transform: scale(1.15);
 }
 
+.nav-interno {
+  font-size: 0.72rem;
+  color: rgba(255,255,255,0.4);
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  border: 1px dashed rgba(255,255,255,0.25);
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+}
+.nav-interno:hover {
+  color: rgba(255,255,255,0.75);
+  border-color: rgba(255,255,255,0.5);
+}
+
 /* Mobile menu toggle */
 .mobile-menu-toggle {
   display: none;
