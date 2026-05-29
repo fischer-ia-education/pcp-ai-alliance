@@ -240,6 +240,36 @@
         updateBar();
     }
 
+    /* ── Scroll automático para item ativo na journey sidebar ── */
+    function initJourneyActiveScroll() {
+        var active = document.querySelector(".journey-item--active");
+        if (!active) return;
+        setTimeout(function () {
+            active.scrollIntoView({ block: "nearest", behavior: "auto" });
+        }, 60);
+    }
+
+    /* ── Navegação por teclado: ← anterior / → próximo ──────── */
+    function initKeyboardNav() {
+        var prevBtn = document.querySelector(".doc-nav-btn--prev");
+        var nextBtn = document.querySelector(".doc-nav-btn--next");
+        if (!prevBtn && !nextBtn) return;
+
+        document.addEventListener("keydown", function (e) {
+            var tag = document.activeElement && document.activeElement.tagName;
+            if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+            if (e.altKey || e.ctrlKey || e.metaKey) return;
+
+            if (e.key === "ArrowLeft" && prevBtn) {
+                e.preventDefault();
+                window.location.href = prevBtn.getAttribute("href");
+            } else if (e.key === "ArrowRight" && nextBtn) {
+                e.preventDefault();
+                window.location.href = nextBtn.getAttribute("href");
+            }
+        });
+    }
+
     /* ── Init ────────────────────────────────────────────────── */
     document.addEventListener("DOMContentLoaded", function () {
         initScrollSpy();
@@ -249,5 +279,7 @@
         initCheckboxes();
         initCardAnimations();
         initReadingProgress();
+        initJourneyActiveScroll();
+        initKeyboardNav();
     });
 })();

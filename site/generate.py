@@ -289,6 +289,27 @@ def _group_by_category(docs: list[dict]) -> dict[str, list[dict]]:
     return categorias
 
 
+_CAT_LABELS = {
+    "comece": "Comece por aqui",
+    "aprofunde": "Aprofunde",
+    "complementar": "Complementar",
+}
+
+
+def _group_docs_for_journey(docs: list[dict]) -> list[dict]:
+    """Retorna lista de grupos [{cat_label, docs}] mantendo ordem de exibição."""
+    groups: list[dict] = []
+    seen: dict[str, dict] = {}
+    for doc in docs:
+        cat = doc["categoria"]
+        if cat not in seen:
+            group: dict = {"cat": cat, "cat_label": _CAT_LABELS.get(cat, cat), "docs": []}
+            groups.append(group)
+            seen[cat] = group
+        seen[cat]["docs"].append(doc)
+    return groups
+
+
 # ── Geração do site ──────────────────────────────────────────
 
 def build_site():
@@ -383,7 +404,10 @@ def build_site():
             print(f"  ✓ {persona_key}/index.html (com sub-personas)")
 
             # Renderizar materiais transversais (root-level)
-            for doc in docs:
+            journey_groups = _group_docs_for_journey(docs)
+            for idx, doc in enumerate(docs):
+                prev_doc = docs[idx - 1] if idx > 0 else None
+                next_doc = docs[idx + 1] if idx < len(docs) - 1 else None
                 (persona_dir / doc["filename"]).write_text(
                     tmpl_document.render(
                         **base_ctx,
@@ -393,6 +417,12 @@ def build_site():
                         doc=doc,
                         outras_personas=outras_personas,
                         back_url=f"../{ persona_key}/index.html",
+                        all_docs=docs,
+                        journey_groups=journey_groups,
+                        doc_index=idx,
+                        doc_total=len(docs),
+                        prev_doc=prev_doc,
+                        next_doc=next_doc,
                     ),
                     encoding="utf-8",
                 )
@@ -424,7 +454,10 @@ def build_site():
                 print(f"  ✓ {persona_key}/{sp_key}/index.html")
 
                 # Documentos da sub-persona
-                for doc in sp_docs:
+                sp_journey_groups = _group_docs_for_journey(sp_docs)
+                for idx, doc in enumerate(sp_docs):
+                    prev_doc = sp_docs[idx - 1] if idx > 0 else None
+                    next_doc = sp_docs[idx + 1] if idx < len(sp_docs) - 1 else None
                     (sp_dir / doc["filename"]).write_text(
                         tmpl_document.render(
                             **base_ctx,
@@ -436,6 +469,12 @@ def build_site():
                             parent_persona=persona_info,
                             parent_persona_key=persona_key,
                             back_url=f"../../{persona_key}/{sp_key}/index.html",
+                            all_docs=sp_docs,
+                            journey_groups=sp_journey_groups,
+                            doc_index=idx,
+                            doc_total=len(sp_docs),
+                            prev_doc=prev_doc,
+                            next_doc=next_doc,
                         ),
                         encoding="utf-8",
                     )
@@ -456,7 +495,10 @@ def build_site():
             )
             print(f"  ✓ {persona_key}/index.html")
 
-            for doc in docs:
+            journey_groups = _group_docs_for_journey(docs)
+            for idx, doc in enumerate(docs):
+                prev_doc = docs[idx - 1] if idx > 0 else None
+                next_doc = docs[idx + 1] if idx < len(docs) - 1 else None
                 (persona_dir / doc["filename"]).write_text(
                     tmpl_document.render(
                         **base_ctx,
@@ -466,6 +508,12 @@ def build_site():
                         doc=doc,
                         outras_personas=outras_personas,
                         back_url=f"../{persona_key}/index.html",
+                        all_docs=docs,
+                        journey_groups=journey_groups,
+                        doc_index=idx,
+                        doc_total=len(docs),
+                        prev_doc=prev_doc,
+                        next_doc=next_doc,
                     ),
                     encoding="utf-8",
                 )
@@ -498,7 +546,10 @@ def build_site():
         )
         print(f"  ✓ {section_key}/index.html")
 
-        for doc in docs:
+        section_journey_groups = _group_docs_for_journey(docs)
+        for idx, doc in enumerate(docs):
+            prev_doc = docs[idx - 1] if idx > 0 else None
+            next_doc = docs[idx + 1] if idx < len(docs) - 1 else None
             (section_dir / doc["filename"]).write_text(
                 tmpl_document.render(
                     **base_ctx,
@@ -508,6 +559,12 @@ def build_site():
                     doc=doc,
                     outras_personas=outras_personas,
                     back_url=f"../{section_key}/index.html",
+                    all_docs=docs,
+                    journey_groups=section_journey_groups,
+                    doc_index=idx,
+                    doc_total=len(docs),
+                    prev_doc=prev_doc,
+                    next_doc=next_doc,
                 ),
                 encoding="utf-8",
             )

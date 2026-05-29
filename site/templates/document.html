@@ -7,44 +7,71 @@
 {% block content %}
 <div class="document-layout" style="--persona-color: {{ persona.cor }}">
 
-    {% if doc.toc %}
+    {# Sidebar sempre visível: journey map + TOC opcional #}
     <aside class="doc-sidebar" id="doc-sidebar">
         <button class="sidebar-close" aria-label="Fechar menu" id="sidebar-close">
             <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
         </button>
-        <nav class="doc-toc">
-            <div class="toc-persona-tag">
-                <span class="toc-dot"></span>
-                {{ persona.nome }}
+
+        <div class="toc-persona-tag">
+            <span class="toc-dot"></span>
+            {{ persona.nome }}
+        </div>
+
+        {# Journey map: todos os documentos da jornada #}
+        {% if journey_groups %}
+        <nav class="doc-journey" aria-label="Jornada de conteúdo">
+            <h3 class="toc-title">Jornada</h3>
+            {% for group in journey_groups %}
+            <div class="journey-group">
+                <div class="journey-cat-label">{{ group.cat_label }}</div>
+                {% for d in group.docs %}
+                <a href="{{ root }}/{{ persona_key }}/{{ d.filename }}"
+                   class="journey-item{% if d.slug == doc.slug %} journey-item--active{% endif %}"
+                   {% if d.slug == doc.slug %}aria-current="page"{% endif %}>
+                    <span class="journey-dot{% if d.slug == doc.slug %} journey-dot--active{% endif %}"></span>
+                    <span class="journey-item-title">{{ d.title }}</span>
+                </a>
+                {% endfor %}
             </div>
+            {% endfor %}
+        </nav>
+        {% endif %}
+
+        {# TOC interno do documento (se houver headings H2) #}
+        {% if doc.toc %}
+        <div class="sidebar-section-divider"></div>
+        <nav class="doc-toc" aria-label="Índice do documento">
             <h3 class="toc-title">Neste documento</h3>
             <ul>
                 {% for item in doc.toc %}
                 <li><a href="#{{ item.id }}" class="toc-link">{{ item.label }}</a></li>
                 {% endfor %}
             </ul>
-            <div class="toc-back">
-                <a href="{{ back_url if back_url else root ~ '/' ~ persona_key ~ '/index.html' }}" class="toc-back-link">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M3 7l4-4M3 7l4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                    Todos os materiais
-                </a>
-            </div>
         </nav>
+        {% endif %}
+
+        <div class="toc-back">
+            <a href="{{ back_url if back_url else root ~ '/' ~ persona_key ~ '/index.html' }}" class="toc-back-link">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M11 7H3M3 7l4-4M3 7l4 4" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Todos os materiais
+            </a>
+        </div>
     </aside>
-    {% endif %}
 
     <article class="doc-content">
-        <nav class="breadcrumb">
+        {# Breadcrumb #}
+        <nav class="breadcrumb" aria-label="Caminho de navegação">
             <a href="{{ root }}/index.html">Início</a>
-            <span class="sep">/</span>
+            <span class="sep" aria-hidden="true">/</span>
             {% if parent_persona %}
             <a href="{{ root }}/{{ parent_persona_key }}/index.html">{{ parent_persona.nome }}</a>
-            <span class="sep">/</span>
+            <span class="sep" aria-hidden="true">/</span>
             <a href="{{ root }}/{{ persona_key }}/index.html">{{ persona.nome }}</a>
             {% else %}
             <a href="{{ root }}/{{ persona_key }}/index.html">{{ persona.nome }}</a>
             {% endif %}
-            <span class="sep">/</span>
+            <span class="sep" aria-hidden="true">/</span>
             <span class="current">{{ doc.tipo_label }}</span>
         </nav>
 
@@ -52,10 +79,24 @@
             <div class="doc-header-meta">
                 <span class="doc-tipo-badge tipo-{{ doc.tipo }}">{{ doc.tipo_label }}</span>
                 <span class="doc-reading-time">
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
                     ~{{ doc.reading_time }} min de leitura
                 </span>
+                {% if doc_total is defined and doc_total > 1 %}
+                <span class="doc-position-badge">
+                    {{ doc_index + 1 }} de {{ doc_total }}
+                </span>
+                {% endif %}
             </div>
+            {% if doc_total is defined and doc_total > 1 %}
+            <div class="doc-progress-bar" role="progressbar"
+                 aria-valuenow="{{ doc_index + 1 }}"
+                 aria-valuemin="1"
+                 aria-valuemax="{{ doc_total }}"
+                 aria-label="Material {{ doc_index + 1 }} de {{ doc_total }}">
+                <div class="doc-progress-fill" style="width: {{ ((doc_index + 1) / doc_total * 100)|int }}%"></div>
+            </div>
+            {% endif %}
         </header>
 
         <div class="doc-body markdown-body">
@@ -63,28 +104,60 @@
         </div>
 
         <footer class="doc-footer">
-            <a href="{{ back_url if back_url else root ~ '/' ~ persona_key ~ '/index.html' }}" class="back-link">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13 8H3M3 8l5-5M3 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Voltar para {{ persona.nome }}
-            </a>
-            {% if outras_personas %}
-            <div class="doc-footer-personas">
-                <span class="doc-footer-label">Outros perfis:</span>
-                {% for op in outras_personas %}
-                <a href="{{ root }}/{{ op.key }}/index.html" class="doc-footer-persona-link" style="--persona-color: {{ op.cor }}">{{ op.icone }} {{ op.nome }}</a>
-                {% endfor %}
-            </div>
+            {# Navegação sequencial prev/next #}
+            {% if (prev_doc is defined and prev_doc) or (next_doc is defined and next_doc) %}
+            <nav class="doc-nav-sequential" aria-label="Navegação entre materiais">
+                <div class="doc-nav-slot doc-nav-slot--prev">
+                    {% if prev_doc is defined and prev_doc %}
+                    <a href="{{ root }}/{{ persona_key }}/{{ prev_doc.filename }}" class="doc-nav-btn doc-nav-btn--prev">
+                        <span class="doc-nav-direction">
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M11 7H3M3 7l4-4M3 7l4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                            Anterior
+                        </span>
+                        <span class="doc-nav-tipo">{{ prev_doc.tipo_label }}</span>
+                        <span class="doc-nav-title">{{ prev_doc.title }}</span>
+                    </a>
+                    {% endif %}
+                </div>
+                <div class="doc-nav-slot doc-nav-slot--next">
+                    {% if next_doc is defined and next_doc %}
+                    <a href="{{ root }}/{{ persona_key }}/{{ next_doc.filename }}" class="doc-nav-btn doc-nav-btn--next">
+                        <span class="doc-nav-direction">
+                            Próximo
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 7h8M7 3l4 4-4 4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </span>
+                        <span class="doc-nav-tipo">{{ next_doc.tipo_label }}</span>
+                        <span class="doc-nav-title">{{ next_doc.title }}</span>
+                    </a>
+                    {% endif %}
+                </div>
+            </nav>
             {% endif %}
+
+            {# Rodapé com "Voltar" e outros perfis #}
+            <div class="doc-footer-bottom">
+                <a href="{{ back_url if back_url else root ~ '/' ~ persona_key ~ '/index.html' }}" class="back-link">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M3 8l5-5M3 8l5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Voltar para {{ persona.nome }}
+                </a>
+                {% if outras_personas %}
+                <div class="doc-footer-personas">
+                    <span class="doc-footer-label">Outros perfis:</span>
+                    {% for op in outras_personas %}
+                    <a href="{{ root }}/{{ op.key }}/index.html" class="doc-footer-persona-link" style="--persona-color: {{ op.cor }}">{{ op.icone }} {{ op.nome }}</a>
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </div>
         </footer>
     </article>
 
-    {% if doc.toc %}
-    <button class="toc-toggle" id="toc-toggle" aria-label="Índice do documento">
-        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+    {# Botão flutuante para abrir sidebar no mobile #}
+    <button class="toc-toggle" id="toc-toggle" aria-label="Abrir menu de navegação">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true">
             <path d="M3 4h14M3 8h10M3 12h12M3 16h8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
         </svg>
     </button>
-    {% endif %}
 
 </div>
 {% endblock %}
