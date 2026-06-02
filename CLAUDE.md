@@ -8,21 +8,23 @@ Guia para o Claude Code trabalhar neste repositório. Leia antes de mexer.
 
 ## Build, Preview e Geração — IMPORTANTE
 
-**Não há `uv` nesta máquina.** Use o virtualenv do projeto (`.venv/`, fora do git):
+**`uv` está instalado** (`~/.local/bin/uv`). Os scripts têm cabeçalho PEP 723, então o `uv` resolve as dependências sozinho — é o caminho preferido:
 
 ```bash
-# Primeira vez (se .venv não existir):
-python3 -m venv .venv
-.venv/bin/pip install markdown jinja2 pyyaml pygments python-docx
-
 # Gerar o site → output/site/
-.venv/bin/python site/generate.py
+uv run site/generate.py
+
+# (Re)gerar os templates .docx editáveis (RIPD, Model Card) em assets/downloads/
+uv run site/gerar_templates_docx.py
 
 # Servir localmente para revisão (o usuário SEMPRE revisa no live server antes de push)
 cd output/site && python3 -m http.server 8000   # http://localhost:8000
+```
 
-# (Re)gerar os templates .docx editáveis (RIPD, Model Card) em assets/downloads/
-.venv/bin/python site/gerar_templates_docx.py
+Se `uv` não estiver no PATH, use `~/.local/bin/uv` ou rode `source ~/.local/bin/env`. **Fallback sem uv** (venv do projeto, `.venv/` fora do git):
+```bash
+python3 -m venv .venv && .venv/bin/pip install markdown jinja2 pyyaml pygments python-docx
+.venv/bin/python site/generate.py
 ```
 
 > Regra do usuário: **nunca dar `git push` sem ele revisar no live server primeiro.** Branch/commit só quando ele pedir.

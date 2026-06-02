@@ -12,20 +12,18 @@ Site estático da **[Aliança de IA para a Educação](http://iaparaeducacao.org
 
 ## Como rodar (build + preview)
 
-**Não há `uv` nesta máquina** — usar o venv do projeto:
+Com **`uv`** (recomendado — resolve as dependências via PEP 723):
 
 ```bash
-# uma vez:
+uv run site/generate.py                  # gera o site em output/site/
+uv run site/gerar_templates_docx.py      # regera os templates Word (.docx)
+cd output/site && python3 -m http.server 8000   # preview em http://localhost:8000
+```
+
+Sem `uv`, use o venv do projeto:
+```bash
 python3 -m venv .venv && .venv/bin/pip install markdown jinja2 pyyaml pygments python-docx
-
-# gerar o site em output/site/
 .venv/bin/python site/generate.py
-
-# servir para revisão local
-cd output/site && python3 -m http.server 8000   # http://localhost:8000
-
-# regerar os templates Word (.docx) editáveis
-.venv/bin/python site/gerar_templates_docx.py
 ```
 
 ## Estrutura
