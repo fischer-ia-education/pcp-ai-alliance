@@ -20,6 +20,23 @@
         <p class="persona-description">{{ section.descricao }}</p>
     </header>
 
+    {% if section_key == 'recursos' %}
+    <section class="material-section recursos-destaque">
+        <div class="section-label-wrap">
+            <span class="section-number">★</span>
+            <h2 class="section-label">Instrumento interativo</h2>
+        </div>
+        <div class="recursos-destaque-grid recursos-destaque-grid--single">
+            <a href="{{ root }}/recursos/criterios-contratacao.html" class="recurso-destaque-card recurso-destaque-card--criterios">
+                <span class="recurso-destaque-tag">Interativo</span>
+                <h3>Critérios para a Contratação de IA</h3>
+                <p>14 critérios práticos em três blocos — Especificação Técnica, Aceitabilidade da Proposta e Cláusulas Contratuais. Cada um com o que exigir, onde incluir e como verificar.</p>
+                <span class="recurso-destaque-cta">Explorar os critérios →</span>
+            </a>
+        </div>
+    </section>
+    {% endif %}
+
     {% if categorias.comece %}
     <section class="material-section" data-section="comece">
         <div class="section-label-wrap">
@@ -41,7 +58,7 @@
                         {% if doc.tipo == 'template' %}
                         <span class="material-arrow material-arrow--download">
                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M6.5 1v7M3.5 5.5l3 3 3-3M1.5 10h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Baixar template
+                            Ver e baixar (Word)
                         </span>
                         {% else %}
                         <span class="material-arrow">Ler material →</span>
@@ -75,7 +92,7 @@
                         {% if doc.tipo == 'template' %}
                         <span class="material-arrow material-arrow--download">
                             <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M6.5 1v7M3.5 5.5l3 3 3-3M1.5 10h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                            Baixar template
+                            Ver e baixar (Word)
                         </span>
                         {% else %}
                         <span class="material-arrow">Ler material →</span>

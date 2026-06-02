@@ -1,2 +1,6 @@
 # Local Netlify folder
 .netlify
+
+.venv/
+
+.DS_Store

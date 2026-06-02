@@ -57,7 +57,7 @@
                 </a>
                 
                 
-                <a href="./revisao-v2.html" class="nav-interno">· Revisão V2</a>
+                <a href="./revisao.html" class="nav-interno">· Revisão</a>
             </nav>
             <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -76,10 +76,16 @@
         </h1>
         <p class="hero-description">Um guia prático para gestores públicos e EdTechs navegarem a contratação responsável de inteligência artificial na educação pública brasileira.</p>
         <p class="hero-alianca">Iniciativa da Fundação Lemann, Telles Foundation e VélezReyes+, com Instituto Jataí, para apoiar a educação pública brasileira no uso responsável de IA.</p>
-        <a href="#selecione-perfil" class="hero-cta">
-            Comece pelo seu perfil
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
+        <div class="hero-actions">
+            <a href="#selecione-perfil" class="hero-cta">
+                Comece pelo seu perfil
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a href="#baixar-guia" class="hero-cta hero-cta--ghost">
+                <svg width="15" height="15" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M6.5 1v7M3.5 5.5l3 3 3-3M1.5 10h10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Baixar o guia
+            </a>
+        </div>
     </div>
     <div class="hero-decoration" aria-hidden="true">
         <svg class="hero-geo" viewBox="0 0 320 480" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
@@ -93,53 +99,6 @@
             <rect x="240" y="300" width="60" height="100" fill="#BBD634" opacity="0.18"/>
             <rect x="160" y="200" width="40" height="40" fill="#A725FF" opacity="0.30"/>
         </svg>
-    </div>
-</section>
-
-<section class="persona-section" id="selecione-perfil">
-    <h2 class="section-heading">Selecione seu perfil</h2>
-    <div class="persona-grid">
-        
-        <a href="./gestores/index.html" class="persona-card" style="--persona-color: #2f855a; --card-index: 0">
-            <div class="card-spine">
-                <span class="card-spine-label">Gestores Públicos</span>
-            </div>
-            <div class="card-body">
-                <div class="card-head">
-                    <span class="card-icon"><svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="5" width="22" height="9" fill="#A725FF"/><rect x="8" y="18" width="22" height="9" fill="#BBD634"/></svg></span>
-                    <span class="card-count">10</span>
-                </div>
-                <h3 class="card-title">Gestores Públicos</h3>
-                <p class="card-question">Como contratar IA com segurança e intencionalidade pedagógica?</p>
-                <p class="card-description">Secretários e equipes de redes públicas de educação</p>
-                
-                <span class="card-cta">
-                    Ver materiais
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-            </div>
-        </a>
-        
-        <a href="./edtechs/index.html" class="persona-card" style="--persona-color: #2b6cb0; --card-index: 1">
-            <div class="card-spine">
-                <span class="card-spine-label">EdTechs</span>
-            </div>
-            <div class="card-body">
-                <div class="card-head">
-                    <span class="card-icon"><svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg></span>
-                    <span class="card-count">17</span>
-                </div>
-                <h3 class="card-title">EdTechs</h3>
-                <p class="card-question">Como oferecer IA de forma responsável para o setor público?</p>
-                <p class="card-description">Empreendedores e equipes de tecnologia educacional</p>
-                <p class="card-sub-info">4 estágios: Inicial · Entrada · Escala · Internacional</p>
-                <span class="card-cta">
-                    Ver materiais
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                </span>
-            </div>
-        </a>
-        
     </div>
 </section>
 
@@ -235,6 +194,54 @@
     </div>
 </section>
 
+<section class="persona-section" id="selecione-perfil">
+    <h2 class="section-heading">Selecione seu perfil</h2>
+    <p class="section-subheading">Cada perfil tem um caminho direto ao que é mais relevante para sua atuação</p>
+    <div class="persona-grid">
+        
+        <a href="./gestores/index.html" class="persona-card" style="--persona-color: #2f855a; --card-index: 0">
+            <div class="card-spine">
+                <span class="card-spine-label">Gestores Públicos</span>
+            </div>
+            <div class="card-body">
+                <div class="card-head">
+                    <span class="card-icon"><svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="5" width="22" height="9" fill="#A725FF"/><rect x="8" y="18" width="22" height="9" fill="#BBD634"/></svg></span>
+                    <span class="card-count">10</span>
+                </div>
+                <h3 class="card-title">Gestores Públicos</h3>
+                <p class="card-question">Como contratar IA com segurança e intencionalidade pedagógica?</p>
+                <p class="card-description">Secretários e equipes de redes públicas de educação</p>
+                
+                <span class="card-cta">
+                    Ver materiais
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+            </div>
+        </a>
+        
+        <a href="./edtechs/index.html" class="persona-card" style="--persona-color: #2b6cb0; --card-index: 1">
+            <div class="card-spine">
+                <span class="card-spine-label">EdTechs</span>
+            </div>
+            <div class="card-body">
+                <div class="card-head">
+                    <span class="card-icon"><svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg></span>
+                    <span class="card-count">17</span>
+                </div>
+                <h3 class="card-title">EdTechs</h3>
+                <p class="card-question">Como oferecer IA de forma responsável para o setor público?</p>
+                <p class="card-description">Empreendedores e equipes de tecnologia educacional</p>
+                <p class="card-sub-info">4 estágios: Inicial · Entrada · Escala · Internacional</p>
+                <span class="card-cta">
+                    Ver materiais
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+            </div>
+        </a>
+        
+    </div>
+</section>
+
 <section class="landing-context">
     <div class="context-inner">
         <div class="context-stats">
@@ -258,6 +265,38 @@
         <blockquote class="context-problem">
             A IA já está nas escolas, mas as compras públicas tratam essa tecnologia como software convencional: sem salvaguardas, sem transparência, sem intencionalidade pedagógica.
         </blockquote>
+    </div>
+</section>
+
+<section class="landing-download" id="baixar-guia">
+    <div class="download-inner">
+        <div class="download-intro">
+            <span class="download-overline">Material completo</span>
+            <h2 class="section-heading">Baixe o Guia de Contratação</h2>
+            <p class="section-subheading">A publicação completa que fundamenta esta plataforma, pronta para consulta e compartilhamento.</p>
+        </div>
+        <div class="download-grid">
+            <a class="download-card" href="./assets/downloads/guia-contratacao-ia-educacao-completo.pdf" target="_blank" rel="noopener">
+                <span class="download-icon" aria-hidden="true">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3v11M8 10l4 4 4-4M4 19h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="download-text">
+                    <span class="download-title">Guia completo</span>
+                    <span class="download-desc">Publicação integral, com fundamentação e referências</span>
+                </span>
+                <span class="download-meta">PDF · 9 MB</span>
+            </a>
+            <div class="download-card download-card--soon" aria-disabled="true">
+                <span class="download-icon" aria-hidden="true">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3v11M8 10l4 4 4-4M4 19h16" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="download-text">
+                    <span class="download-title">Versão resumida</span>
+                    <span class="download-desc">Síntese de ~10 páginas, em diagramação pela equipe de design</span>
+                </span>
+                <span class="download-meta download-meta--soon">Em breve</span>
+            </div>
+        </div>
     </div>
 </section>
 

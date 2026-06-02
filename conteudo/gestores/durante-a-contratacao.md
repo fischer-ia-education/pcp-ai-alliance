@@ -15,125 +15,78 @@ tipo: jornada-durante
 
 ## O Que Esta Fase Inclui
 
-A fase *Durante a Contratação* compreende quatro eixos:
+A fase *Durante a Contratação* compreende quatro movimentos:
 
-1. **Definição dos critérios técnicos**
-2. **Escolha da modalidade de contratação**
-3. **Elaboração do Termo de Referência e do edital**
-4. **Definição das salvaguardas contratuais**
+1. **Responder às 8 perguntas fundamentais** que todo contrato de IA precisa endereçar
+2. **Escolher a modalidade** de contratação adequada ao objeto e ao contexto
+3. **Garantir as salvaguardas** de governança algorítmica, contrato e formação
+4. **Aplicar os critérios práticos** no Termo de Referência, no edital e na minuta
 
----
-
-## 1. Critérios Técnicos para IA
-
-Diferente do software convencional, a IA exige critérios técnicos específicos que vão além de funcionalidades e preço.
-
-**Inclua nos requisitos técnicos:**
-
-| Critério | O que exigir |
-|----------|--------------|
-| **Transparência** | Documentação de como a IA funciona (Model Card ou equivalente) |
-| **Explicabilidade** | A IA deve ser capaz de explicar suas recomendações em linguagem acessível |
-| **Equidade** | Testes de desempenho por grupos (gênero, raça, renda) para verificar vieses |
-| **Privacidade** | RIPD, LGPD, criptografia, minimização de dados, prazo de retenção |
-| **Supervisão humana** | Mecanismos para que professores e gestores questionem e anulem decisões da IA |
-| **Interoperabilidade** | Compatibilidade com sistemas já usados pela rede (SIGEDUC, SAGA, etc.) |
-| **Portabilidade** | Os dados pertencem à rede pública, não ao fornecedor |
-| **Reversibilidade** | Plano claro de saída caso a contratação seja encerrada |
+As três primeiras dão o enquadramento. A quarta é onde a teoria vira exigência verificável: para isso, use o **cardápio de critérios** ao final desta página.
 
 ---
 
-## 2. Escolha a Modalidade de Contratação
+## As 8 Perguntas Fundamentais do Contrato de IA
+
+> Estas perguntas devem estar respondidas, explicitamente, no contrato ou em seus anexos.
+
+1. **Para quê?** Qual é o propósito pedagógico da solução? Que problema ela resolve?
+2. **Com que dados?** Que dados serão coletados, processados e armazenados? Por quanto tempo e em que base legal (LGPD)?
+3. **Como?** Que tipo de algoritmo? Que dados de treinamento? A IA pode discriminar algum grupo?
+4. **Para quem?** Quem terá acesso aos dados e às saídas da IA? Professores? Gestores? O fornecedor?
+5. **Com que segurança?** Quais as medidas de segurança da informação? O que acontece em caso de incidente?
+6. **Até quando?** Qual o prazo contratual? Há renovação automática? Quais as condições de rescisão?
+7. **E se falhar?** Quais as métricas de desempenho? O que acontece se as metas não forem atingidas?
+8. **Com que legado?** Ao final do contrato, como serão portados os dados? Há plano de transição?
+
+---
+
+## Escolha a Modalidade de Contratação
 
 A Lei 14.133/2021 (Nova Lei de Licitações) prevê diferentes modalidades. A escolha depende do objeto, do valor e do contexto.
 
 | Modalidade | Quando usar | Exemplo de uso |
 |-----------|-------------|----------------|
-| **Inexigibilidade** | Fornecedor exclusivo ou notória especialização | Solução proprietária sem equivalente no mercado (Joinville/SC) |
-| **Pregão Eletrônico** | Serviços comuns com especificação clara | Plataforma de aprendizado adaptativo com TR bem definido (Rio Verde/GO) |
-| **CPSI** (Contratação Pré-Comercial) | Desenvolvimento de solução inexistente no mercado | Piloto com inovação tecnológica; permite testar antes de contratar em escala |
-| **Parceria Intermediada** | Contratação com apoio de instituto ou fundação | Organizações como Sebrae, Lize ou outros intermediários facilitam a modelagem (Itajaí/SC) |
+| **Inexigibilidade** | Fornecedor exclusivo ou notória especialização | Solução proprietária sem equivalente (Joinville/SC) |
+| **Pregão Eletrônico** | Serviços comuns com especificação clara | Plataforma adaptativa com TR bem definido (Rio Verde/GO) |
+| **CPSI** (Contratação Pré-Comercial) | Desenvolvimento de solução inexistente no mercado | Piloto com inovação; permite testar antes de escalar |
+| **Parceria Intermediada** | Contratação com apoio de instituto ou fundação | Intermediários facilitam a modelagem (Itajaí/SC) |
 
-**Atenção à inexigibilidade:** É a modalidade mais usada nas redes públicas (80% dos casos mapeados), mas exige comprovação rigorosa da exclusividade. Use apenas quando houver justificativa técnica sólida.
-
----
-
-## 3. O Termo de Referência para IA
-
-O Termo de Referência (TR) é o documento que define o objeto, os requisitos técnicos, as obrigações do fornecedor e os critérios de avaliação. Para contratos de IA, ele precisa ir além do TR convencional.
-
-**O TR deve responder:**
-
-### As 8 Perguntas Fundamentais do Contrato de IA
-
-> Essas perguntas devem estar respondidas, explicitamente, no contrato ou em seus anexos.
-
-1. **Para quê?**
-   - Qual é o propósito pedagógico da solução? Que problema ela resolve e como?
-
-2. **Com que dados?**
-   - Que dados serão coletados, processados e armazenados? Por quanto tempo? Em que base legal (LGPD)?
-
-3. **Como?**
-   - Como a IA funciona? Que tipo de algoritmo? Que dados de treinamento foram usados? A IA pode discriminar algum grupo?
-
-4. **Para quem?**
-   - Quem terá acesso aos dados e às saídas da IA? Professores? Gestores? O fornecedor?
-
-5. **Com que segurança?**
-   - Quais são as medidas de segurança da informação? O que acontece em caso de incidente de dados?
-
-6. **Até quando?**
-   - Qual é o prazo contratual? Há renovação automática? Quais são as condições para rescisão?
-
-7. **E se falhar?**
-   - Quais são as métricas de desempenho? O que acontece se as metas não forem atingidas? Há multas contratuais?
-
-8. **Com que legado?**
-   - Ao final do contrato, como serão portados os dados? O fornecedor deve garantir continuidade pedagógica ou plano de transição.
+**Atenção à inexigibilidade:** é a modalidade mais usada nas redes públicas (80% dos casos mapeados), mas exige comprovação rigorosa da exclusividade. Use apenas com justificativa técnica sólida.
 
 ---
 
-## 4. Salvaguardas Contratuais Obrigatórias
+## Quais São as Salvaguardas
 
-**Inclua cláusulas específicas para:**
+Os critérios práticos do bloco abaixo traduzem três salvaguardas interdependentes:
 
-### Transparência Algorítmica
-> O fornecedor deve entregar documentação técnica da IA (equivalente ao Model Card) e atualizar essa documentação a cada atualização significativa do modelo.
+- **Governança algorítmica** — transparência, explicabilidade, supervisão humana e auditabilidade.
+- **Contrato como governança** — proteção de dados, propriedade da informação, reversibilidade e mecanismos de saída.
+- **Formação e capacidade institucional** — preparar gestores e professores para usar e supervisionar o que foi contratado.
 
-### Supervisão Humana
-> Nenhuma decisão da IA com impacto direto sobre a trajetória escolar do aluno (aprovação, retenção, encaminhamento) pode ser automatizada. O professor ou gestor sempre tem a palavra final.
+Cada critério indica **onde incluir** (Termo de Referência, edital ou minuta) e **como verificar** (na Prova de Conceito ou na fiscalização). Selecione os pertinentes ao tipo de solução e à realidade da rede.
 
-### Governança de Dados
-> Os dados gerados no âmbito do contrato pertencem à rede pública. O fornecedor não pode usar esses dados para treinar seus modelos sem consentimento explícito da rede e dos responsáveis pelos alunos.
-
-### Reversibilidade e Portabilidade
-> Ao final do contrato (ou em caso de rescisão), o fornecedor tem prazo definido para entregar todos os dados em formato aberto e interoperável, sem custo adicional.
-
-### Mecanismos de Contestação
-> Deve haver canal formal para que professores, alunos e responsáveis contestem recomendações ou classificações feitas pela IA.
+[[CRITERIOS_LAUNCHER]]
 
 ---
 
 ## Checklist da Fase "Durante"
 
-- [ ] Critérios técnicos específicos de IA incluídos no TR
+- [ ] As 8 perguntas fundamentais respondidas no contrato ou anexos
 - [ ] Modalidade de contratação definida e justificada
-- [ ] As 8 perguntas fundamentais respondidas no contrato
-- [ ] Cláusula de transparência algorítmica incluída
-- [ ] Cláusula de supervisão humana obrigatória incluída
-- [ ] Cláusula de propriedade dos dados da rede incluída
-- [ ] Cláusula de portabilidade e plano de saída incluída
-- [ ] Métricas de desempenho pedagógico definidas
-- [ ] Mecanismos de contestação previstos
+- [ ] Critérios de Especificação Técnica (ET) incluídos no Termo de Referência
+- [ ] Documentos de Aceitabilidade da Proposta (AP) exigidos no edital
+- [ ] Cláusulas Contratuais (CC) previstas na minuta e no plano de fiscalização
 - [ ] Equipe pedagógica envolvida na avaliação das propostas
+- [ ] Responsável pela fiscalização e periodicidade de verificação definidos
 
 ---
 
 ## Próximos Passos
 
-- **Após a Contratação**: Como monitorar, auditar e garantir o bom uso da IA ao longo do contrato
-- **Checklist da Jornada**: Lista completa de verificação por fase
+- **Após a Contratação**: como monitorar, auditar e garantir o bom uso da IA ao longo do contrato
+- **Critérios de Contratação**: o cardápio completo, com cada critério em detalhe
+- **Checklist da Jornada**: lista completa de verificação por fase
 
 ---
 

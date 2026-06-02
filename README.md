@@ -1,121 +1,67 @@
 ---
-title: "Materiais por Persona: Contratação Pública de IA na Educação"
+title: "Contratação Pública de IA na Educação — Plataforma"
 author: "Aliança de IA para a Educação"
 date: "2026"
 ---
 
-# Materiais por Persona: Contratação Pública de IA na Educação
+# Contratação Pública de Soluções de IA na Educação
 
-Estes materiais são derivados da publicação **"Contratação Pública de Soluções de IA na Educação"**, iniciativa da [Aliança de IA para a Educação](http://iaparaeducacao.org.br), desenvolvida em parceria com o **Instituto Jataí**.
+Site estático da **[Aliança de IA para a Educação](http://iaparaeducacao.org.br)** (Fundação Lemann, Telles Foundation e VélezReyes+), em parceria com o **Instituto Jataí**, sobre contratação pública responsável de IA na educação brasileira. Conteúdo derivado da publicação *"Contratação Pública de Soluções de IA na Educação"* (pesquisa nov–dez 2025: literatura, análise PNCP 2024–2026 e 11 entrevistas).
 
-A publicação original é um instrumento abrangente que cobre desde conceitos de IA na educação até um guia prático de contratação responsável. Os materiais abaixo reorganizam e reenquadram esse conteúdo para **5 personas estratégicas**, oferecendo a cada público um caminho direto ao que é mais relevante para sua atuação.
+> Para detalhes técnicos de arquitetura e do fluxo de trabalho, veja **[CLAUDE.md](CLAUDE.md)**.
 
----
+## Como rodar (build + preview)
 
-## Para Editores de Conteúdo
-
-Todo o conteúdo editável está na pasta [`conteudo/`](conteudo/). Veja o guia [`conteudo/COMO-EDITAR.md`](conteudo/COMO-EDITAR.md) para instruções de como criar e editar materiais.
-
----
-
-## Navegação por Persona
-
-### EdTechs (Empreendedores)
-
-*Perspectiva: "Como vendo IA de forma responsável para o setor público?"*
-
-| Material | Descrição | Tempo de leitura |
-|----------|-----------|-----------------|
-| [Guia de Modalidades de Contratação](conteudo/edtechs/guia-modalidades-contratacao.md) | Pregão, registro de preço, inexigibilidade, dispensa, CPSI e ETEC — guia prático | ~20 min |
-| [Checklist de Prontidão](conteudo/edtechs/checklist-edtechs.md) | 35+ itens para verificar antes de abordar redes públicas | ~10 min |
-| [Perguntas Frequentes](conteudo/edtechs/faq-edtechs.md) | 16 respostas sobre mercado, requisitos, processo de venda e riscos | ~15 min |
-| [Resumo Executivo](conteudo/edtechs/one-pager-edtechs.md) | Visão geral em 1 página: cenário, oportunidade, 5 ações imediatas | ~3 min |
-| [Guia para EdTechs Internacionais](conteudo/edtechs/internacional/guia-internacionais.md) | Para empresas estrangeiras: presença jurídica, LGPD internacional, adaptação cultural, tributação | ~15 min |
-
----
-
-### Gestores Públicos
-
-*Perspectiva: "Como compro IA com segurança e intencionalidade pedagógica?"*
-
-| Material | Descrição | Tempo de leitura |
-|----------|-----------|-----------------|
-| [Guia Completo](conteudo/gestores/guia-gestores.md) | Da compreensão de IA ao guia antes/durante/após contratação | ~25 min |
-| [Checklist da Jornada](conteudo/gestores/checklist-gestores.md) | Itens acionáveis por fase: antes, durante e após a contratação | ~10 min |
-| [Framework de Decisão](conteudo/gestores/framework-decisao-gestores.md) | Árvore de decisão, matriz de risco, comparativo de modalidades, RACI | ~15 min |
-| [Resumo Executivo](conteudo/gestores/one-pager-gestores.md) | Visão geral em 1 página: problema, riscos, solução, próximos passos | ~3 min |
-
----
-
-### Organizações Intermediárias
-
-*Perspectiva: "Como facilitar contratações de IA mais responsáveis?"*
-
-| Material | Descrição | Tempo de leitura |
-|----------|-----------|-----------------|
-| [Guia Completo](conteudo/intermediarios/guia-intermediarios.md) | Modelos de intermediação, critérios de curadoria, letramento algorítmico | ~15 min |
-| [Resumo Executivo](conteudo/intermediarios/one-pager-intermediarios.md) | Oportunidade de atuação, 3 modelos, checklist de curadoria | ~3 min |
-
----
-
-### Legisladores e Formuladores de Políticas
-
-*Perspectiva: "Que marcos regulatórios e incentivos são necessários?"*
-
-| Material | Descrição | Tempo de leitura |
-|----------|-----------|-----------------|
-| [Policy Brief](conteudo/legisladores/policy-brief-legisladores.md) | Lacunas regulatórias, benchmarks internacionais, 7 recomendações | ~15 min |
-| [Resumo Executivo](conteudo/legisladores/one-pager-legisladores.md) | Problema, 5 recomendações, dados de impacto | ~3 min |
-
----
-
-### Educadores (Professores e Coordenadores)
-
-*Perspectiva: "Como uso e supervisiono IA no dia a dia da escola?"*
-
-| Material | Descrição | Tempo de leitura |
-|----------|-----------|-----------------|
-| [Guia Prático](conteudo/educadores/guia-educadores.md) | O que é IA, como ajuda, riscos, supervisão humana, perguntas essenciais | ~15 min |
-| [Resumo Executivo](conteudo/educadores/one-pager-educadores.md) | 5 benefícios, 5 alertas, 3 perguntas para a coordenação | ~3 min |
-
----
-
-## Sobre a Publicação Original
-
-A publicação **"Contratação Pública de Soluções de IA na Educação"** é resultante de pesquisa realizada entre novembro e dezembro de 2025, envolvendo:
-- Mapeamento e revisão de literatura nacional e internacional sobre IA na educação
-- Pesquisa documental de contratações públicas realizadas entre 2024 e fevereiro de 2026
-- 11 entrevistas com gestores públicos, especialistas jurídicos, provedores de soluções e especialistas em IA
-
-## Geração de PDF e HTML
-
-Para gerar versões em PDF e HTML dos materiais:
+**Não há `uv` nesta máquina** — usar o venv do projeto:
 
 ```bash
-# Instalar dependências
-# pandoc: sudo pacman -S pandoc (Arch) / sudo apt install pandoc (Debian/Ubuntu)
-# weasyprint: pip install weasyprint (para PDF via HTML)
+# uma vez:
+python3 -m venv .venv && .venv/bin/pip install markdown jinja2 pyyaml pygments python-docx
 
-# Gerar todos os materiais
-./build.sh
+# gerar o site em output/site/
+.venv/bin/python site/generate.py
 
-# Gerar apenas HTML
-./build.sh --html
+# servir para revisão local
+cd output/site && python3 -m http.server 8000   # http://localhost:8000
 
-# Gerar materiais de uma persona específica
-./build.sh gestores
-./build.sh edtechs
+# regerar os templates Word (.docx) editáveis
+.venv/bin/python site/gerar_templates_docx.py
 ```
 
-Os arquivos gerados ficam em `output/html/` e `output/pdf/`.
+## Estrutura
 
----
+- **`conteudo/`** — todo o conteúdo editável em Markdown. Guia de edição em [`conteudo/COMO-EDITAR.md`](conteudo/COMO-EDITAR.md).
+- **`site/generate.py`** — gerador estático (descobre `.md`, aplica templates Jinja2).
+- **`site/templates/`**, **`site/assets/`** — templates e CSS/JS.
+- **`site/assets/downloads/`** — Guia completo (PDF) e templates editáveis (`.docx`).
+- **`REVISAO-PLATAFORMA.html`** — documentação interna das rodadas de revisão (abas V2/V3), publicada como `revisao.html`.
+
+## Navegação (atual)
+
+Menu com **2 personas + 3 seções**:
+
+| Entrada | Tipo | Conteúdo |
+|---------|------|----------|
+| **Gestores Públicos** | Persona | Usos em potencial · Antes / Durante / Após a contratação · Guia · Checklist · Framework |
+| **EdTechs** | Persona | 5 Perguntas · Modalidades · Checklist · Guia + 4 sub-estágios (Inicial, Entrada, Escala, Internacional) |
+| **Recursos** | Seção | Critérios de Contratação (interativo) · Glossário · Model Card e RIPD (com download Word) |
+| **Contexto e Política** | Seção | Como as redes contratam · Desafios · Boas práticas internacionais · Documentos oficiais · Policy Brief |
+| **Sobre o Guia** | Seção | Apresentação · Metodologia |
+
+As pastas `educadores/`, `intermediarios/` e `legisladores/` permanecem em `conteudo/` mas estão fora do menu principal.
+
+## Destaques da plataforma
+
+- **Critérios de Contratação de IA** — 14 critérios (ET/AP/CC) numa página interativa (abas + acordeão), fonte única no gerador. Também embutidos como "cardápio" na página *Durante a Contratação*.
+- **Templates editáveis (Word)** — RIPD Simplificado e Model Card Educacional para baixar e preencher, espelhando as orientações do site.
+- **Guia completo (PDF)** — download na home.
+
+## Deploy
+
+Netlify — `netlify.toml`: `publish = "output/site"`.
 
 ## Créditos
 
-- **Publicação original:** Aliança de IA para a Educação, em parceria com o Instituto Jataí
-- **Materiais derivados:** Gerados a partir da publicação original com reorganização por persona e enquadramento de perspectiva
+Publicação original: Aliança de IA para a Educação, em parceria com o Instituto Jataí. Materiais derivados reorganizados por persona.
 
----
-
-*Aliança de IA para a Educação | 2026*
+*Aliança de IA para a Educação · Instituto Jataí · 2026*

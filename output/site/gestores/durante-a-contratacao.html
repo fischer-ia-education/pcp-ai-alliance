@@ -57,7 +57,7 @@
                 </a>
                 
                 
-                <a href="../revisao-v2.html" class="nav-interno">· Revisão V2</a>
+                <a href="../revisao.html" class="nav-interno">· Revisão</a>
             </nav>
             <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
                 <span></span><span></span><span></span>
@@ -182,13 +182,11 @@
                 
                 <li><a href="#o-que-esta-fase-inclui" class="toc-link">O Que Esta Fase Inclui</a></li>
                 
-                <li><a href="#1-criterios-tecnicos-para-ia" class="toc-link">1. Critérios Técnicos para IA</a></li>
+                <li><a href="#as-8-perguntas-fundamentais-do-contrato-de-ia" class="toc-link">As 8 Perguntas Fundamentais do Contrato de IA</a></li>
                 
-                <li><a href="#2-escolha-a-modalidade-de-contratacao" class="toc-link">2. Escolha a Modalidade de Contratação</a></li>
+                <li><a href="#escolha-a-modalidade-de-contratacao" class="toc-link">Escolha a Modalidade de Contratação</a></li>
                 
-                <li><a href="#3-o-termo-de-referencia-para-ia" class="toc-link">3. O Termo de Referência para IA</a></li>
-                
-                <li><a href="#4-salvaguardas-contratuais-obrigatorias" class="toc-link">4. Salvaguardas Contratuais Obrigatórias</a></li>
+                <li><a href="#quais-sao-as-salvaguardas" class="toc-link">Quais São as Salvaguardas</a></li>
                 
                 <li><a href="#checklist-da-fase-durante" class="toc-link">Checklist da Fase "Durante"</a></li>
                 
@@ -223,7 +221,7 @@
                 <span class="doc-tipo-badge tipo-jornada-durante">Durante a Contratação</span>
                 <span class="doc-reading-time">
                     <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="6" stroke="currentColor" stroke-width="1.2"/><path d="M7 4v3.5l2.5 1.5" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
-                    ~5 min de leitura
+                    ~3 min de leitura
                 </span>
                 
                 <span class="doc-position-badge">
@@ -231,6 +229,7 @@
                 </span>
                 
             </div>
+            
             
             <div class="doc-progress-bar" role="progressbar"
                  aria-valuenow="4"
@@ -249,61 +248,31 @@
 </blockquote>
 <hr />
 <h2 id="o-que-esta-fase-inclui">O Que Esta Fase Inclui</h2>
-<p>A fase <em>Durante a Contratação</em> compreende quatro eixos:</p>
+<p>A fase <em>Durante a Contratação</em> compreende quatro movimentos:</p>
 <ol>
-<li><strong>Definição dos critérios técnicos</strong></li>
-<li><strong>Escolha da modalidade de contratação</strong></li>
-<li><strong>Elaboração do Termo de Referência e do edital</strong></li>
-<li><strong>Definição das salvaguardas contratuais</strong></li>
+<li><strong>Responder às 8 perguntas fundamentais</strong> que todo contrato de IA precisa endereçar</li>
+<li><strong>Escolher a modalidade</strong> de contratação adequada ao objeto e ao contexto</li>
+<li><strong>Garantir as salvaguardas</strong> de governança algorítmica, contrato e formação</li>
+<li><strong>Aplicar os critérios práticos</strong> no Termo de Referência, no edital e na minuta</li>
+</ol>
+<p>As três primeiras dão o enquadramento. A quarta é onde a teoria vira exigência verificável: para isso, use o <strong>cardápio de critérios</strong> ao final desta página.</p>
+<hr />
+<h2 id="as-8-perguntas-fundamentais-do-contrato-de-ia">As 8 Perguntas Fundamentais do Contrato de IA</h2>
+<blockquote>
+<p>Estas perguntas devem estar respondidas, explicitamente, no contrato ou em seus anexos.</p>
+</blockquote>
+<ol>
+<li><strong>Para quê?</strong> Qual é o propósito pedagógico da solução? Que problema ela resolve?</li>
+<li><strong>Com que dados?</strong> Que dados serão coletados, processados e armazenados? Por quanto tempo e em que base legal (LGPD)?</li>
+<li><strong>Como?</strong> Que tipo de algoritmo? Que dados de treinamento? A IA pode discriminar algum grupo?</li>
+<li><strong>Para quem?</strong> Quem terá acesso aos dados e às saídas da IA? Professores? Gestores? O fornecedor?</li>
+<li><strong>Com que segurança?</strong> Quais as medidas de segurança da informação? O que acontece em caso de incidente?</li>
+<li><strong>Até quando?</strong> Qual o prazo contratual? Há renovação automática? Quais as condições de rescisão?</li>
+<li><strong>E se falhar?</strong> Quais as métricas de desempenho? O que acontece se as metas não forem atingidas?</li>
+<li><strong>Com que legado?</strong> Ao final do contrato, como serão portados os dados? Há plano de transição?</li>
 </ol>
 <hr />
-<h2 id="1-criterios-tecnicos-para-ia">1. Critérios Técnicos para IA</h2>
-<p>Diferente do software convencional, a IA exige critérios técnicos específicos que vão além de funcionalidades e preço.</p>
-<p><strong>Inclua nos requisitos técnicos:</strong></p>
-<table>
-<thead>
-<tr>
-<th>Critério</th>
-<th>O que exigir</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Transparência</strong></td>
-<td>Documentação de como a IA funciona (Model Card ou equivalente)</td>
-</tr>
-<tr>
-<td><strong>Explicabilidade</strong></td>
-<td>A IA deve ser capaz de explicar suas recomendações em linguagem acessível</td>
-</tr>
-<tr>
-<td><strong>Equidade</strong></td>
-<td>Testes de desempenho por grupos (gênero, raça, renda) para verificar vieses</td>
-</tr>
-<tr>
-<td><strong>Privacidade</strong></td>
-<td>RIPD, LGPD, criptografia, minimização de dados, prazo de retenção</td>
-</tr>
-<tr>
-<td><strong>Supervisão humana</strong></td>
-<td>Mecanismos para que professores e gestores questionem e anulem decisões da IA</td>
-</tr>
-<tr>
-<td><strong>Interoperabilidade</strong></td>
-<td>Compatibilidade com sistemas já usados pela rede (SIGEDUC, SAGA, etc.)</td>
-</tr>
-<tr>
-<td><strong>Portabilidade</strong></td>
-<td>Os dados pertencem à rede pública, não ao fornecedor</td>
-</tr>
-<tr>
-<td><strong>Reversibilidade</strong></td>
-<td>Plano claro de saída caso a contratação seja encerrada</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<h2 id="2-escolha-a-modalidade-de-contratacao">2. Escolha a Modalidade de Contratação</h2>
+<h2 id="escolha-a-modalidade-de-contratacao">Escolha a Modalidade de Contratação</h2>
 <p>A Lei 14.133/2021 (Nova Lei de Licitações) prevê diferentes modalidades. A escolha depende do objeto, do valor e do contexto.</p>
 <table>
 <thead>
@@ -317,110 +286,53 @@
 <tr>
 <td><strong>Inexigibilidade</strong></td>
 <td>Fornecedor exclusivo ou notória especialização</td>
-<td>Solução proprietária sem equivalente no mercado (Joinville/SC)</td>
+<td>Solução proprietária sem equivalente (Joinville/SC)</td>
 </tr>
 <tr>
 <td><strong>Pregão Eletrônico</strong></td>
 <td>Serviços comuns com especificação clara</td>
-<td>Plataforma de aprendizado adaptativo com TR bem definido (Rio Verde/GO)</td>
+<td>Plataforma adaptativa com TR bem definido (Rio Verde/GO)</td>
 </tr>
 <tr>
 <td><strong>CPSI</strong> (Contratação Pré-Comercial)</td>
 <td>Desenvolvimento de solução inexistente no mercado</td>
-<td>Piloto com inovação tecnológica; permite testar antes de contratar em escala</td>
+<td>Piloto com inovação; permite testar antes de escalar</td>
 </tr>
 <tr>
 <td><strong>Parceria Intermediada</strong></td>
 <td>Contratação com apoio de instituto ou fundação</td>
-<td>Organizações como Sebrae, Lize ou outros intermediários facilitam a modelagem (Itajaí/SC)</td>
+<td>Intermediários facilitam a modelagem (Itajaí/SC)</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Atenção à inexigibilidade:</strong> É a modalidade mais usada nas redes públicas (80% dos casos mapeados), mas exige comprovação rigorosa da exclusividade. Use apenas quando houver justificativa técnica sólida.</p>
+<p><strong>Atenção à inexigibilidade:</strong> é a modalidade mais usada nas redes públicas (80% dos casos mapeados), mas exige comprovação rigorosa da exclusividade. Use apenas com justificativa técnica sólida.</p>
 <hr />
-<h2 id="3-o-termo-de-referencia-para-ia">3. O Termo de Referência para IA</h2>
-<p>O Termo de Referência (TR) é o documento que define o objeto, os requisitos técnicos, as obrigações do fornecedor e os critérios de avaliação. Para contratos de IA, ele precisa ir além do TR convencional.</p>
-<p><strong>O TR deve responder:</strong></p>
-<h3 id="as-8-perguntas-fundamentais-do-contrato-de-ia">As 8 Perguntas Fundamentais do Contrato de IA</h3>
-<blockquote>
-<p>Essas perguntas devem estar respondidas, explicitamente, no contrato ou em seus anexos.</p>
-</blockquote>
-<ol>
-<li>
-<p><strong>Para quê?</strong><br />
-   - Qual é o propósito pedagógico da solução? Que problema ela resolve e como?</p>
-</li>
-<li>
-<p><strong>Com que dados?</strong><br />
-   - Que dados serão coletados, processados e armazenados? Por quanto tempo? Em que base legal (LGPD)?</p>
-</li>
-<li>
-<p><strong>Como?</strong><br />
-   - Como a IA funciona? Que tipo de algoritmo? Que dados de treinamento foram usados? A IA pode discriminar algum grupo?</p>
-</li>
-<li>
-<p><strong>Para quem?</strong><br />
-   - Quem terá acesso aos dados e às saídas da IA? Professores? Gestores? O fornecedor?</p>
-</li>
-<li>
-<p><strong>Com que segurança?</strong><br />
-   - Quais são as medidas de segurança da informação? O que acontece em caso de incidente de dados?</p>
-</li>
-<li>
-<p><strong>Até quando?</strong><br />
-   - Qual é o prazo contratual? Há renovação automática? Quais são as condições para rescisão?</p>
-</li>
-<li>
-<p><strong>E se falhar?</strong><br />
-   - Quais são as métricas de desempenho? O que acontece se as metas não forem atingidas? Há multas contratuais?</p>
-</li>
-<li>
-<p><strong>Com que legado?</strong><br />
-   - Ao final do contrato, como serão portados os dados? O fornecedor deve garantir continuidade pedagógica ou plano de transição.</p>
-</li>
-</ol>
-<hr />
-<h2 id="4-salvaguardas-contratuais-obrigatorias">4. Salvaguardas Contratuais Obrigatórias</h2>
-<p><strong>Inclua cláusulas específicas para:</strong></p>
-<h3 id="transparencia-algoritmica">Transparência Algorítmica</h3>
-<blockquote>
-<p>O fornecedor deve entregar documentação técnica da IA (equivalente ao Model Card) e atualizar essa documentação a cada atualização significativa do modelo.</p>
-</blockquote>
-<h3 id="supervisao-humana">Supervisão Humana</h3>
-<blockquote>
-<p>Nenhuma decisão da IA com impacto direto sobre a trajetória escolar do aluno (aprovação, retenção, encaminhamento) pode ser automatizada. O professor ou gestor sempre tem a palavra final.</p>
-</blockquote>
-<h3 id="governanca-de-dados">Governança de Dados</h3>
-<blockquote>
-<p>Os dados gerados no âmbito do contrato pertencem à rede pública. O fornecedor não pode usar esses dados para treinar seus modelos sem consentimento explícito da rede e dos responsáveis pelos alunos.</p>
-</blockquote>
-<h3 id="reversibilidade-e-portabilidade">Reversibilidade e Portabilidade</h3>
-<blockquote>
-<p>Ao final do contrato (ou em caso de rescisão), o fornecedor tem prazo definido para entregar todos os dados em formato aberto e interoperável, sem custo adicional.</p>
-</blockquote>
-<h3 id="mecanismos-de-contestacao">Mecanismos de Contestação</h3>
-<blockquote>
-<p>Deve haver canal formal para que professores, alunos e responsáveis contestem recomendações ou classificações feitas pela IA.</p>
-</blockquote>
+<h2 id="quais-sao-as-salvaguardas">Quais São as Salvaguardas</h2>
+<p>Os critérios práticos do bloco abaixo traduzem três salvaguardas interdependentes:</p>
+<ul>
+<li><strong>Governança algorítmica</strong> — transparência, explicabilidade, supervisão humana e auditabilidade.</li>
+<li><strong>Contrato como governança</strong> — proteção de dados, propriedade da informação, reversibilidade e mecanismos de saída.</li>
+<li><strong>Formação e capacidade institucional</strong> — preparar gestores e professores para usar e supervisionar o que foi contratado.</li>
+</ul>
+<p>Cada critério indica <strong>onde incluir</strong> (Termo de Referência, edital ou minuta) e <strong>como verificar</strong> (na Prova de Conceito ou na fiscalização). Selecione os pertinentes ao tipo de solução e à realidade da rede.</p>
+<aside class="criterios-launcher" aria-label="Cardápio de critérios de contratação"><div class="crit-launch-header"><span class="crit-launch-tag">Cardápio prático</span><h3 class="crit-launch-title">Critérios para a contratação de IA</h3><p class="crit-launch-intro">Selecione os critérios pertinentes ao tipo de solução e à realidade da rede. Cada um traz por que existe, o que exigir, onde incluir e como verificar.</p></div><div class="crit-launch-bloco" style="--bloco-cor: #A725FF"><div class="crit-launch-bloco-head"><span class="crit-launch-sigla">ET</span><span class="crit-launch-nome">Especificação Técnica</span></div><p class="crit-launch-resumo">O que a solução deve ser capaz de fazer. Verificável por Prova de Conceito (POC).</p><div class="crit-launch-chips"><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#et1"><span class="crit-launch-num">ET 1</span>Sinalização permanente de IA</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#et2"><span class="crit-launch-num">ET 2</span>Alerta obrigatório e validação humana para decisões de alto impacto</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#et3"><span class="crit-launch-num">ET 3</span>Anulação de recomendações com registro auditável</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#et4"><span class="crit-launch-num">ET 4</span>Mecanismos de controle de conteúdo inapropriado</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#et5"><span class="crit-launch-num">ET 5</span>Proibição de treinamento do modelo com dados dos alunos da rede</a></div></div><div class="crit-launch-bloco" style="--bloco-cor: #5a8a00"><div class="crit-launch-bloco-head"><span class="crit-launch-sigla">AP</span><span class="crit-launch-nome">Aceitabilidade da Proposta</span></div><p class="crit-launch-resumo">Documentos e declarações que o fornecedor apresenta para participar da licitação. Propostas sem eles são desclassificadas.</p><div class="crit-launch-chips"><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#ap1"><span class="crit-launch-num">AP 1</span>Nota técnica do modelo: variáveis, lógica e dados de treinamento</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#ap2"><span class="crit-launch-num">AP 2</span>Declaração de dados coletados com finalidade pedagógica justificada</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#ap3"><span class="crit-launch-num">AP 3</span>Política específica de proteção de dados de crianças e adolescentes</a></div></div><div class="crit-launch-bloco" style="--bloco-cor: #111111"><div class="crit-launch-bloco-head"><span class="crit-launch-sigla">CC</span><span class="crit-launch-nome">Cláusulas Contratuais</span></div><p class="crit-launch-resumo">Obrigações que valem durante toda a vigência do contrato e guiam a fiscalização.</p><div class="crit-launch-chips"><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#cc1"><span class="crit-launch-num">CC 1</span>Auditoria pedagógica: output da IA vs. julgamento docente</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#cc2"><span class="crit-launch-num">CC 2</span>Canal de contestação de decisões algorítmicas com SLA definido</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#cc3"><span class="crit-launch-num">CC 3</span>Formação inicial e continuada da equipe da rede</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#cc4"><span class="crit-launch-num">CC 4</span>Portabilidade em formato aberto com destruição certificada</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#cc5"><span class="crit-launch-num">CC 5</span>Gatilhos objetivos de rescisão sem ônus à rede</a><a class="crit-launch-chip" href="../recursos/criterios-contratacao.html#cc6"><span class="crit-launch-num">CC 6</span>Comitê de supervisão algorítmica</a></div></div><a class="crit-launch-cta" href="../recursos/criterios-contratacao.html">Ver todos os critérios em detalhe <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a></aside>
 <hr />
 <h2 id="checklist-da-fase-durante">Checklist da Fase "Durante"</h2>
 <ul>
-<li class="task-item"><input type="checkbox" disabled> Critérios técnicos específicos de IA incluídos no TR</li>
+<li class="task-item"><input type="checkbox" disabled> As 8 perguntas fundamentais respondidas no contrato ou anexos</li>
 <li class="task-item"><input type="checkbox" disabled> Modalidade de contratação definida e justificada</li>
-<li class="task-item"><input type="checkbox" disabled> As 8 perguntas fundamentais respondidas no contrato</li>
-<li class="task-item"><input type="checkbox" disabled> Cláusula de transparência algorítmica incluída</li>
-<li class="task-item"><input type="checkbox" disabled> Cláusula de supervisão humana obrigatória incluída</li>
-<li class="task-item"><input type="checkbox" disabled> Cláusula de propriedade dos dados da rede incluída</li>
-<li class="task-item"><input type="checkbox" disabled> Cláusula de portabilidade e plano de saída incluída</li>
-<li class="task-item"><input type="checkbox" disabled> Métricas de desempenho pedagógico definidas</li>
-<li class="task-item"><input type="checkbox" disabled> Mecanismos de contestação previstos</li>
+<li class="task-item"><input type="checkbox" disabled> Critérios de Especificação Técnica (ET) incluídos no Termo de Referência</li>
+<li class="task-item"><input type="checkbox" disabled> Documentos de Aceitabilidade da Proposta (AP) exigidos no edital</li>
+<li class="task-item"><input type="checkbox" disabled> Cláusulas Contratuais (CC) previstas na minuta e no plano de fiscalização</li>
 <li class="task-item"><input type="checkbox" disabled> Equipe pedagógica envolvida na avaliação das propostas</li>
+<li class="task-item"><input type="checkbox" disabled> Responsável pela fiscalização e periodicidade de verificação definidos</li>
 </ul>
 <hr />
 <h2 id="proximos-passos">Próximos Passos</h2>
 <ul>
-<li><strong>Após a Contratação</strong>: Como monitorar, auditar e garantir o bom uso da IA ao longo do contrato</li>
-<li><strong>Checklist da Jornada</strong>: Lista completa de verificação por fase</li>
+<li><strong>Após a Contratação</strong>: como monitorar, auditar e garantir o bom uso da IA ao longo do contrato</li>
+<li><strong>Critérios de Contratação</strong>: o cardápio completo, com cada critério em detalhe</li>
+<li><strong>Checklist da Jornada</strong>: lista completa de verificação por fase</li>
 </ul>
 <hr />
 <p><em>Aliança de IA para a Educação | Instituto Jataí | 2026</em></p>

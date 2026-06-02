@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Critérios para a Contratação de IA · Contratação Pública de IA na Educação</title>
+    <meta name="description" content="Materiais para contratação responsável de IA na educação pública brasileira">
+    <link rel="icon" type="image/png" href="../assets/logos/icone_alianca.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/style.css">
+    
+</head>
+<body class="page-persona page-criterios">
+
+    <div class="site-disclaimer">
+        <p><strong>Atenção:</strong> Este site é um conceito em desenvolvimento. O conteúdo ainda não foi revisado e pode conter imprecisões.</p>
+    </div>
+
+    <header class="site-header">
+        <div class="header-inner">
+            <a href="../index.html" class="header-logo">
+                <img src="../assets/logos/assinatura_alianca_branco.png" alt="Aliança IA para Educação" height="52" style="display:block; max-height:52px; width:auto">
+            </a>
+            <nav class="header-nav" id="header-nav">
+                
+                <a href="../gestores/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #2f855a">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="5" width="22" height="9" fill="#A725FF"/><rect x="8" y="18" width="22" height="9" fill="#BBD634"/></svg>
+                    Gestores Públicos
+                </a>
+                
+                <a href="../edtechs/index.html"
+                   class="nav-persona"
+                   style="--persona-color: #2b6cb0">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="10" width="22" height="15" fill="#A725FF"/><polygon points="18,3 30,3 30,14" fill="#BBD634"/></svg>
+                    EdTechs
+                </a>
+                
+                
+                
+                <a href="../recursos/index.html"
+                   class="nav-section active">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="2" y="8" width="20" height="16" fill="#A725FF"/><rect x="12" y="5" width="18" height="12" transform="rotate(15,21,11)" fill="#BBD634"/></svg> Recursos
+                </a>
+                
+                <a href="../contexto-politica/index.html"
+                   class="nav-section">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="14" y="2" width="16" height="28" fill="#BBD634"/><polygon points="2,6 16,16 2,26" fill="#A725FF"/></svg> Contexto e Política
+                </a>
+                
+                <a href="../sobre-o-guia/index.html"
+                   class="nav-section">
+                    <svg viewBox="0 0 32 32" width="32" height="32" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M6 4h14l6 6v18H6z" fill="#A725FF"/><rect x="10" y="14" width="12" height="2" fill="#BBD634"/><rect x="10" y="18" width="9" height="2" fill="#BBD634"/><rect x="10" y="22" width="11" height="2" fill="#BBD634"/></svg> Sobre o Guia
+                </a>
+                
+                
+                <a href="../revisao.html" class="nav-interno">· Revisão</a>
+            </nav>
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Menu" aria-expanded="false">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main class="site-main">
+        
+<div class="persona-hub criterios-page" style="--persona-color: #718096">
+
+    <nav class="breadcrumb" aria-label="Caminho de navegação">
+        <a href="../index.html">Início</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="../recursos/index.html">Recursos</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current">Critérios de Contratação</span>
+    </nav>
+
+    <header class="persona-header criterios-header">
+        <div class="persona-header-accent" aria-hidden="true"></div>
+        <span class="criterios-overline">Instrumento prático · Instituto Jataí</span>
+        <h1>Critérios para a Contratação de IA na Educação Pública</h1>
+        <p class="persona-description">
+            Os critérios traduzem as salvaguardas de uma boa contratação em exigências práticas e verificáveis.
+            Use como um <strong>cardápio</strong>: selecione os critérios pertinentes ao tipo de solução e à realidade
+            da rede — não é uma lista para aplicar integralmente em todo caso.
+        </p>
+    </header>
+
+    <div class="criterios-legenda">
+        <span><span class="leg-dot" style="background:#A725FF"></span> ET — verificável na POC</span>
+        <span><span class="leg-dot" style="background:#5a8a00"></span> AP — documento para a licitação</span>
+        <span><span class="leg-dot" style="background:#111111"></span> CC — obrigação durante a vigência</span>
+    </div>
+
+    
+    <div class="criterios-tabs" role="tablist" aria-label="Blocos de critérios">
+        
+        <button class="crit-tab active"
+                role="tab"
+                id="tab-ET"
+                aria-controls="painel-ET"
+                aria-selected="true"
+                data-bloco="ET"
+                style="--bloco-cor: #A725FF">
+            <span class="crit-tab-sigla">ET</span>
+            <span class="crit-tab-nome">Especificação Técnica</span>
+            <span class="crit-tab-count">5</span>
+        </button>
+        
+        <button class="crit-tab"
+                role="tab"
+                id="tab-AP"
+                aria-controls="painel-AP"
+                aria-selected="false"
+                data-bloco="AP"
+                style="--bloco-cor: #5a8a00">
+            <span class="crit-tab-sigla">AP</span>
+            <span class="crit-tab-nome">Aceitabilidade da Proposta</span>
+            <span class="crit-tab-count">3</span>
+        </button>
+        
+        <button class="crit-tab"
+                role="tab"
+                id="tab-CC"
+                aria-controls="painel-CC"
+                aria-selected="false"
+                data-bloco="CC"
+                style="--bloco-cor: #111111">
+            <span class="crit-tab-sigla">CC</span>
+            <span class="crit-tab-nome">Cláusulas Contratuais</span>
+            <span class="crit-tab-count">6</span>
+        </button>
+        
+    </div>
+
+    
+    
+    <section class="crit-painel"
+             id="painel-ET"
+             role="tabpanel"
+             aria-labelledby="tab-ET"
+             style="--bloco-cor: #A725FF"
+             >
+
+        <p class="crit-painel-resumo">O que a solução deve ser capaz de fazer. Verificável por Prova de Conceito (POC).</p>
+
+        <div class="crit-lista">
+            
+            <article class="crit-card" id="et1">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-et1">
+                        <span class="crit-card-num">ET 1</span>
+                        <span class="crit-card-titulo">Sinalização permanente de IA</span>
+                        <span class="crit-card-salvaguarda">Transparência e explicabilidade</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-et1" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Tutor inteligente e IA generativa</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Alunos e professores têm o direito de saber quando estão interagindo com uma IA, não com um ser humano. Sem essa sinalização, podem atribuir às respostas uma confiabilidade que ela não tem ou desenvolver uma relação com o sistema sem perceber que ele não compreende, não sente e não se responsabiliza pelo que diz.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>A identificação de IA deve estar visível nas telas de interação, sem necessidade de rolagem. Quando perguntado diretamente se é humano, o sistema deve responder que é uma IA.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Termo de Referência: requisito funcional obrigatório da solução</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">Na POC, executar testes como:</p>
+                        <ul class="crit-verificar">
+                            <li>Verificar se a identificação de IA está visível em pelo menos 5 telas diferentes do fluxo do aluno</li><li>Perguntar diretamente ao sistema “Você é humano?” e registrar a resposta</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-et1">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="et2">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-et2">
+                        <span class="crit-card-num">ET 2</span>
+                        <span class="crit-card-titulo">Alerta obrigatório e validação humana para decisões de alto impacto</span>
+                        <span class="crit-card-salvaguarda">Supervisão humana contínua</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-et2" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Algumas decisões têm consequências diretas e duradouras na vida do aluno, como progressão, reprovação ou classificações de risco de evasão. Nenhum sistema de IA deve tomá-las por conta própria: a responsabilidade pedagógica é do educador, não da solução.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>O fornecedor deve garantir que nenhuma decisão de alto impacto seja executada sem confirmação ativa de um usuário humano. O sistema deve exigir uma ação deliberada de autorização e registrar quem autorizou e quando.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Termo de Referência: requisito funcional obrigatório da solução</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">Na POC, executar um teste como:</p>
+                        <ul class="crit-verificar">
+                            <li>Simular atribuição de uma nota ou resultado de progressão/reprovação</li><li>Verificar se o sistema exige uma ação deliberada do usuário para prosseguir</li><li>Confirmar que: (a) o sistema não executa a ação automaticamente; (b) registra quem confirmou e quando</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-et2">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="et3">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-et3">
+                        <span class="crit-card-num">ET 3</span>
+                        <span class="crit-card-titulo">Anulação de recomendações com registro auditável</span>
+                        <span class="crit-card-salvaguarda">Supervisão humana contínua</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-et3" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Soluções de IA recomendam conteúdos, notas e intervenções com base em dados históricos e podem errar. Equipe pedagógica e professores precisam poder discordar e substituir pelo próprio julgamento. Se essa capacidade não existir, ou não ficar registrada, o algoritmo passa a ter a palavra final sem que ninguém possa questionar.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Qualquer recomendação gerada pelo sistema deve poder ser anulada ou substituída pela equipe pedagógica a qualquer momento. Cada anulação registrada automaticamente em log com data, hora e identificação do usuário. O sistema não pode reverter automaticamente uma decisão da equipe. O histórico deve ser acessível ao fiscal da rede, não apenas ao fornecedor.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Termo de Referência: requisito funcional obrigatório</li><li>Plano de fiscalização: verificação pelo fiscal, com frequência definida pela rede</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">Na POC, executar um teste como:</p>
+                        <ul class="crit-verificar">
+                            <li>Solicitar uma recomendação ao sistema (trilha, nota, alerta)</li><li>Anulá-la pelo perfil de professor ou coordenação pedagógica</li><li>Confirmar que: (a) a anulação foi possível; (b) o registro aparece no histórico; (c) o sistema não reverteu a decisão</li><li>Durante a execução: o fiscal acessa o histórico de anulações e confirma a disponibilidade para consulta</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-et3">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="et4">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-et4">
+                        <span class="crit-card-num">ET 4</span>
+                        <span class="crit-card-titulo">Mecanismos de controle de conteúdo inapropriado</span>
+                        <span class="crit-card-salvaguarda">Transparência e explicabilidade</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-et4" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Tutor inteligente e IA generativa</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Sistemas que geram texto livremente podem produzir conteúdo inadequado ao contexto escolar ou bloquear indevidamente temas legítimos. A exigência tem respaldo no ECA Digital (Lei nº 15.211/2025), que determina proteção desde a concepção (safety-by-design) para produtos digitais acessados por crianças e adolescentes.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>O fornecedor deve documentar as categorias de conteúdo que o sistema não produz e a lógica desses limites — não uma lista exaustiva, mas critérios compreensíveis e verificáveis. Deve descrever o processo de atualização dos filtros e o prazo máximo de correção de falhas. As proteções devem estar incorporadas ao design, não apenas como filtros externos.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Termo de Referência: requisito funcional obrigatório</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">Na POC, executar testes como:</p>
+                        <ul class="crit-verificar">
+                            <li>Grupo 1: interações que devem ser bloqueadas — verificar se o sistema recusa e emite explicação</li><li>Grupo 2: temas curriculares sensíveis mas legítimos — verificar se responde sem bloqueio indevido</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-et4">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="et5">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-et5">
+                        <span class="crit-card-num">ET 5</span>
+                        <span class="crit-card-titulo">Proibição de treinamento do modelo com dados dos alunos da rede</span>
+                        <span class="crit-card-salvaguarda">Privacidade e segurança de dados</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-et5" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Ao interagir com uma plataforma de IA, o aluno gera dados valiosos para as empresas. Esses dados pertencem aos alunos e à rede, não ao fornecedor. Usá-los para treinar ou ajustar o modelo pode violar a LGPD, que dá proteção máxima a dados de crianças e adolescentes.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>O fornecedor não pode usar dados gerados por alunos e professores (interações, respostas, produções, desempenho) para treinar, ajustar ou melhorar o modelo, nem para qualquer finalidade que não seja a execução do contrato. A vedação deve constar na minuta e ser confirmada nos Termos de Serviço do provedor de infraestrutura.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Termo de Referência: requisito obrigatório</li><li>Minuta contratual: cláusula expressa de vedação</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        
+                        <ul class="crit-verificar">
+                            <li>Acrescentar cláusula contratual e verificar se os Termos de Serviço do provedor de infraestrutura não a contradizem</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-et5">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+        </div>
+    </section>
+    
+    <section class="crit-painel hidden"
+             id="painel-AP"
+             role="tabpanel"
+             aria-labelledby="tab-AP"
+             style="--bloco-cor: #5a8a00"
+             hidden>
+
+        <p class="crit-painel-resumo">Documentos e declarações que o fornecedor apresenta para participar da licitação. Propostas sem eles são desclassificadas.</p>
+
+        <div class="crit-lista">
+            
+            <article class="crit-card" id="ap1">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-ap1">
+                        <span class="crit-card-num">AP 1</span>
+                        <span class="crit-card-titulo">Nota técnica do modelo: variáveis, lógica e dados de treinamento</span>
+                        <span class="crit-card-salvaguarda">Transparência e explicabilidade</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-ap1" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>A documentação do modelo permite avaliar riscos técnicos, verificar adequação pedagógica e identificar vieses antes da contratação. Sem ela, o gestor contrata uma caixa-preta sem saber o que há dentro.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Nota técnica com, no mínimo: tipo de modelo; fonte e período dos dados de treinamento; competências e habilidades cobertas (referência à BNCC quando aplicável); limitações conhecidas; taxa de acerto ou desempenho; e grau de autonomia (sugestões que o humano valida vs. decisões autônomas).</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Edital: exigência documental (modelo de preenchimento anexado ao edital)</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        
+                        <ul class="crit-verificar">
+                            <li>Na fase de julgamento: conferir se a nota técnica preenche todos os campos exigidos</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="crit-atencao">
+                        <span class="crit-atencao-label">Atenção</span>
+                        <ul>
+                            <li>Modelo que exija informações restritas ou sigilosas pode afastar interessados e restringir a competição</li><li>Modelo amplo demais pode dificultar o entendimento das características do objeto</li>
+                        </ul>
+                    </div>
+                    
+
+                    <button class="crit-fechar" data-target="corpo-ap1">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="ap2">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-ap2">
+                        <span class="crit-card-num">AP 2</span>
+                        <span class="crit-card-titulo">Declaração de dados coletados com finalidade pedagógica justificada</span>
+                        <span class="crit-card-salvaguarda">Privacidade e segurança de dados</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-ap2" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Plataformas coletam muito mais dados do que os usuários percebem — tempo de tela, padrões de clique, histórico de erros, às vezes biometria. Sem uma lista explícita e justificada, a rede não sabe o que autoriza nem como verificar o uso.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Declaração de todos os dados coletados, com a finalidade pedagógica de cada variável: o que é coletado, para quê, por quanto tempo é retido e quem acessa. Dados não listados não podem ser coletados na vigência. A declaração integra o contrato como anexo vinculante.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Edital: exigência documental</li><li>Minuta contratual: anexo vinculante, vedando uso para publicidade ou perfilamento</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        
+                        <ul class="crit-verificar">
+                            <li>Na fase de julgamento: verificar se a declaração foi preenchida e se cada dado tem finalidade pedagógica justificada</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="crit-atencao">
+                        <span class="crit-atencao-label">Atenção</span>
+                        <ul>
+                            <li>Dados declaratórios não são confirmáveis no momento do julgamento</li><li>Prever rotina de verificação na execução e definir quem na rede é responsável</li>
+                        </ul>
+                    </div>
+                    
+
+                    <button class="crit-fechar" data-target="corpo-ap2">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="ap3">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-ap3">
+                        <span class="crit-card-num">AP 3</span>
+                        <span class="crit-card-titulo">Política específica de proteção de dados de crianças e adolescentes</span>
+                        <span class="crit-card-salvaguarda">Privacidade e segurança de dados</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-ap3" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>A LGPD (art. 14) estabelece proteção reforçada para dados de crianças e adolescentes. Política genérica não basta. Ao contratar, a rede é controladora e o fornecedor, operador — que só pode tratar dados conforme as instruções da rede.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Política que mencione explicitamente crianças e adolescentes e descreva: (a) consentimento e bases legais por faixa etária — atenção ao consentimento parental para crianças até 12 anos; (b) vedação a usos não pedagógicos (publicidade, perfilamento, compartilhamento); (c) dados coletados e tratamento de dados sensíveis, com base legal e segurança reforçada; (d) papéis de controlador (rede) e operador (fornecedor), vedado uso autônomo inclusive após o encerramento.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Edital: exigência documental</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">Na fase de julgamento:</p>
+                        <ul class="crit-verificar">
+                            <li>Verificar se a declaração foi preenchida</li><li>Se cada dado coletado tem finalidade pedagógica justificada</li><li>Se há distinção entre crianças e adolescentes</li><li>Se os dados sensíveis estão identificados com a respectiva base legal</li>
+                        </ul>
+                    </div>
+
+                    
+                    <div class="crit-atencao">
+                        <span class="crit-atencao-label">Atenção</span>
+                        <ul>
+                            <li>Dados declaratórios não são confirmáveis no momento do julgamento</li><li>Prever rotina de verificação na execução e definir o responsável</li>
+                        </ul>
+                    </div>
+                    
+
+                    <button class="crit-fechar" data-target="corpo-ap3">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+        </div>
+    </section>
+    
+    <section class="crit-painel hidden"
+             id="painel-CC"
+             role="tabpanel"
+             aria-labelledby="tab-CC"
+             style="--bloco-cor: #111111"
+             hidden>
+
+        <p class="crit-painel-resumo">Obrigações que valem durante toda a vigência do contrato e guiam a fiscalização.</p>
+
+        <div class="crit-lista">
+            
+            <article class="crit-card" id="cc1">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-cc1">
+                        <span class="crit-card-num">CC 1</span>
+                        <span class="crit-card-titulo">Auditoria pedagógica: output da IA vs. julgamento docente</span>
+                        <span class="crit-card-salvaguarda">Auditabilidade</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-cc1" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Eficácia técnica não garante eficácia educacional. Um sistema pode funcionar bem no algoritmo e gerar recomendações sem sentido para a turma, o currículo ou a realidade local. A auditoria pedagógica traz o julgamento docente para dentro do ciclo de supervisão.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Auditoria pedagógica periódica, confrontando uma amostra das recomendações do sistema com o julgamento de professores usuários. Divergências recorrentes acionam protocolo de revisão junto ao fornecedor.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Minuta contratual: obrigação periódica com protocolo de revisão</li><li>Plano de fiscalização: responsável, periodicidade e forma de registro dos resultados</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        
+                        <ul class="crit-verificar">
+                            <li>Apresentar a professores uma amostra de recomendações sem indicar a origem</li><li>Registrar os casos avaliados como inadequados ou sem sentido pedagógico</li><li>Formalizar divergências recorrentes e encaminhar ao fornecedor para revisão</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-cc1">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="cc2">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-cc2">
+                        <span class="crit-card-num">CC 2</span>
+                        <span class="crit-card-titulo">Canal de contestação de decisões algorítmicas com SLA definido</span>
+                        <span class="crit-card-salvaguarda">Auditabilidade</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-cc2" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Sistemas de IA erram — notas incorretas, alertas equivocados, conteúdos inadequados. Professores, alunos e famílias precisam de um caminho claro para questionar e obter resposta em prazo razoável. Sem canal, os erros ficam sem correção e a confiança se deteriora.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Canal de contestação acessível diretamente da interface da plataforma, que registre todas as contestações, com prazo de resposta definido conforme o nível de impacto da decisão. Todos os registros disponíveis para auditoria pela rede.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Minuta contratual: SLA e obrigação de registro de contestações</li><li>Plano de fiscalização: verificação periódica do volume e prazo de atendimento; definir responsável</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">Durante a execução contratual:</p>
+                        <ul class="crit-verificar">
+                            <li>Verificar a existência e o funcionamento do canal na interface</li><li>Conferir registros e prazos de resposta nas verificações periódicas</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-cc2">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="cc3">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-cc3">
+                        <span class="crit-card-num">CC 3</span>
+                        <span class="crit-card-titulo">Formação inicial e continuada da equipe da rede</span>
+                        <span class="crit-card-salvaguarda">Alfabetização algorítmica</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-cc3" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Uma solução que ninguém sabe usar bem, ou que a equipe usa sem entender os limites, não gera valor pedagógico real e pode causar danos. Quem não reconhece quando o sistema erra tende a seguir as sugestões acriticamente. A formação é condição para a solução funcionar.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Formação inicial antes da implantação e formação continuada durante a vigência. Carga horária, formato e periodicidade definidos no contrato conforme o porte da solução. O conteúdo vai além do uso operacional: abrange os limites do sistema e como identificar e tratar resultados inadequados.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Termo de Referência: carga horária, formato e periodicidade como entregável</li><li>Minuta contratual: obrigação com evidência de realização</li><li>Plano de fiscalização: verificação a cada ciclo formativo</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">Durante a execução contratual:</p>
+                        <ul class="crit-verificar">
+                            <li>Confirmar que a formação inicial ocorreu antes do início do uso da solução</li><li>A cada ciclo: confirmar realização com registro de participação</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-cc3">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="cc4">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-cc4">
+                        <span class="crit-card-num">CC 4</span>
+                        <span class="crit-card-titulo">Portabilidade em formato aberto com destruição certificada</span>
+                        <span class="crit-card-salvaguarda">Reversibilidade e prevenção de lock-in</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-cc4" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Ao final do contrato, os dados produzidos pertencem à rede, não ao fornecedor. Se ficarem presos em formato proprietário, a rede perde acesso à própria informação e fica dependente de renovar só para não perder o histórico — um dos mecanismos mais comuns de lock-in.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Ao término, o fornecedor entrega todos os dados em formato aberto, destrói as cópias em seus sistemas e apresenta certificado de destruição. Prazo de entrega definido no contrato. Dados legíveis com ferramentas básicas, sem depender de sistemas proprietários.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Minuta contratual: entrega em formato aberto, prazo e certificado de destruição por terceiro</li><li>Plano de fiscalização: checklist de encerramento contratual</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">No encerramento:</p>
+                        <ul class="crit-verificar">
+                            <li>Confirmar recebimento dos dados no prazo e que o formato é aberto e legível</li><li>Exigir o certificado de destruição antes de dar quitação ao contrato</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-cc4">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="cc5">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-cc5">
+                        <span class="crit-card-num">CC 5</span>
+                        <span class="crit-card-titulo">Gatilhos objetivos de rescisão sem ônus à rede</span>
+                        <span class="crit-card-salvaguarda">Reversibilidade e prevenção de lock-in</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-cc5" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>Contratos de IA podem precisar ser encerrados antes do prazo — erros sistemáticos graves, discriminação algorítmica, violação de dados. Sem gatilhos definidos previamente, a rede pode ficar presa a um contrato problemático. Definir antes é mais simples e seguro do que negociar depois do problema.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Gatilhos objetivos e mensuráveis para rescisão sem ônus financeiro. Mínimos sugeridos: taxa de erro/inconsistência acima de [XX%] confirmada em auditoria; discriminação algorítmica confirmada; violação confirmada de dados de alunos; descumprimento reiterado do SLA de contestações.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Minuta contratual: cláusula com gatilhos mensuráveis e procedimento de acionamento</li><li>Plano de fiscalização: verificação periódica dos indicadores vinculados aos gatilhos</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">Durante a execução contratual:</p>
+                        <ul class="crit-verificar">
+                            <li>Monitorar os indicadores de cada gatilho na periodicidade definida pela rede</li><li>O fornecedor entrega relatório com os dados necessários</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-cc5">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+            <article class="crit-card" id="cc6">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-cc6">
+                        <span class="crit-card-num">CC 6</span>
+                        <span class="crit-card-titulo">Comitê de supervisão algorítmica</span>
+                        <span class="crit-card-salvaguarda">Governança algorítmica</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-cc6" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> Todos os tipos de solução</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>A supervisão tende a se concentrar no fiscal ou numa única área. Um comitê multissetorial distribui a responsabilidade e traz olhares complementares — pedagógico, técnico e jurídico. Redes sem essa estrutura podem começar com arranjos simples (reuniões periódicas) e evoluir conforme a maturidade.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>Instância de supervisão com representação mínima das áreas pedagógica e técnica da rede e um representante do fornecedor — que participa como informante técnico, não deliberativo. Formato variável conforme a capacidade institucional, de reuniões periódicas a comitê formalizado. Espaço estruturado, com registro.</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            <li>Minuta contratual: obrigação da rede e do fornecedor, formato e periodicidade a definir</li><li>Plano de fiscalização: composição mínima, periodicidade e forma de registro</li>
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        <p class="crit-verificar-intro">Durante a execução contratual:</p>
+                        <ul class="crit-verificar">
+                            <li>Confirmar que as reuniões acontecem com registro (ata ou equivalente)</li><li>Verificar se abordam o uso da solução, não apenas aspectos administrativos</li><li>Verificar a presença do fornecedor e o registro das informações técnicas prestadas</li>
+                        </ul>
+                    </div>
+
+                    
+
+                    <button class="crit-fechar" data-target="corpo-cc6">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            
+        </div>
+    </section>
+    
+
+    <div class="criterios-rodape">
+        <p>Estes critérios são um recorte prático do <strong>Guia de Contratação Pública de Soluções de IA para a Educação</strong>.
+        Para o contexto completo, consulte a página <a href="../gestores/durante-a-contratacao.html">Durante a Contratação</a>.</p>
+    </div>
+
+</div>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-top-brand">
+                <img src="../assets/logos/icone_alianca.png" height="72" alt="">
+                <span class="footer-brand-name">Aliança IA para Educação</span>
+            </div>
+            <div class="footer-top-partner">
+                <p class="footer-section-label">Em parceria com</p>
+                <img src="../assets/logos/logo_jatai_branco.png" height="24" alt="Logo Instituto Jataí" style="display:block; margin-bottom:0.5rem;">
+                <p class="footer-partner-desc">Apoiamos governos a inovar no uso de recursos públicos para promover uma sociedade sustentável e justa</p>
+            </div>
+            <div class="footer-top-social">
+                <p class="footer-section-label">Siga-nos</p>
+                <a href="https://www.linkedin.com/company/alian%C3%A7a-ia-educa%C3%A7%C3%A3o/" target="_blank" rel="noopener" aria-label="LinkedIn da Aliança IA para Educação">
+                    <img src="../assets/logos/logo_linkedin.png" alt="LinkedIn" height="36" style="display:block">
+                </a>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="footer-bottom">
+            <p class="footer-realizacao-title">Realização</p>
+            <p class="footer-realizacao-desc">A Aliança IA para Educação é uma iniciativa conjunta da Fundação Lemann, Telles Foundation e VélezReyes+ que visa fomentar o uso de Inteligência Artificial na educação pública brasileira.</p>
+            <div class="footer-logos">
+                <img src="../assets/logos/lemann_logo_branca.png" height="28" alt="Logo Fundação Lemann">
+                <img src="../assets/logos/telles_branca.png" height="48" alt="Logo Telles Foundation">
+                <img src="../assets/logos/velezreyes_logo_branca.png" height="24" alt="Logo VélezReyes+">
+            </div>
+            <p class="footer-copyright">© 2026 Aliança IA para Educação · Instituto Jataí</p>
+        </div>
+    </footer>
+
+    <script src="../assets/script.js"></script>
+    
+</body>
+</html>

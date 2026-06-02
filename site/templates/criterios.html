@@ -1,0 +1,129 @@
+{% extends "base.html" %}
+
+{% block title %}Critérios para a Contratação de IA · {{ site_title }}{% endblock %}
+
+{% block body_class %}page-persona page-criterios{% endblock %}
+
+{% block content %}
+<div class="persona-hub criterios-page" style="--persona-color: {{ section.cor }}">
+
+    <nav class="breadcrumb" aria-label="Caminho de navegação">
+        <a href="{{ root }}/index.html">Início</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <a href="{{ root }}/recursos/index.html">{{ section.nome }}</a>
+        <span class="sep" aria-hidden="true">/</span>
+        <span class="current">Critérios de Contratação</span>
+    </nav>
+
+    <header class="persona-header criterios-header">
+        <div class="persona-header-accent" aria-hidden="true"></div>
+        <span class="criterios-overline">Instrumento prático · Instituto Jataí</span>
+        <h1>Critérios para a Contratação de IA na Educação Pública</h1>
+        <p class="persona-description">
+            Os critérios traduzem as salvaguardas de uma boa contratação em exigências práticas e verificáveis.
+            Use como um <strong>cardápio</strong>: selecione os critérios pertinentes ao tipo de solução e à realidade
+            da rede — não é uma lista para aplicar integralmente em todo caso.
+        </p>
+    </header>
+
+    <div class="criterios-legenda">
+        <span><span class="leg-dot" style="background:#A725FF"></span> ET — verificável na POC</span>
+        <span><span class="leg-dot" style="background:#5a8a00"></span> AP — documento para a licitação</span>
+        <span><span class="leg-dot" style="background:#111111"></span> CC — obrigação durante a vigência</span>
+    </div>
+
+    {# ── Abas dos blocos ET / AP / CC ───────────────────────────── #}
+    <div class="criterios-tabs" role="tablist" aria-label="Blocos de critérios">
+        {% for sigla, info in blocos.items() %}
+        <button class="crit-tab{% if loop.first %} active{% endif %}"
+                role="tab"
+                id="tab-{{ sigla }}"
+                aria-controls="painel-{{ sigla }}"
+                aria-selected="{{ 'true' if loop.first else 'false' }}"
+                data-bloco="{{ sigla }}"
+                style="--bloco-cor: {{ info.cor }}">
+            <span class="crit-tab-sigla">{{ sigla }}</span>
+            <span class="crit-tab-nome">{{ info.nome }}</span>
+            <span class="crit-tab-count">{{ criterios_grupos[sigla]|length }}</span>
+        </button>
+        {% endfor %}
+    </div>
+
+    {# ── Painéis ────────────────────────────────────────────────── #}
+    {% for sigla, info in blocos.items() %}
+    <section class="crit-painel{% if not loop.first %} hidden{% endif %}"
+             id="painel-{{ sigla }}"
+             role="tabpanel"
+             aria-labelledby="tab-{{ sigla }}"
+             style="--bloco-cor: {{ info.cor }}"
+             {% if not loop.first %}hidden{% endif %}>
+
+        <p class="crit-painel-resumo">{{ info.resumo }}</p>
+
+        <div class="crit-lista">
+            {% for c in criterios_grupos[sigla] %}
+            <article class="crit-card" id="{{ c.id }}">
+                <h2 class="crit-card-head">
+                    <button class="crit-card-toggle" aria-expanded="false" aria-controls="corpo-{{ c.id }}">
+                        <span class="crit-card-num">{{ c.num }}</span>
+                        <span class="crit-card-titulo">{{ c.titulo }}</span>
+                        <span class="crit-card-salvaguarda">{{ c.salvaguarda }}</span>
+                        <svg class="crit-chevron" width="18" height="18" viewBox="0 0 18 18" fill="none" aria-hidden="true"><path d="M4 7l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </h2>
+
+                <div class="crit-card-corpo" id="corpo-{{ c.id }}" hidden>
+                    <p class="crit-aplica"><span class="crit-aplica-label">Aplica-se a</span> {{ c.aplica }}</p>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Por que existe</h3>
+                        <p>{{ c.porque }}</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">O que exigir</h3>
+                        <p>{{ c.exigir }}</p>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Onde incluir</h3>
+                        <ul class="crit-onde">
+                            {% for o in c.onde %}<li>{{ o }}</li>{% endfor %}
+                        </ul>
+                    </div>
+
+                    <div class="crit-campo">
+                        <h3 class="crit-campo-titulo">Como verificar</h3>
+                        {% if c.verificar_intro %}<p class="crit-verificar-intro">{{ c.verificar_intro }}</p>{% endif %}
+                        <ul class="crit-verificar">
+                            {% for v in c.verificar %}<li>{{ v }}</li>{% endfor %}
+                        </ul>
+                    </div>
+
+                    {% if c.atencao %}
+                    <div class="crit-atencao">
+                        <span class="crit-atencao-label">Atenção</span>
+                        <ul>
+                            {% for a in c.atencao %}<li>{{ a }}</li>{% endfor %}
+                        </ul>
+                    </div>
+                    {% endif %}
+
+                    <button class="crit-fechar" data-target="corpo-{{ c.id }}">
+                        Fechar
+                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M3 9l4-4 4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+            </article>
+            {% endfor %}
+        </div>
+    </section>
+    {% endfor %}
+
+    <div class="criterios-rodape">
+        <p>Estes critérios são um recorte prático do <strong>Guia de Contratação Pública de Soluções de IA para a Educação</strong>.
+        Para o contexto completo, consulte a página <a href="{{ root }}/gestores/durante-a-contratacao.html">Durante a Contratação</a>.</p>
+    </div>
+
+</div>
+{% endblock %}

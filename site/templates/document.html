@@ -88,6 +88,13 @@
                 </span>
                 {% endif %}
             </div>
+            {% if doc.download %}
+            <a class="doc-download-btn" href="{{ root }}/assets/downloads/{{ doc.download.arquivo }}" download>
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v9M4.5 7l3.5 3.5L11.5 7M2.5 13.5h11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                {{ doc.download.rotulo }}
+                <span class="doc-download-fmt">.docx</span>
+            </a>
+            {% endif %}
             {% if doc_total is defined and doc_total > 1 %}
             <div class="doc-progress-bar" role="progressbar"
                  aria-valuenow="{{ doc_index + 1 }}"

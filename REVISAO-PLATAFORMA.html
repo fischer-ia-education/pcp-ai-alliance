@@ -241,20 +241,88 @@
     text-align: center; padding: 2rem; color: var(--texto-leve);
     font-size: 0.82rem; border-top: 1px solid var(--borda); margin-top: 2rem;
   }
+
+  /* Abas de versão V2 / V3 */
+  .rev-tabs {
+    display: flex; gap: 0.5rem; justify-content: center;
+    padding: 1.75rem 1rem 0; background: var(--fundo);
+  }
+  .rev-tab {
+    padding: 0.7rem 1.7rem;
+    border: 1px solid var(--borda); border-bottom: none;
+    background: #fff; border-radius: 10px 10px 0 0;
+    cursor: pointer; font-family: inherit;
+    font-size: 0.95rem; font-weight: 700; color: var(--texto-leve);
+    transition: background 0.15s, color 0.15s;
+  }
+  .rev-tab:hover { color: var(--texto); }
+  .rev-tab.active { background: #1a202c; color: #fff; border-color: #1a202c; }
+  .rev-tab .rev-tab-date { display: block; font-size: 0.7rem; font-weight: 400; opacity: 0.7; }
+  .rev-panel { display: none; }
+  .rev-panel.active { display: block; }
+
+  /* V3: decisões feito / não feito */
+  .tag-feito { background: var(--novo); color: var(--novo-texto); }
+  .tag-naofeito { background: var(--removido); color: var(--removido-texto); }
+  .tag-parcial { background: var(--renomeado); color: var(--renomeado-texto); }
+
+  .premissa {
+    background: #faf5ff; border-left: 4px solid var(--roxo);
+    padding: 0.9rem 1.2rem; border-radius: 0 8px 8px 0;
+    margin: 0.75rem 0; font-size: 0.9rem; color: var(--texto-leve);
+  }
+  .premissa strong { color: #553c9a; }
+
+  .decisao-card {
+    background: var(--card); border: 1px solid var(--borda);
+    border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem;
+  }
+  .decisao-card h3 {
+    font-size: 1.05rem; margin-bottom: 0.4rem;
+    display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap;
+  }
+  .decisao-card p { font-size: 0.9rem; color: var(--texto-leve); }
+  .destino-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.6rem; }
+  .destino-pill {
+    font-size: 0.78rem; font-weight: 600;
+    background: #ebf4ff; color: var(--azul);
+    padding: 0.3rem 0.6rem; border-radius: 6px;
+  }
+
+  .rev-voltar {
+    display: inline-flex; align-items: center; gap: 0.5rem;
+    margin: 1rem 0 0 1.25rem;
+    padding: 0.55rem 1.1rem;
+    background: #fff; color: var(--texto);
+    border: 1px solid var(--borda); border-radius: 999px;
+    font-size: 0.85rem; font-weight: 700; text-decoration: none;
+    transition: border-color 0.15s, color 0.15s, transform 0.15s;
+  }
+  .rev-voltar:hover { border-color: var(--roxo); color: var(--roxo); transform: translateX(-2px); }
 </style>
 </head>
 <body>
 
+<a class="rev-voltar" href="index.html">
+  <svg width="15" height="15" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M13 8H3M3 8l5-5M3 8l5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  Voltar para a plataforma
+</a>
+
 <div class="page-header">
-  <h1>Revisão da Plataforma — V2</h1>
-  <p class="subtitle">Documentação das mudanças implementadas com base nas sugestões de revisão</p>
+  <h1>Revisão da Plataforma</h1>
+  <p class="subtitle">Documentação das rodadas de revisão e das decisões de implementação</p>
   <div class="meta">
     <span>Plataforma: pcp-ai-alliance.netlify.app</span>
-    <span>Data: Maio 2026</span>
-    <span>Versão: 2.0</span>
+    <span>Aliança de IA para a Educação · Instituto Jataí</span>
   </div>
 </div>
 
+<div class="rev-tabs" role="tablist" aria-label="Versões da revisão">
+  <button class="rev-tab" role="tab" data-rev="v2" aria-selected="false">Revisão V2 <span class="rev-tab-date">Maio 2026</span></button>
+  <button class="rev-tab active" role="tab" data-rev="v3" aria-selected="true">Revisão V3 <span class="rev-tab-date">Junho 2026</span></button>
+</div>
+
+<div class="rev-panel" id="rev-v2" role="tabpanel">
 <div class="container">
 
   <!-- Resumo estatístico -->
@@ -876,10 +944,274 @@
   </div>
 
 </div>
+</div><!-- /rev-v2 -->
+
+<div class="rev-panel active" id="rev-v3" role="tabpanel">
+<div class="container">
+
+  <!-- Contexto da rodada -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">🧭</span> O Que Foi Esta Rodada (V3)</h2>
+    <p style="color:var(--texto-leve); max-width:760px;">
+      A V3 incorpora os dois materiais enviados pelo Instituto Jataí em maio de 2026:
+      o documento <strong>"Critérios para a Contratação de IA na Educação Pública"</strong> (14 critérios práticos)
+      e o documento <strong>"Revisão 2 da plataforma"</strong> (sugestões de incorporação dos critérios e ajustes de home).
+      O foco foi traduzir as salvaguardas em exigências verificáveis e disponibilizar o Guia para download,
+      sem sobrecarregar a porta de entrada da plataforma.
+    </p>
+  </div>
+
+  <!-- Resumo estatístico -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">📊</span> Resumo das Mudanças</h2>
+    <div class="stats-grid">
+      <div class="stat-box green"><div class="number">14</div><div class="label">Critérios integrados (ET, AP, CC) a partir de fonte única</div></div>
+      <div class="stat-box blue"><div class="number">1</div><div class="label">Nova página interativa de Critérios (abas + acordeão)</div></div>
+      <div class="stat-box green"><div class="number">2</div><div class="label">Templates Word (.docx) editáveis: RIPD e Model Card</div></div>
+      <div class="stat-box orange"><div class="number">6</div><div class="label">Larguras de seção unificadas (1040px) e títulos centralizados</div></div>
+      <div class="stat-box blue"><div class="number">V2+V3</div><div class="label">Página "Revisão" com abas navegáveis + voltar à plataforma</div></div>
+      <div class="stat-box red"><div class="number">1</div><div class="label">Sugestão avaliada e não implementada (com premissa registrada)</div></div>
+    </div>
+  </div>
+
+  <!-- Critérios -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">🗂️</span> Integração dos Critérios — Arquitetura</h2>
+    <p style="color:var(--texto-leve); max-width:760px;">
+      Decisão central: os 14 critérios vivem em <strong>uma única fonte de dados</strong> no gerador
+      (<code>CRITERIOS</code> em <code>site/generate.py</code>) e aparecem em pontos distintos sem duplicação de conteúdo.
+    </p>
+    <div class="decisao-card">
+      <h3>Página única + pontos de entrada</h3>
+      <p>A página interativa canônica reúne tudo; os demais lugares apenas conduzem até ela (com deep-link por critério).</p>
+      <div class="destino-list">
+        <span class="destino-pill">📄 Recursos › Critérios de Contratação (página completa)</span>
+        <span class="destino-pill">🛒 Durante a Contratação › cardápio com botões</span>
+        <span class="destino-pill">🔗 Âncoras por critério (#et1 … #cc6)</span>
+      </div>
+    </div>
+    <div class="premissa">
+      <strong>Premissa 1 — Fonte única.</strong> Se a Jataí revisar um critério, muda em um só lugar e propaga para todos os pontos. Conteúdo duplicado envelhece torto.
+    </div>
+    <div class="premissa">
+      <strong>Premissa 2 — Divulgação progressiva.</strong> Em "Durante" o gestor vê apenas os 3 blocos com botões; o detalhe (14×4 campos) abre na página dedicada, sob demanda — sem soterrar quem ainda está aprendendo.
+    </div>
+    <div class="premissa">
+      <strong>Premissa 3 — Instrumento e jornada ao mesmo tempo.</strong> A página é consultável como ferramenta (Recursos) e é chamada no momento em que importa (fase Durante). Atende as opções (2) e (3) da Jataí simultaneamente.
+    </div>
+  </div>
+
+  <!-- Home -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">🏠</span> Reorganização da Home</h2>
+    <div class="two-col">
+      <div class="arch-card arch-before">
+        <span class="arch-title">Antes (V2)</span>
+        <div class="nav-diagram">
+          <div class="nav-item">Hero + botão "Comece pelo seu perfil"</div>
+          <div class="nav-item renamed">"Selecione seu perfil" (logo abaixo — texto repetido)</div>
+          <div class="nav-item">3 Pilares</div>
+          <div class="nav-item">Jornada</div>
+          <div class="nav-item">Contexto / estatísticas</div>
+        </div>
+      </div>
+      <div class="arch-card arch-after">
+        <span class="arch-title">Depois (V3)</span>
+        <div class="nav-diagram">
+          <div class="nav-item">Hero + 2 CTAs: "Comece pelo seu perfil" e "Baixar o guia"</div>
+          <div class="nav-item">3 Pilares</div>
+          <div class="nav-item">Jornada Antes/Durante/Após</div>
+          <div class="nav-item new">"Selecione seu perfil" (após o conteúdo)</div>
+          <div class="nav-item">Contexto / estatísticas</div>
+          <div class="nav-item new">Faixa de download (completo + resumido em breve)</div>
+        </div>
+      </div>
+    </div>
+    <div class="premissa">
+      <strong>Premissa — Narrativa antes da ação.</strong> Quem chega precisa entender o que é contratação responsável (pergunta → pilares → jornada) antes de ser obrigado a escolher um perfil. Pedir a escolha cedo demais aumenta o abandono. Segue a ordem sugerida pela Jataí.
+    </div>
+    <div class="premissa">
+      <strong>Premissa — Um CTA primário.</strong> A duplicata "Comece pelo seu perfil" + "Selecione seu perfil" lado a lado foi resolvida: a seção de perfil foi movida para depois do conteúdo, eliminando a repetição. O hero mantém um atalho primário e um secundário de download.
+    </div>
+  </div>
+
+  <!-- Durante -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">✂️</span> Reestruturação de "Durante a Contratação"</h2>
+    <table class="change-table">
+      <thead><tr><th>O que saiu</th><th>O que entrou</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>Tabela longa de "Critérios Técnicos" e a prosa extensa de "Salvaguardas Contratuais Obrigatórias" (duplicavam os critérios)</td>
+          <td>Bloco enxuto "Quais são as salvaguardas" + o <strong>cardápio de critérios</strong> (launcher ET/AP/CC com botões)</td>
+        </tr>
+        <tr>
+          <td>Checklist com itens redundantes ao conteúdo dos critérios</td>
+          <td>Checklist reorganizado por bloco (ET no TR, AP no edital, CC na minuta)</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="premissa">
+      <strong>Premissa — Página mais leve.</strong> A Jataí pediu para "repensar o conteúdo para não ficar extenso". A página agora dá o enquadramento (8 perguntas, modalidade, salvaguardas) e delega o operacional ao cardápio, evitando duplicação.
+    </div>
+  </div>
+
+  <!-- Refinamento de UX/UI (2ª passada) -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">🎨</span> Refinamento de UX/UI (2ª passada)</h2>
+    <p style="color:var(--texto-leve); max-width:760px;">
+      Após a primeira entrega, uma rodada de ajustes finos de layout e consistência visual, com verificação por
+      screenshot em desktop e mobile (viewport real via DevTools Protocol).
+    </p>
+    <table class="change-table">
+      <thead><tr><th>Ajuste</th><th>O que mudou</th></tr></thead>
+      <tbody>
+        <tr><td>Centralização da home</td><td>Seções tinham larguras diferentes (1200/1000/860px). Unificadas em 1040px e títulos centralizados — tudo alinha nas mesmas bordas</td></tr>
+        <tr><td>Cards de perfil</td><td><code>grid</code> trocado de <code>auto-fill</code> (criava colunas vazias, empurrava à esquerda) para <code>auto-fit</code>: os 2 perfis preenchem a largura</td></tr>
+        <tr><td>Espaçamento do hero</td><td>Reduzido o espaço morto entre os CTAs e a seção de pilares</td></tr>
+        <tr><td>Faixa de download</td><td>"Material completo" virou pílula separada do título "Baixe o Guia de Contratação"; bloco centralizado</td></tr>
+        <tr><td>Página de Critérios</td><td>Abas viraram segmented control; barra de cor por bloco (ET roxo / AP verde / CC preto); badges preenchidas; chevron colorido</td></tr>
+        <tr><td>Página de Revisão</td><td>Botão "Voltar para a plataforma" (a página é standalone, sem o menu do site)</td></tr>
+      </tbody>
+    </table>
+    <div class="premissa">
+      <strong>Premissa — Consistência de bordas.</strong> Seções com larguras diferentes leem como "desalinhado" mesmo quando cada uma está centrada. Unificar a largura e centralizar os títulos resolve a percepção de bagunça com uma única regra.
+    </div>
+  </div>
+
+  <!-- Templates editáveis -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">📎</span> Templates Editáveis para Download (Word)</h2>
+    <p style="color:var(--texto-leve); max-width:760px;">
+      Os instrumentos que o gestor/EdTech precisa <em>preencher</em> não podem ser apenas páginas estáticas.
+      Agora há arquivos <strong>.docx editáveis</strong>, gerados a partir do próprio conteúdo do site
+      (mesmas orientações, em formato preenchível: campos em branco, tabelas e dicas).
+    </p>
+    <div class="destino-list">
+      <span class="destino-pill">📄 RIPD Simplificado — ripd-simplificado-template.docx</span>
+      <span class="destino-pill">📄 Model Card Educacional — model-card-educacional-template.docx</span>
+    </div>
+    <div class="premissa">
+      <strong>Premissa — Entregar a ferramenta, não só a explicação.</strong> Botão de download destacado nas páginas de template e gerados por script (<code>site/gerar_templates_docx.py</code>), regeneráveis quando o conteúdo mudar. Próximos candidatos: Nota Técnica (AP1), Declaração de dados (AP2) e Política de proteção (AP3).
+    </div>
+  </div>
+
+  <!-- Decisões: o que a Jataí sugeriu × o que fizemos -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">⚖️</span> Sugestões da Jataí × Decisão</h2>
+    <table class="change-table">
+      <thead><tr><th>Sugestão</th><th>Decisão</th><th>Como</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>(2) Critérios na página "Durante a Contratação", com menu clicável</td>
+          <td><span class="tag tag-feito">Feito</span></td>
+          <td>Cardápio embutido com botões que abrem cada critério na página dedicada</td>
+        </tr>
+        <tr>
+          <td>(3) Critérios na página de Recursos</td>
+          <td><span class="tag tag-feito">Feito</span></td>
+          <td>Card de destaque "Critérios para a Contratação de IA" + página interativa</td>
+        </tr>
+        <tr>
+          <td>Ordem da home: pergunta → 3 pilares → seleção de perfil</td>
+          <td><span class="tag tag-feito">Feito</span></td>
+          <td>Seções reordenadas; perfil movido para depois de pilares e jornada</td>
+        </tr>
+        <tr>
+          <td>Duplicata "Comece pelo seu perfil" / "Selecione seu perfil"</td>
+          <td><span class="tag tag-feito">Feito</span></td>
+          <td>Um CTA primário no hero; seção de perfil reposicionada</td>
+        </tr>
+        <tr>
+          <td>Repensar o conteúdo de "Durante" para não ficar extenso</td>
+          <td><span class="tag tag-feito">Feito</span></td>
+          <td>Removida a duplicação; cardápio assume o detalhe operacional</td>
+        </tr>
+        <tr>
+          <td>Disponibilizar o Guia para download</td>
+          <td><span class="tag tag-feito">Feito</span></td>
+          <td>PDF completo na home, em Recursos e na página de Critérios. Versão resumida: <em>em breve</em></td>
+        </tr>
+        <tr>
+          <td>(1) Critérios na home, junto aos três pilares</td>
+          <td><span class="tag tag-naofeito">Não feito</span></td>
+          <td>Decisão deliberada — ver premissa abaixo</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="premissa">
+      <strong>Por que NÃO colocamos os critérios na home (opção 1).</strong> A própria Jataí levantou a dúvida ("é cedo demais?"). A home é espaço conceitual e de entrada: jogar 14 critérios operacionais ali, antes de o visitante entender os pilares, quebra a progressão pedagógica e compete com a ação principal. Os critérios aparecem na fase "Durante", quando o gestor já tem contexto e está modelando a compra. Se a Jataí preferir, é reversível: o launcher já existe e pode ser embutido na home com um ajuste pequeno.
+    </div>
+  </div>
+
+  <!-- Log de mudanças -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">📝</span> Log de Mudanças (V3)</h2>
+    <table class="change-table">
+      <thead><tr><th>Componente</th><th>Mudança</th><th>Status</th><th>Arquivo</th></tr></thead>
+      <tbody>
+        <tr><td>Critérios (dados)</td><td>Fonte única dos 14 critérios + blocos ET/AP/CC</td><td><span class="tag tag-novo">Novo</span></td><td><code>site/generate.py</code></td></tr>
+        <tr><td>Página de Critérios</td><td>Template interativo: abas, acordeão acessível, deep-link</td><td><span class="tag tag-novo">Novo</span></td><td><code>site/templates/criterios.html</code></td></tr>
+        <tr><td>Durante a Contratação</td><td>Enxugado; marcador <code>[[CRITERIOS_LAUNCHER]]</code> injeta o cardápio</td><td><span class="tag tag-revisado">Revisado</span></td><td><code>conteudo/gestores/durante-a-contratacao.md</code></td></tr>
+        <tr><td>Home</td><td>Reordenação, 2 CTAs no hero, faixa de download</td><td><span class="tag tag-revisado">Revisado</span></td><td><code>site/templates/index.html</code></td></tr>
+        <tr><td>Recursos</td><td>Cards de destaque: Critérios + download do Guia</td><td><span class="tag tag-revisado">Revisado</span></td><td><code>site/templates/section_recursos.html</code></td></tr>
+        <tr><td>Navegação</td><td>"Revisão V2" → "Revisão" (página com abas)</td><td><span class="tag tag-revisado">Revisado</span></td><td><code>site/templates/base.html</code></td></tr>
+        <tr><td>Download</td><td>PDF do Guia movido para assets e publicado no build</td><td><span class="tag tag-novo">Novo</span></td><td><code>site/assets/downloads/</code></td></tr>
+        <tr><td>Estilos / JS</td><td>Componentes de critérios, download e abas (vanilla)</td><td><span class="tag tag-novo">Novo</span></td><td><code>site/assets/style.css</code>, <code>script.js</code></td></tr>
+        <tr><td>Página de Revisão</td><td>Geração conectada ao build (antes o link era 404)</td><td><span class="tag tag-revisado">Revisado</span></td><td><code>site/generate.py</code></td></tr>
+        <tr><td>Templates Word</td><td>Gerador de .docx editáveis (RIPD, Model Card) + mapa slug→download</td><td><span class="tag tag-novo">Novo</span></td><td><code>site/gerar_templates_docx.py</code>, <code>site/generate.py</code></td></tr>
+        <tr><td>Páginas de template</td><td>Botão "Baixar versão editável (Word)" no cabeçalho do documento</td><td><span class="tag tag-revisado">Revisado</span></td><td><code>site/templates/document.html</code></td></tr>
+        <tr><td>UX/UI da home</td><td>Centralização unificada (1040px), títulos centrados, grid auto-fit, espaçamento do hero, faixa de download</td><td><span class="tag tag-revisado">Revisado</span></td><td><code>site/assets/style.css</code></td></tr>
+        <tr><td>Página de Critérios</td><td>Abas segmented, barra de cor por bloco; removido o download do guia (consolidado na home)</td><td><span class="tag tag-revisado">Revisado</span></td><td><code>site/templates/criterios.html</code>, <code>style.css</code></td></tr>
+        <tr><td>Voltar à plataforma</td><td>Link de retorno ao site na página de Revisão standalone</td><td><span class="tag tag-novo">Novo</span></td><td><code>REVISAO-PLATAFORMA.html</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Pendentes -->
+  <div class="section-block">
+    <h2 class="section-title"><span class="icon">⏭️</span> Próximos Passos</h2>
+    <table class="change-table">
+      <thead><tr><th>Item</th><th>Situação</th></tr></thead>
+      <tbody>
+        <tr><td>Versão resumida do Guia (~10 páginas)</td><td>Em diagramação pela designer da Jataí; card "em breve" já preparado</td></tr>
+        <tr><td>Revisão aprofundada página a página</td><td>Prevista após esta rodada, conforme alinhado por e-mail</td></tr>
+        <tr><td>Critérios na home (opção 1)</td><td>Avaliar com a Jataí se vale embutir o launcher na home</td></tr>
+        <tr><td>Mais templates Word</td><td>Avaliar gerar .docx de Nota Técnica (AP1), Declaração de dados (AP2) e Política de proteção (AP3)</td></tr>
+        <tr><td>Download do Guia em Recursos</td><td>Consolidado só na home; reavaliar se vale reintroduzir um acesso em Recursos</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+</div><!-- /rev-v3 -->
 
 <footer>
   <strong>Aliança de IA para a Educação · Instituto Jataí</strong><br>
-  Documentação interna — Revisão V2 · Maio 2026
+  Documentação interna — Revisão da Plataforma · V2 (Maio 2026) · V3 (Junho 2026)
 </footer>
+
+<script>
+  (function () {
+    var tabs = document.querySelectorAll(".rev-tab");
+    var panels = { v2: document.getElementById("rev-v2"), v3: document.getElementById("rev-v3") };
+    function show(rev) {
+      tabs.forEach(function (t) {
+        var on = t.getAttribute("data-rev") === rev;
+        t.classList.toggle("active", on);
+        t.setAttribute("aria-selected", on ? "true" : "false");
+      });
+      Object.keys(panels).forEach(function (k) {
+        if (panels[k]) panels[k].classList.toggle("active", k === rev);
+      });
+      if (history.replaceState) history.replaceState(null, "", "#" + rev);
+    }
+    tabs.forEach(function (t) {
+      t.addEventListener("click", function () { show(t.getAttribute("data-rev")); });
+    });
+    var hash = (window.location.hash || "").slice(1);
+    if (hash === "v2" || hash === "v3") show(hash);
+  })();
+</script>
 </body>
 </html>
