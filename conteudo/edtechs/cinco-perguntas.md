@@ -9,7 +9,7 @@ tipo: cinco-perguntas
 
 # 5 Perguntas Antes de Ofertar IA para o Setor Público
 
-> O setor público de educação é um mercado com características únicas: ciclos longos, processos formais, responsabilidade com dados de menores e exigência de evidências. Antes de oferecer sua solução a uma rede pública, responda honestamente a estas cinco perguntas.
+> O setor público de educação é um mercado com características únicas: ciclos longos, processos formais, responsabilidade com dados de crianças e adolescentes e exigência de evidências. Antes de oferecer sua solução a uma rede pública, responda honestamente a estas cinco perguntas.
 
 ---
 
@@ -58,7 +58,7 @@ Esta é, provavelmente, a pergunta mais frequente em processos licitatórios de 
 - [ ] O fornecedor (você) pode usar os dados dos alunos para treinar o modelo? Com que consentimento?
 - [ ] O que acontece com os dados ao final do contrato?
 
-**LGPD e dados de crianças:** Se sua solução processa dados de alunos menores de 18 anos, você está sujeito a regras mais rígidas da LGPD (Art. 14). O responsável pelo tratamento deve ser a rede pública, não a EdTech.
+**LGPD e dados de crianças:** Se sua solução processa dados de crianças e adolescentes, você está sujeito a regras mais rígidas da LGPD (Art. 14). O responsável pelo tratamento deve ser a rede pública, não a EdTech.
 
 **Entregável esperado:** Ter um RIPD (Relatório de Impacto à Proteção de Dados) e um Model Card prontos para apresentar durante o processo licitatório não é diferencial: é requisito básico em contratos sérios.
 

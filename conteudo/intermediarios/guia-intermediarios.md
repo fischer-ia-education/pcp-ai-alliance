@@ -9,8 +9,6 @@ tipo: guia
 
 # Guia para Organizações Intermediárias
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
-
 ---
 
 ## Introdução: O Papel Estratégico do Intermediário
@@ -132,7 +130,7 @@ Ao curar ou recomendar soluções de IA para redes públicas, avalie:
 ### Critérios de Privacidade e Ética
 | Critério | O que verificar |
 |----------|----------------|
-| LGPD | Há conformidade verificada, especialmente para dados de menores? |
+| LGPD | Há conformidade verificada, especialmente para dados de crianças e adolescentes? |
 | Coleta mínima | Coleta apenas dados necessários para a finalidade pedagógica? |
 | Consentimento | Há mecanismo de consentimento dos pais/responsáveis? |
 | Segurança | Criptografia, anonimização, controle de acesso? |
@@ -216,5 +214,7 @@ Organizações intermediárias não são apenas facilitadoras, são **guardiãs 
 O modelo de intermediação não é transitório: mesmo quando redes públicas desenvolvem maior capacidade institucional, o papel de curadoria, benchmark e aprendizado coletivo permanece relevante. A Aliança de IA para a Educação foi criada com essa missão.
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

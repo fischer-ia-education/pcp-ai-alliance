@@ -14,7 +14,7 @@ tipo: checklist
 
 - [ ] CNPJ ativo no Brasil (filial, subsidiária ou representante legal) (Essencial)
 - [ ] Assessoria jurídica brasileira contratada, com experiência em direito administrativo (Essencial)
-- [ ] Conformidade com LGPD documentada, com atenção a dados de menores (Essencial)
+- [ ] Conformidade com LGPD documentada, com atenção a dados de crianças e adolescentes (Essencial)
 - [ ] Conhecimento básico da Lei 14.133/2021 (Essencial)
 - [ ] Mapeamento do ECA e suas implicações para o produto (Importante)
 

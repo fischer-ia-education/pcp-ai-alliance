@@ -10,7 +10,6 @@ tipo: guia
 
 # Entrando no Mercado Brasileiro: Guia para EdTechs Internacionais
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
 >
 > **Este guia complementa o [Guia para EdTechs](guia-edtechs.md).** Leia o guia principal primeiro: ele cobre procurement, salvaguardas, estudos de caso e orientações que se aplicam a todas as EdTechs. Este documento aborda os desafios **adicionais** enfrentados por empresas internacionais.
 
@@ -71,9 +70,9 @@ Se sua solução processa dados fora do Brasil (em servidores nos EUA, Europa ou
 |-----------|----------------|-------------|
 | **País com nível adequado de proteção** | A ANPD (Autoridade Nacional de Proteção de Dados) reconhece que o país tem proteção equivalente | Lista ainda em construção pela ANPD |
 | **Cláusulas contratuais padrão** | Contrato entre exportador e importador de dados com garantias específicas | Alternativa mais utilizada enquanto a lista de países não é definida |
-| **Consentimento específico** | Autorização explícita do titular (ou responsável legal, no caso de menores) | Válida, mas operacionalmente difícil em escala |
+| **Consentimento específico** | Autorização explícita do titular (ou responsável legal, no caso de crianças e adolescentes) | Válida, mas operacionalmente difícil em escala |
 
-### Proteção reforçada para menores
+### Proteção reforçada para crianças e adolescentes
 
 O Art. 14 da LGPD estabelece que dados de **crianças e adolescentes** devem ser tratados com **proteção máxima**. Isso significa:
 - Consentimento **explícito** de pais ou responsáveis legais

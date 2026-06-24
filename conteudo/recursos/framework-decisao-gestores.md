@@ -3,13 +3,11 @@ title: "Framework de Decisão para Contratação de IA na Educação"
 subtitle: "Ferramentas de Apoio à Decisão para Gestores Públicos"
 author: "Aliança de IA para a Educação"
 date: "2026"
-persona: gestores
+persona: recursos
 tipo: framework
 ---
 
 # Framework de Decisão para Contratação de IA na Educação
-
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
 
 ---
 
@@ -73,10 +71,10 @@ Inspirada na Avaliação de Impacto Algorítmico (AIA) canadense, esta matriz aj
 | Critério | Inexigibilidade | Pregão Eletrônico | Parceria Intermediada | CPSI (Inovação) |
 |----------|----------------|-------------------|----------------------|----------------|
 | **Quando usar** | Solução exclusiva (fornecedor único) | Especificações objetivamente definidas | Quando há instituição parceira qualificada (Sebrae, universidade, fundação) | Quando a solução ainda não existe no mercado |
-| **Base legal** | Art. 74, Lei 14.133/2021 | Lei 14.133/2021 | Art. 75, XV, Lei 14.133/2021 | Art. 29, Lei 14.133/2021 |
+| **Base legal** | Art. 74, Lei 14.133/2021 | Lei 14.133/2021 | Art. 75, XV, Lei 14.133/2021 | Art. 13, Lei Complementar 182/2021 |
 | **Vantagens** | Agilidade, acesso a soluções especializadas | Competitividade de preço, transparência | Curadoria e validação prévia, menor risco | Foco no problema (não na solução), aprendizado institucional |
 | **Riscos** | Sem competição, risco de lock-in, preço não otimizado | Pode priorizar preço sobre qualidade pedagógica | Depende da qualidade do intermediário | Processo mais longo e complexo |
-| **Caso real** | Joinville/SC: Letrus (R$2,1M) | Rio Verde/GO: Herby Vision (R$211K) | RN: Sebrae/LIZE (R$15K) | Inspiração: UK Pre-Commercial Procurement |
+| **Caso real** | Joinville/SC: Letrus (R$2,1M) | Rio Verde/GO: Herby Vision (R$211K) | RN: Sebrae/LIZE (R$15K) | Inspiração: contratação de soluções inovadoras para educação |
 | **Recomendação** | Use com análise jurídica rigorosa e com salvaguardas contratuais reforçadas | Adequado quando há múltiplos fornecedores e requisitos objetivos | Bom para municípios com menor capacidade institucional | Ideal para soluções inovadoras em teste |
 
 ---
@@ -148,5 +146,7 @@ Um contrato de IA bem estruturado deve responder a estas 8 perguntas. Para cada 
 | Decisão informada sobre renovação/descontinuação | Renovação automática sem avaliação |
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

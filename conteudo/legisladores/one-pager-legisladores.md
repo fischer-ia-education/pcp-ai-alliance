@@ -9,8 +9,6 @@ tipo: one-pager
 
 # IA na Educação Pública: Subsídios para Políticas Públicas
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
-
 ---
 
 ## O Problema
@@ -30,7 +28,7 @@ A inteligência artificial já está presente no cotidiano das escolas brasileir
 
 | # | Recomendação | Referência internacional |
 |---|-------------|------------------------|
-| 1 | **Criar diretrizes nacionais para contratação de IA educacional**, com requisitos mínimos de transparência, explicabilidade e proteção de dados de menores | Chile: anexo de IA obrigatório em licitações; Canadá: Avaliação de Impacto Algorítmico |
+| 1 | **Criar diretrizes nacionais para contratação de IA educacional**, com requisitos mínimos de transparência, explicabilidade e proteção de dados de crianças e adolescentes | Chile: anexo de IA obrigatório em licitações; Canadá: Avaliação de Impacto Algorítmico |
 | 2 | **Instituir a obrigatoriedade de rotulagem de IA** em plataformas educacionais: o usuário deve saber que interage com IA | Reino Unido: Algorithmic Transparency Recording Standard (ATRS) |
 | 3 | **Criar programas de letramento algorítmico** para gestores e educadores, com financiamento federal | Canadá: Academia Digital para servidores; Chile: Rede de Inovadores Públicos (30 mil servidores) |
 | 4 | **Regulamentar sandboxes educacionais** que permitam testar soluções de IA em escala reduzida antes da contratação definitiva | Reino Unido: Pre-Commercial Procurement (PCP) com ciclos go/no-go |
@@ -52,5 +50,7 @@ As recomendações estão alinhadas com: Lei 14.133/2021 (Licitações), LGPD, E
 Consulte o **Policy Brief completo** para análise detalhada, opções de política pública e fundamentação jurídica.
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

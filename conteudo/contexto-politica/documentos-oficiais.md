@@ -43,7 +43,7 @@ A LGPD é o principal marco regulatório para o tratamento de dados pessoais no 
 - **Art. 41**: Obrigatoriedade de indicar Encarregado de Proteção de Dados (DPO) para controladores e operadores
 - **Art. 20**: Direito à explicação sobre decisões automatizadas: titular pode solicitar revisão de decisões tomadas exclusivamente com base em tratamento automatizado de dados pessoais
 
-**Base legal mais comum para IA educacional:** execução de política pública (art. 7º, III) ou legítimo interesse (art. 7º, IX), combinado com consentimento específico para dados de menores.
+**Base legal mais comum para IA educacional:** execução de política pública (art. 7º, III) ou legítimo interesse (art. 7º, IX), combinado com consentimento específico para dados de crianças e adolescentes.
 
 ---
 
@@ -95,7 +95,7 @@ O CNE tem competência para emitir diretrizes sobre o uso de tecnologias na educ
 
 O ECA estabelece o princípio do **melhor interesse da criança**, que deve guiar qualquer decisão que afete crianças e adolescentes: incluindo decisões automatizadas por IA. Relevante especialmente para:
 - Sistemas de reconhecimento facial em escolas (vedação pela interpretação majoritária)
-- Perfis comportamentais e dados sensíveis de alunos menores
+- Perfis comportamentais e dados sensíveis de crianças e adolescentes
 - Decisões automatizadas sobre trajetórias escolares (aprovação, reprovação, encaminhamentos)
 
 ---
@@ -106,7 +106,7 @@ O ECA estabelece o princípio do **melhor interesse da criança**, que deve guia
 |-----------|-----------|------------|
 | **UNESCO** | Recomendação sobre ética da IA (2021) | Princípios globais: proporcionalidade, segurança, privacidade, transparência, responsabilidade |
 | **OECD** | Princípios da OCDE sobre IA (2019, atualizado 2024) | Cinco princípios: inclusividade, robustez, transparência, responsabilidade, segurança |
-| **ANPD** | Guia orientativo sobre dados de crianças e adolescentes | Especificidades do tratamento de dados de menores no Brasil |
+| **ANPD** | Guia orientativo sobre dados de crianças e adolescentes | Especificidades do tratamento de dados de crianças e adolescentes no Brasil |
 | **Chile** | Diretrizes para IA no Setor Público (2023) | Referência para elaboração de cláusulas contratuais específicas |
 | **Canadá** | Diretriz sobre Tomada de Decisão Automatizada | Avaliação de Impacto Algorítmico por nível de risco |
 

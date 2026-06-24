@@ -3,13 +3,11 @@ title: "Checklist da Jornada de Contratação de IA na Educação"
 subtitle: "Guia Prático por Fase: Antes, Durante e Após a Contratação"
 author: "Aliança de IA para a Educação"
 date: "2026"
-persona: gestores
+persona: recursos
 tipo: checklist
 ---
 
 # Checklist da Jornada de Contratação de IA na Educação
-
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
 
 ---
 
@@ -19,7 +17,7 @@ Este checklist acompanha a jornada de contratação de soluções de IA educacio
 
 ### Mínimo Viável
 
-Se você tem recursos limitados, foque primeiro nos itens marcados com **⚡ (essencial)**. Eles representam o mínimo necessário para uma contratação responsável. Os demais itens fortalecem o processo, mas podem ser incorporados gradualmente.
+Se você tem recursos limitados, foque primeiro nos itens marcados como **essencial**. Eles representam o mínimo necessário para uma contratação responsável. Os demais itens fortalecem o processo, mas podem ser incorporados gradualmente.
 
 ---
 
@@ -27,13 +25,13 @@ Se você tem recursos limitados, foque primeiro nos itens marcados com **⚡ (es
 
 ### 1.1 Preparação Institucional
 
-- [ ] ⚡ **Problema pedagógico definido:** Identificamos o desafio educacional que queremos resolver *antes* de pensar na tecnologia (ex.: defasagem de aprendizagem, sobrecarga docente, evasão escolar)
+- [ ] (Essencial) **Problema pedagógico definido:** Identificamos o desafio educacional que queremos resolver *antes* de pensar na tecnologia (ex.: defasagem de aprendizagem, sobrecarga docente, evasão escolar)
 - [ ] **Resultados esperados claros:** Sabemos quais resultados educacionais queremos alcançar com a solução
-- [ ] ⚡ **IA é necessária?** Verificamos se o problema realmente exige IA ou se uma solução convencional seria suficiente
+- [ ] (Essencial) **IA é necessária?** Verificamos se o problema realmente exige IA ou se uma solução convencional seria suficiente
 - [ ] **Capacidade institucional diagnosticada:** Avaliamos se a rede tem pessoal, conhecimento e infraestrutura para contratar, implementar e monitorar a solução
-- [ ] ⚡ **Equipe multissetorial composta:** Há profissionais de TI, jurídico e pedagógico envolvidos no processo
+- [ ] (Essencial) **Equipe multissetorial composta:** Há profissionais de TI, jurídico e pedagógico envolvidos no processo
 - [ ] **Letramento algorítmico iniciado:** A equipe responsável tem formação básica sobre o que é IA, como funciona e quais são os riscos
-- [ ] ⚡ **Infraestrutura mapeada:** Sabemos qual é a conectividade e o hardware disponível nas escolas-alvo
+- [ ] (Essencial) **Infraestrutura mapeada:** Sabemos qual é a conectividade e o hardware disponível nas escolas-alvo
 - [ ] **Dados disponíveis identificados:** Temos clareza sobre quais dados existem na rede e como isso afeta a estratégia de compra
 
 ### 1.2 Reconhecimento de Mercado
@@ -59,7 +57,7 @@ Se você tem recursos limitados, foque primeiro nos itens marcados com **⚡ (es
 
 - [ ] **Estudo Técnico Preliminar (ETP) elaborado:** Consolidamos as informações levantadas na fase anterior
 - [ ] **Modalidade de licitação definida:** Escolhemos a modalidade mais adequada (inexigibilidade, pregão, CPSI, parceria intermediada)
-- [ ] ⚡ **Termo de Referência (TR) com critérios de IA:** O TR não trata a solução como software convencional; inclui requisitos específicos de IA
+- [ ] (Essencial) **Termo de Referência (TR) com critérios de IA:** O TR não trata a solução como software convencional; inclui requisitos específicos de IA
 - [ ] **Critérios técnicos detalhados**:
   - [ ] Tipo de modelo e grau de autonomia
   - [ ] Fontes de dados e critérios de treinamento
@@ -72,29 +70,34 @@ Se você tem recursos limitados, foque primeiro nos itens marcados com **⚡ (es
 ### 2.2 Salvaguardas no Contrato
 
 **Transparência e explicabilidade:**
-- [ ] ⚡ Exigida documentação técnica (fontes de dados, lógica do algoritmo, limitações)
+
+- [ ] (Essencial) Exigida documentação técnica (fontes de dados, lógica do algoritmo, limitações)
 - [ ] Exigida rotulagem clara: o sistema informa que o usuário interage com IA
 - [ ] Exigida informação sobre riscos de "alucinação" ou erro factual
 
-**Governança de dados e privacidade de menores:**
-- [ ] ⚡ Consentimento explícito dos pais/responsáveis previsto
+**Governança de dados e privacidade de crianças e adolescentes:**
+
+- [ ] (Essencial) Consentimento explícito dos pais/responsáveis previsto
 - [ ] Relatório de Impacto à Proteção de Dados (RIPD) exigido
 - [ ] Avaliação de Impacto Algorítmico exigida
-- [ ] ⚡ Dados pertencem à rede de ensino (não ao fornecedor)
+- [ ] (Essencial) Dados pertencem à rede de ensino (não ao fornecedor)
 - [ ] Direito à portabilidade e exclusão segura de dados ao fim do contrato
 
 **Supervisão humana:**
+
 - [ ] O sistema não toma decisões de alto impacto de forma autônoma (aprovação, reprovação, sanções)
-- [ ] ⚡ Professores têm ferramentas para anular ou corrigir sugestões da IA
+- [ ] (Essencial) Professores têm ferramentas para anular ou corrigir sugestões da IA
 - [ ] Logs de IA e painel de observabilidade previstos
 - [ ] Prazos e condições de auditorias definidos
 
 **Equidade e prevenção de vieses:**
+
 - [ ] Fornecedor deve comprovar testes contra discriminação algorítmica (raça, gênero, regionalismo)
 - [ ] Modelos treinados com dados que reflitam a realidade brasileira e a língua portuguesa
 
 **Reversibilidade e interoperabilidade:**
-- [ ] ⚡ Portabilidade de dados garantida (API, padrões abertos)
+
+- [ ] (Essencial) Portabilidade de dados garantida (API, padrões abertos)
 - [ ] Plano de saída contratual definido
 - [ ] Cláusulas de descontinuação caso a solução apresente falhas sistêmicas ou perca valor pedagógico
 - [ ] Exclusão segura de dados após encerramento do contrato
@@ -105,14 +108,14 @@ Se você tem recursos limitados, foque primeiro nos itens marcados com **⚡ (es
 
 ### 3.1 Monitoramento Pedagógico
 
-- [ ] ⚡ **Avaliação pedagógica contínua:** Monitoramos se a IA está gerando aprendizado real (não apenas "ilusão de desempenho")
+- [ ] (Essencial) **Avaliação pedagógica contínua:** Monitoramos se a IA está gerando aprendizado real (não apenas "ilusão de desempenho")
 - [ ] **Alinhamento com BNCC verificado:** A solução permanece alinhada aos objetivos curriculares da rede
 - [ ] **KPIs pedagógicos acompanhados:** Indicadores de desempenho são medidos e analisados regularmente
 - [ ] **Auditorias pedagógicas realizadas:** Resultados do algoritmo são comparados com o julgamento profissional dos educadores
 
 ### 3.2 Supervisão Humana
 
-- [ ] ⚡ **Autonomia docente preservada:** Verificamos periodicamente se professores estão cedendo de forma acrítica às sugestões da IA
+- [ ] (Essencial) **Autonomia docente preservada:** Verificamos periodicamente se professores estão cedendo de forma acrítica às sugestões da IA
 - [ ] **Revisão do modelo de implementação:** Se houver terceirização acrítica, revisamos o desenho de implementação
 
 ### 3.3 Dados e Segurança
@@ -124,7 +127,7 @@ Se você tem recursos limitados, foque primeiro nos itens marcados com **⚡ (es
 
 ### 3.4 Direito ao Recurso
 
-- [ ] ⚡ **Canais de contestação acessíveis:** Alunos e famílias sabem como contestar decisões da IA
+- [ ] (Essencial) **Canais de contestação acessíveis:** Alunos e famílias sabem como contestar decisões da IA
 - [ ] **Revisão humana garantida:** Toda contestação passa por análise humana
 
 ### 3.5 Formação Contínua
@@ -146,5 +149,7 @@ Considere intervir ou acionar as cláusulas de saída se:
 - [ ] O fornecedor nega acesso a logs ou trilhas de auditoria
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

@@ -18,7 +18,7 @@ A administração pública brasileira só contrata pessoas jurídicas com regist
 
 ## Mapa regulatório mínimo
 
-Lei 14.133/2021 (Nova Lei de Licitações): define as regras de contratação pública. LGPD (Lei Geral de Proteção de Dados): equivalente ao GDPR, com especificidades para dados de menores. ECA (Estatuto da Criança e do Adolescente): proteções para menores que impactam coleta de dados em ambiente escolar. BNCC (Base Nacional Comum Curricular): referência curricular nacional, sem a qual soluções educacionais enfrentam resistência institucional. PL 2338/2023: projeto de lei que pode se tornar o Marco Legal da IA no Brasil.
+Lei 14.133/2021 (Nova Lei de Licitações): define as regras de contratação pública. LGPD (Lei Geral de Proteção de Dados): equivalente ao GDPR, com especificidades para dados de crianças e adolescentes. ECA (Estatuto da Criança e do Adolescente): proteções para crianças e adolescentes que impactam coleta de dados em ambiente escolar. BNCC (Base Nacional Comum Curricular): referência curricular nacional, sem a qual soluções educacionais enfrentam resistência institucional. PL 2338/2023: projeto de lei que pode se tornar o Marco Legal da IA no Brasil.
 
 ## Localização não é tradução
 

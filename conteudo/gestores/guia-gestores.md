@@ -193,7 +193,7 @@ Antes da publicação do edital, realize uma avaliação de potenciais impactos:
 **Transparência e explicabilidade:**
 O edital deve exigir documentação técnica detalhando fontes de dados, forma de treinamento, lógica do algoritmo e limitações. O sistema deve informar ao usuário que ele interage com IA e quais são os riscos de erro.
 
-**Governança de dados e privacidade de menores:**
+**Governança de dados e privacidade de crianças e adolescentes:**
 Dado que o público é de crianças e adolescentes (categoria de máxima proteção), os contratos devem prever:
 - Consentimento explícito dos pais ou responsáveis
 - Relatórios de Impacto à Proteção de Dados (RIPD) e Avaliações de Impacto Algorítmico

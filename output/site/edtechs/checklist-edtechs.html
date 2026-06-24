@@ -194,6 +194,17 @@
                 
             </div>
             
+            <div class="doc-download-block">
+                <a class="doc-download-btn" href="../assets/downloads/checklist-edtechs.xlsx" download>
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1v9M4.5 7l3.5 3.5L11.5 7M2.5 13.5h11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    Baixar este checklist em Excel
+                    <span class="doc-download-fmt">.xlsx</span>
+                </a>
+                
+                <p class="doc-download-note">É a versão em planilha dos itens abaixo — marque o que já foi feito, anote responsáveis e prazos e salve o seu progresso.</p>
+                
+            </div>
+            
             
             <div class="doc-progress-bar" role="progressbar"
                  aria-valuenow="4"
@@ -207,69 +218,66 @@
 
         <div class="doc-body markdown-body">
             <h1 id="checklist-de-prontidao-para-edtechs">Checklist de Prontidão para EdTechs</h1>
-<blockquote>
-<p>Material derivado da publicação <em>"Contratação Pública de Soluções de IA na Educação"</em>, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.</p>
-</blockquote>
 <hr />
 <h2 id="como-usar-este-checklist">Como usar este checklist</h2>
 <p>Use este instrumento para avaliar se sua solução de IA está pronta para ser ofertada a redes públicas de educação. Os itens refletem os requisitos e salvaguardas que gestores públicos estão cada vez mais atentos a exigir. Quanto mais itens completos, mais preparada está sua EdTech para competir nesse mercado de forma responsável.</p>
 <h3 id="priorizacao">Priorização</h3>
 <p>Os itens estão organizados por área, mas nem todos têm o mesmo peso. Use esta legenda:</p>
 <ul>
-<li>🔴 <strong>Crítico:</strong> Deal-breaker. Sem isso, não avance para o setor público.</li>
-<li>🟡 <strong>Importante:</strong> Fortalece significativamente sua posição.</li>
-<li>🟢 <strong>Diferencial:</strong> Destaca sua EdTech dos concorrentes.</li>
+<li><strong>Crítico:</strong> Deal-breaker. Sem isso, não avance para o setor público.</li>
+<li><strong>Importante:</strong> Fortalece significativamente sua posição.</li>
+<li><strong>Diferencial:</strong> Destaca sua EdTech dos concorrentes.</li>
 </ul>
 <hr />
 <h2 id="1-prontidao-pedagogica">1. Prontidão Pedagógica</h2>
 <ul>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Problema pedagógico claramente definido:</strong> Sabemos articular qual desafio real da escola ou secretaria nossa solução resolve (ex.: sobrecarga docente, defasagem de aprendizagem, diagnóstico em turmas grandes)</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Tarefas automatizadas vs. assistidas estão claras:</strong> Distinguimos quais tarefas repetitivas são automatizadas e quais são assistidas/facilitadas pela IA</li>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Resultados educacionais esperados documentados:</strong> Temos clareza sobre os ganhos de aprendizagem esperados e como estão conectados ao funcionamento da IA</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Evidências de impacto disponíveis:</strong> Possuímos evidências (estudos, pilotos, dados de uso) que demonstram impacto real na aprendizagem, não apenas em engajamento ou uso</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Alinhamento curricular:</strong> A solução está alinhada à BNCC e pode ser integrada ao currículo da rede (não é recurso isolado)</li>
-<li class="task-item"><input type="checkbox" disabled> 🟢 <strong>IA como meio, não fim:</strong> O propósito pedagógico é o protagonista; a tecnologia é o instrumento</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Problema pedagógico claramente definido:</strong> Sabemos articular qual desafio real da escola ou secretaria nossa solução resolve (ex.: sobrecarga docente, defasagem de aprendizagem, diagnóstico em turmas grandes)</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Tarefas automatizadas vs. assistidas estão claras:</strong> Distinguimos quais tarefas repetitivas são automatizadas e quais são assistidas/facilitadas pela IA</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Resultados educacionais esperados documentados:</strong> Temos clareza sobre os ganhos de aprendizagem esperados e como estão conectados ao funcionamento da IA</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Evidências de impacto disponíveis:</strong> Possuímos evidências (estudos, pilotos, dados de uso) que demonstram impacto real na aprendizagem, não apenas em engajamento ou uso</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Alinhamento curricular:</strong> A solução está alinhada à BNCC e pode ser integrada ao currículo da rede (não é recurso isolado)</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-diferencial">Diferencial</span> <strong>IA como meio, não fim:</strong> O propósito pedagógico é o protagonista; a tecnologia é o instrumento</li>
 </ul>
 <h2 id="2-prontidao-tecnica">2. Prontidão Técnica</h2>
 <ul>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Model Card / ficha técnica preparada:</strong> Documentamos o modelo de IA utilizado, incluindo:</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 Fontes de dados e método de treinamento</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 Métricas de desempenho e acurácia</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 Limitações conhecidas e riscos de erro ("alucinação")</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 Grau de autonomia das decisões</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Testes contra vieses realizados:</strong> A solução foi testada contra discriminação algorítmica de raça, gênero, regionalismo e condição socioeconômica</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Dados de treinamento refletem a realidade brasileira:</strong> Modelos treinados com dados em português brasileiro, respeitando diversidade cultural e linguística</li>
-<li class="task-item"><input type="checkbox" disabled> 🟢 <strong>Interoperabilidade garantida:</strong> APIs e padrões abertos que permitem integração com sistemas existentes das redes</li>
-<li class="task-item"><input type="checkbox" disabled> 🟢 <strong>Plano de portabilidade de dados:</strong> Os dados podem ser exportados e migrados para outra solução sem perda</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Model Card / ficha técnica preparada:</strong> Documentamos o modelo de IA utilizado, incluindo:</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> Fontes de dados e método de treinamento</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> Métricas de desempenho e acurácia</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> Limitações conhecidas e riscos de erro ("alucinação")</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> Grau de autonomia das decisões</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Testes contra vieses realizados:</strong> A solução foi testada contra discriminação algorítmica de raça, gênero, regionalismo e condição socioeconômica</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Dados de treinamento refletem a realidade brasileira:</strong> Modelos treinados com dados em português brasileiro, respeitando diversidade cultural e linguística</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-diferencial">Diferencial</span> <strong>Interoperabilidade garantida:</strong> APIs e padrões abertos que permitem integração com sistemas existentes das redes</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-diferencial">Diferencial</span> <strong>Plano de portabilidade de dados:</strong> Os dados podem ser exportados e migrados para outra solução sem perda</li>
 </ul>
 <h2 id="3-prontidao-em-privacidade-e-seguranca">3. Prontidão em Privacidade e Segurança</h2>
 <ul>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Conformidade com a LGPD verificada:</strong> Especialmente no que tange a dados de crianças e adolescentes (categoria de máxima proteção)</li>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Restrição de coleta:</strong> Coletamos apenas dados estritamente necessários para a finalidade pedagógica</li>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Limitação de finalidade:</strong> Dados educacionais não são usados para fins distintos (publicidade, perfilamento comportamental)</li>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Consentimento informado:</strong> Há mecanismo de consentimento explícito dos pais/responsáveis</li>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Criptografia e anonimização:</strong> Dados sensíveis são criptografados em trânsito e armazenamento, com pseudonimização</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Política de retenção e exclusão:</strong> Dados são excluídos após encerramento do vínculo escolar/contratual</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>RIPD preparado:</strong> Relatório de Impacto à Proteção de Dados disponível para entrega voluntária</li>
-<li class="task-item"><input type="checkbox" disabled> 🟢 <strong>Reconhecimento facial:</strong> Se a solução utiliza reconhecimento facial, há justificativa pedagógica clara e escrutínio rigoroso documentado</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Conformidade com a LGPD verificada:</strong> Especialmente no que tange a dados de crianças e adolescentes (categoria de máxima proteção)</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Restrição de coleta:</strong> Coletamos apenas dados estritamente necessários para a finalidade pedagógica</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Limitação de finalidade:</strong> Dados educacionais não são usados para fins distintos (publicidade, perfilamento comportamental)</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Consentimento informado:</strong> Há mecanismo de consentimento explícito dos pais/responsáveis</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Criptografia e anonimização:</strong> Dados sensíveis são criptografados em trânsito e armazenamento, com pseudonimização</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Política de retenção e exclusão:</strong> Dados são excluídos após encerramento do vínculo escolar/contratual</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>RIPD preparado:</strong> Relatório de Impacto à Proteção de Dados disponível para entrega voluntária</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-diferencial">Diferencial</span> <strong>Reconhecimento facial:</strong> Se a solução utiliza reconhecimento facial, há justificativa pedagógica clara e escrutínio rigoroso documentado</li>
 </ul>
 <h2 id="4-prontidao-para-o-setor-publico">4. Prontidão para o Setor Público</h2>
 <ul>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Modelo de preços compatível:</strong> Preços sustentáveis e compatíveis com orçamentos públicos (evitar licenças por usuário com flutuação excessiva)</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Atestados de capacidade técnica:</strong> Documentação que comprova experiência e competência técnica da empresa</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Conhecimento das modalidades de contratação:</strong> Sabemos como funciona inexigibilidade, pregão, CPSI e parcerias intermediadas</li>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Plano de treinamento para professores e gestores:</strong> Inclui capacitação como entrega contratual (não como opcional)</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Acordo de nível de serviço (SLA):</strong> Indicadores de desempenho definidos (disponibilidade, tempo de resposta, resolução de incidentes)</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Plano de saída / descontinuação:</strong> Documentamos como a rede pode migrar dados e encerrar o uso da solução de forma segura</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Modelo de preços compatível:</strong> Preços sustentáveis e compatíveis com orçamentos públicos (evitar licenças por usuário com flutuação excessiva)</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Atestados de capacidade técnica:</strong> Documentação que comprova experiência e competência técnica da empresa</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Conhecimento das modalidades de contratação:</strong> Sabemos como funciona inexigibilidade, pregão, CPSI e parcerias intermediadas</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Plano de treinamento para professores e gestores:</strong> Inclui capacitação como entrega contratual (não como opcional)</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Acordo de nível de serviço (SLA):</strong> Indicadores de desempenho definidos (disponibilidade, tempo de resposta, resolução de incidentes)</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Plano de saída / descontinuação:</strong> Documentamos como a rede pode migrar dados e encerrar o uso da solução de forma segura</li>
 </ul>
 <h2 id="5-prontidao-de-transparencia-e-supervisao">5. Prontidão de Transparência e Supervisão</h2>
 <ul>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Explicação acessível:</strong> Conseguimos explicar, em linguagem não técnica, como a IA funciona e como gera resultados</li>
-<li class="task-item"><input type="checkbox" disabled> 🔴 <strong>Rotulagem clara:</strong> O sistema informa ao usuário final que ele está interagindo com uma IA</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Dashboards de acompanhamento:</strong> Gestores e professores podem visualizar o "caminho de decisão" da IA e intervir quando necessário</li>
-<li class="task-item"><input type="checkbox" disabled> 🟡 <strong>Trilhas de auditoria (logs):</strong> Registros que explicam o raciocínio por trás de notas, diagnósticos ou recomendações</li>
-<li class="task-item"><input type="checkbox" disabled> 🟢 <strong>Canais de contestação:</strong> Mecanismos claros para que alunos e famílias contestem decisões algorítmicas</li>
-<li class="task-item"><input type="checkbox" disabled> 🟢 <strong>Relatórios periódicos:</strong> Previsão de relatórios regulares de desempenho, uso e impacto</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Explicação acessível:</strong> Conseguimos explicar, em linguagem não técnica, como a IA funciona e como gera resultados</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-critico">Crítico</span> <strong>Rotulagem clara:</strong> O sistema informa ao usuário final que ele está interagindo com uma IA</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Dashboards de acompanhamento:</strong> Gestores e professores podem visualizar o "caminho de decisão" da IA e intervir quando necessário</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-importante">Importante</span> <strong>Trilhas de auditoria (logs):</strong> Registros que explicam o raciocínio por trás de notas, diagnósticos ou recomendações</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-diferencial">Diferencial</span> <strong>Canais de contestação:</strong> Mecanismos claros para que alunos e famílias contestem decisões algorítmicas</li>
+<li class="task-item"><input type="checkbox"><span class="prio prio-diferencial">Diferencial</span> <strong>Relatórios periódicos:</strong> Previsão de relatórios regulares de desempenho, uso e impacto</li>
 </ul>
 <hr />
 <h2 id="avaliacao-rapida">Avaliação Rápida</h2>
@@ -319,6 +327,7 @@
 <li><strong>Com que legado?</strong> Como dados e aprendizados retornam à rede?</li>
 </ol>
 <hr />
+<p><em>Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.</em></p>
 <p><em>Aliança de IA para a Educação | Instituto Jataí | 2026</em></p>
         </div>
 

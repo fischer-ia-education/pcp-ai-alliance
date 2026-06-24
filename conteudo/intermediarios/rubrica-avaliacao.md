@@ -21,7 +21,7 @@ A empresa possui CNPJ ativo e certidões de regularidade fiscal e trabalhista em
 
 A empresa possui política de privacidade publicada, com menção explícita ao tratamento de dados de crianças e adolescentes conforme LGPD (art. 14). Verificação: análise do documento publicado no site da empresa.
 
-A empresa apresenta mecanismo documentado de obtenção de consentimento dos responsáveis legais para coleta de dados de menores. Verificação: descrição do mecanismo na documentação técnica.
+A empresa apresenta mecanismo documentado de obtenção de consentimento dos responsáveis legais para coleta de dados de crianças e adolescentes. Verificação: descrição do mecanismo na documentação técnica.
 
 **Critérios importantes (pontuação alta):**
 

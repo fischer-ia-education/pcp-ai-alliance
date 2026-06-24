@@ -9,8 +9,6 @@ tipo: policy-brief
 
 # IA na Educação Pública: Lacunas Regulatórias e Recomendações
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
-
 ---
 
 ## Resumo
@@ -48,7 +46,7 @@ Levantamento no Portal Nacional de Contratações Públicas (PNCP) para o perío
 | **Ausência de diretrizes nacionais** para contratação de IA educacional | Cada rede contrata de forma isolada, sem parâmetros mínimos de qualidade e segurança |
 | **Sem obrigatoriedade de rotulagem de IA** em plataformas educacionais | Professores e alunos interagem com IA sem saber, impedindo supervisão crítica |
 | **Sem requisitos de transparência algorítmica** em contratos públicos | Decisões que afetam trajetórias escolares são tomadas em "caixa-preta" |
-| **Proteção insuficiente de dados de menores** em contextos de IA | LGPD existe, mas falta regulamentação específica para IA educacional com dados de crianças |
+| **Proteção insuficiente de dados de crianças e adolescentes** em contextos de IA | LGPD existe, mas falta regulamentação específica para IA educacional com dados de crianças |
 | **Falta de programas estruturados de letramento algorítmico** para servidores públicos | Gestores e professores não têm formação para avaliar, contratar e supervisionar IA |
 | **Ausência de instrumentos de avaliação de impacto algorítmico** obrigatórios | Soluções são contratadas sem análise de riscos para diferentes grupos de estudantes |
 | **Sem incentivo regulatório para experimentação** (sandboxes educacionais) | Municípios contratam em larga escala sem testar antes |
@@ -95,7 +93,7 @@ Diretrizes nacionais para IA no setor público (2023). Projeto "Algoritmos Étic
 
 ### Recomendação 1: Diretrizes Nacionais para Contratação de IA Educacional
 
-**O quê:** Criar diretrizes nacionais que estabeleçam requisitos mínimos para contratação de soluções de IA na educação pública, incluindo obrigatoriedade de transparência, explicabilidade, supervisão humana e proteção de dados de menores.
+**O quê:** Criar diretrizes nacionais que estabeleçam requisitos mínimos para contratação de soluções de IA na educação pública, incluindo obrigatoriedade de transparência, explicabilidade, supervisão humana e proteção de dados de crianças e adolescentes.
 
 **Como:** Via regulamentação do Ministério da Educação, em articulação com MCTI e Autoridade Nacional de Proteção de Dados (ANPD), com participação de estados, municípios e sociedade civil.
 
@@ -156,7 +154,7 @@ Diretrizes nacionais para IA no setor público (2023). Projeto "Algoritmos Étic
 | Marco | Alinhamento |
 |-------|-------------|
 | **Lei 14.133/2021** (Licitações) | As recomendações complementam o framework de licitações com requisitos específicos de IA |
-| **LGPD** (Lei 13.709/2018) | Reforça proteção de dados de menores com regulamentação setorial |
+| **LGPD** (Lei 13.709/2018) | Reforça proteção de dados de crianças e adolescentes com regulamentação setorial |
 | **ECA** (Lei 8.069/1990) | Protege direitos fundamentais de crianças e adolescentes em contextos digitais |
 | **PBIA 2024–2028** | Operacionaliza as 6 ações de impacto do PBIA na área da educação |
 | **Marco Legal da IA** (em tramitação) | Fornece subsídios setoriais para regulamentação da IA na educação |
@@ -201,7 +199,7 @@ Diretrizes nacionais para IA no setor público (2023). Projeto "Algoritmos Étic
 **Requerer audiência pública** na Comissão de Educação (ou Comissão de Ciência e Tecnologia) sobre "Contratação Pública de IA na Educação", convidando representantes do MEC, ANPD, TCU e da Aliança de IA para a Educação.
 
 ### Ação de curto prazo (30 dias)
-**Apresentar emenda ao PL 2338/2023** (Marco Legal da IA, em tramitação) incluindo disposições específicas sobre IA educacional: obrigatoriedade de rotulagem, avaliação de impacto algorítmico para soluções de nível 3-4 de risco, e proteção reforçada de dados de menores.
+**Apresentar emenda ao PL 2338/2023** (Marco Legal da IA, em tramitação) incluindo disposições específicas sobre IA educacional: obrigatoriedade de rotulagem, avaliação de impacto algorítmico para soluções de nível 3-4 de risco, e proteção reforçada de dados de crianças e adolescentes.
 
 ### Ação de médio prazo (6 meses)
 **Solicitar ao TCU** auditoria operacional nas contratações de IA educacional vigentes, com foco na presença (ou ausência) de salvaguardas específicas de IA nos contratos.
@@ -217,5 +215,7 @@ O custo da regulação é modesto (menos de 0,03% do gasto educacional). O custo
 A regulação não freia a inovação: ela a direciona para o interesse público.
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

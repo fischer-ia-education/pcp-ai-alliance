@@ -9,8 +9,6 @@ tipo: one-pager
 
 # IA na Educação Pública: O que EdTechs Precisam Saber
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
-
 ---
 
 ## O Cenário
@@ -35,7 +33,7 @@ As compras públicas em educação têm **enorme poder de mercado**. Redes públ
 |---|------|---------|
 | 1 | **Documente o problema pedagógico** que sua solução resolve | Gestores compram soluções para problemas reais da escola, não tecnologia pela tecnologia |
 | 2 | **Prepare um Model Card** (ficha técnica do modelo) | Explique dados de treinamento, métricas, limites e riscos de erro de forma acessível |
-| 3 | **Garanta conformidade com a LGPD** para dados de menores | Criptografia, anonimização, consentimento dos pais, política de exclusão de dados |
+| 3 | **Garanta conformidade com a LGPD** para dados de crianças e adolescentes | Criptografia, anonimização, consentimento dos pais, política de exclusão de dados |
 | 4 | **Ofereça dashboards de acompanhamento** para gestores e professores | A supervisão humana exige visibilidade sobre o que a IA está fazendo |
 | 5 | **Tenha um plano de preços compatível** com orçamentos públicos | Evite modelos de licença por usuário que flutuem excessivamente |
 
@@ -53,5 +51,7 @@ EdTechs que se destacam no mercado público são aquelas que:
 Consulte o **Guia Completo para EdTechs** e o **Checklist de Prontidão** para uma preparação detalhada antes de abordar redes públicas de educação.
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

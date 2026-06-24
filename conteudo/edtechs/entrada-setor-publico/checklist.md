@@ -38,7 +38,7 @@ tipo: checklist
 
 ## Conformidade
 
-- [ ] Política de privacidade adequada à LGPD, com tratamento de dados de menores (Essencial)
+- [ ] Política de privacidade adequada à LGPD, com tratamento de dados de crianças e adolescentes (Essencial)
 - [ ] Certidões de regularidade fiscal e trabalhista atualizadas (Essencial)
 - [ ] DPO nomeado (Importante)
 - [ ] Política de retenção e exclusão de dados com prazos (Importante)

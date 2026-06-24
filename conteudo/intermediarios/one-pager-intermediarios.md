@@ -9,8 +9,6 @@ tipo: one-pager
 
 # IA na Educação: O Papel das Organizações Intermediárias
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
-
 ---
 
 ## O Cenário
@@ -42,7 +40,7 @@ Ao avaliar uma solução de IA para indicação a redes públicas, verifique:
 - [ ] Há evidências de impacto na aprendizagem?
 - [ ] A EdTech explica de forma clara como a IA funciona e quais dados utiliza?
 - [ ] A solução é compatível com a infraestrutura das redes-alvo (inclusive baixa conectividade)?
-- [ ] Há conformidade com a LGPD e proteção especial para dados de menores?
+- [ ] Há conformidade com a LGPD e proteção especial para dados de crianças e adolescentes?
 - [ ] Existe plano de treinamento para professores e gestores?
 - [ ] A EdTech oferece portabilidade de dados e padrões abertos (sem lock-in)?
 
@@ -59,5 +57,7 @@ Organizações intermediárias são multiplicadoras: cada curadoria bem-feita ou
 Consulte o **Guia para Organizações Intermediárias** para orientações detalhadas sobre como estruturar programas de seleção, critérios de avaliação e modelos de parceria.
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

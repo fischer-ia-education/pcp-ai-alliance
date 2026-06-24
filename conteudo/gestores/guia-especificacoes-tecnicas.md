@@ -27,7 +27,7 @@ Exemplo: "A solução deverá funcionar em dispositivos Chromebook e Android com
 
 Exigir: conformidade com LGPD e indicação de DPO, mecanismo de consentimento dos responsáveis (art. 14 LGPD), minimização de dados (especificar categorias aceitáveis e vedadas), criptografia (TLS 1.2+ em trânsito, AES-256 em repouso), política de retenção e exclusão (prazo sugerido: 60 dias após encerramento), pseudonimização em relatórios.
 
-Exemplo: "O fornecedor deverá apresentar política de privacidade em conformidade com a Lei 13.709/2018 (LGPD), implementar mecanismo de consentimento dos responsáveis legais para tratamento de dados de menores, utilizar criptografia TLS 1.2+ em trânsito e AES-256 em repouso, e garantir a exclusão segura de todos os dados em até 60 dias após o encerramento do contrato."
+Exemplo: "O fornecedor deverá apresentar política de privacidade em conformidade com a Lei 13.709/2018 (LGPD), implementar mecanismo de consentimento dos responsáveis legais para tratamento de dados de crianças e adolescentes, utilizar criptografia TLS 1.2+ em trânsito e AES-256 em repouso, e garantir a exclusão segura de todos os dados em até 60 dias após o encerramento do contrato."
 
 ## Bloco 4: Transparência, explicabilidade e auditabilidade
 

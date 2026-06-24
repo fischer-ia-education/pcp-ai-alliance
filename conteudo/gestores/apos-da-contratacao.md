@@ -41,6 +41,7 @@ Contratar IA sem monitorar seus resultados pedagógicos é como prescrever um me
 | Equidade: comparação de resultados por grupo | Semestral |
 
 **Perguntas a fazer regularmente:**
+
 - A IA está ajudando os alunos que mais precisam, ou concentrando benefícios em quem já tem melhor desempenho?
 - Os professores estão usando a ferramenta como planejado? Ou encontraram resistências?
 - O propósito pedagógico original está sendo alcançado?
@@ -121,19 +122,74 @@ A IA na escola só funciona se os professores souberem usá-la com autonomia, pe
 
 ## Checklist da Fase "Após"
 
-- [ ] Indicadores pedagógicos de acompanhamento definidos e monitorados
-- [ ] Relatório mensal de uso entregue pelo fornecedor
-- [ ] Comitê de governança constituído e se reunindo regularmente
-- [ ] Auditoria de segurança de dados realizada (semestral ou anual)
-- [ ] Canal de contestação ativo e divulgado para professores e responsáveis
-- [ ] Plano de formação docente implementado e avaliado
-- [ ] Decisão sobre renovação ou encerramento baseada em evidências de impacto
+> Se você tem recursos limitados, foque primeiro nos itens marcados como **essencial**. Os demais fortalecem o processo e podem ser incorporados gradualmente.
+
+### 3.1 Monitoramento Pedagógico
+
+- [ ] (Essencial) **Avaliação pedagógica contínua:** Monitoramos se a IA está gerando aprendizado real (não apenas "ilusão de desempenho")
+- [ ] **Alinhamento com BNCC verificado:** A solução permanece alinhada aos objetivos curriculares da rede
+- [ ] **KPIs pedagógicos acompanhados:** Indicadores de desempenho são medidos e analisados regularmente
+- [ ] **Auditorias pedagógicas realizadas:** Resultados do algoritmo são comparados com o julgamento profissional dos educadores
+
+### 3.2 Supervisão Humana
+
+- [ ] (Essencial) **Autonomia docente preservada:** Verificamos periodicamente se professores estão cedendo de forma acrítica às sugestões da IA
+- [ ] **Revisão do modelo de implementação:** Se houver terceirização acrítica, revisamos o desenho de implementação
+
+### 3.3 Dados e Segurança
+
+- [ ] **Auditorias de segurança anuais:** Testes de penetração e verificação de resiliência contra ataques e vazamentos
+- [ ] **Controle de acesso verificado:** Monitoramos quem acessa dados de estudantes
+- [ ] **Consentimentos atualizados:** Registros de consentimento dos pais/responsáveis são mantidos atualizados
+- [ ] **Avaliação de impacto algorítmico atualizada:** Revisamos a AIA quando novos dados são processados ou o modelo é recalibrado
+
+### 3.4 Direito ao Recurso
+
+- [ ] (Essencial) **Canais de contestação acessíveis:** Alunos e famílias sabem como contestar decisões da IA
+- [ ] **Revisão humana garantida:** Toda contestação passa por análise humana
+
+### 3.5 Formação Contínua
+
+- [ ] **Treinamento docente permanente:** O letramento não é evento único, mas acompanhamento contínuo
+- [ ] **Comunidades de prática criadas:** Educadores trocam experiências sobre uso, falhas e melhorias da ferramenta
+
+---
+
+## Indicadores de Sucesso por Fase
+
+### Primeiros 3 meses (Implantação)
+
+| Indicador de Sucesso | Sinal de Alerta |
+|---------------------|-----------------|
+| Professores treinados e usando a ferramenta | Professores não foram capacitados ou resistem ao uso |
+| SLAs sendo cumpridos (disponibilidade, suporte) | Plataforma instável, suporte lento |
+| Dados de uso sendo gerados e acessíveis | Sem acesso a relatórios ou métricas |
+
+### 6 meses (Consolidação)
+
+| Indicador de Sucesso | Sinal de Alerta |
+|---------------------|-----------------|
+| Primeiras evidências de impacto pedagógico | Nenhuma melhora mensurável na aprendizagem |
+| Professores usando dashboards e intervindo quando necessário | Professores delegando decisões acriticamente à IA |
+| Nenhum incidente de segurança de dados | Vazamentos, acesso não autorizado ou dados expostos |
+
+### 12 meses (Avaliação)
+
+| Indicador de Sucesso | Sinal de Alerta |
+|---------------------|-----------------|
+| Impacto pedagógico documentado e positivo | Evidências de "preguiça cognitiva" ou aprendizado superficial |
+| Auditorias realizadas sem achados críticos | Vieses detectados, falhas não corrigidas |
+| Comunidades de prática ativas entre professores | Ferramenta subutilizada ou abandonada |
+| Decisão informada sobre renovação/descontinuação | Renovação automática sem avaliação |
+
+*Os prazos e indicadores são sugestões; devem ser adaptados à realidade e capacidade da rede.*
 
 ---
 
 ## Quando Encerrar o Contrato
 
 O encerramento deve ser considerado quando:
+
 - As metas pedagógicas não foram atingidas após período de ajuste
 - Há evidência de dano (vieses confirmados, violação de dados, dependência cognitiva)
 - O fornecedor não cumpre obrigações contratuais (transparência, segurança)

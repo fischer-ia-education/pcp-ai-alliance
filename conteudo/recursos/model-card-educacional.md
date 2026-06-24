@@ -34,7 +34,7 @@ Versão: [ex.: 2.1] | Data: [ex.: março/2026] | Empresa: [nome] | Contato técn
 
 2.2 Dados de operação: [O que a solução coleta durante o uso e para que finalidade.]
 
-2.3 Tratamento de dados de menores: [Consentimento, minimização, pseudonimização, retenção, exclusão.]
+2.3 Tratamento de dados de crianças e adolescentes: [Consentimento, minimização, pseudonimização, retenção, exclusão.]
 
 2.4 Localização dos dados: [País/região de armazenamento e processamento. Provedor de nuvem.]
 

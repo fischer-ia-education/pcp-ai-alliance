@@ -22,7 +22,7 @@ Solução: [Nome] | Empresa: [Nome e CNPJ] | DPO: [Nome, e-mail, telefone] | Dat
 
 1.3 Escopo: Público-alvo [faixa etária, perfis], volume estimado de titulares, abrangência geográfica, período de tratamento.
 
-1.4 Contexto: [Ambiente escolar, plataforma digital, uso por menores, supervisão por professores, uso em horário escolar/em casa.]
+1.4 Contexto: [Ambiente escolar, plataforma digital, uso por crianças e adolescentes, supervisão por professores, uso em horário escolar/em casa.]
 
 ## PARTE 2: DADOS PESSOAIS TRATADOS
 
@@ -37,7 +37,7 @@ Solução: [Nome] | Empresa: [Nome e CNPJ] | DPO: [Nome, e-mail, telefone] | Dat
 
 2.2 Dados sensíveis: [A solução coleta biometria, saúde, raça/etnia, religião? Se sim, justifique e descreva salvaguardas. Se não, declare.]
 
-2.3 Dados de menores: [Mecanismo de consentimento dos responsáveis: formulário digital, termo impresso, integração com sistema da escola.]
+2.3 Dados de crianças e adolescentes: [Mecanismo de consentimento dos responsáveis: formulário digital, termo impresso, integração com sistema da escola.]
 
 ## PARTE 3: NECESSIDADE E PROPORCIONALIDADE
 
@@ -51,7 +51,7 @@ Solução: [Nome] | Empresa: [Nome e CNPJ] | DPO: [Nome, e-mail, telefone] | Dat
 
 | Risco | Probabilidade | Gravidade | Mitigação |
 |-------|---------------|-----------|-----------|
-| Vazamento de dados de menores | [B/M/A] | [B/M/A] | [Medida] |
+| Vazamento de dados de crianças e adolescentes | [B/M/A] | [B/M/A] | [Medida] |
 | Uso para finalidade não autorizada | [B/M/A] | [B/M/A] | [Medida] |
 | Viés algorítmico discriminatório | [B/M/A] | [B/M/A] | [Medida] |
 | Decisão automatizada com impacto na trajetória escolar | [B/M/A] | [B/M/A] | [Medida] |

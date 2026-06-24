@@ -52,7 +52,7 @@ Além disso, sistemas de IA podem **"alucinar"**: gerar informações que parece
 
 ### 3. Segurança, Privacidade e Vigilância
 
-**Hipervigilância e reconhecimento facial:** o uso de tecnologias de reconhecimento facial para controle de frequência é considerado intrusivo e desproporcional, gerando ambientes de desconfiança e violando a privacidade de menores.
+**Hipervigilância e reconhecimento facial:** o uso de tecnologias de reconhecimento facial para controle de frequência é considerado intrusivo e desproporcional, gerando ambientes de desconfiança e violando a privacidade de crianças e adolescentes.
 
 **Vazamento e mau uso de dados:** a coleta massiva de dados sensíveis (biometria, desempenho, comportamento e emoções) sem salvaguardas claras expõe crianças e adolescentes a riscos de exploração comercial.
 

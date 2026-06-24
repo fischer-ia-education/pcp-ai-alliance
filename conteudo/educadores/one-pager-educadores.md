@@ -9,8 +9,6 @@ tipo: one-pager
 
 # IA na Sala de Aula: O que Todo Professor Precisa Saber
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
-
 ---
 
 ## O que é IA, em uma frase?
@@ -64,5 +62,7 @@ Quando uma nova ferramenta de IA chegar à sua escola, pergunte:
 Consulte o **Guia Prático para Educadores** para orientações detalhadas sobre como usar IA no dia a dia da escola de forma crítica, segura e pedagogicamente intencional.
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

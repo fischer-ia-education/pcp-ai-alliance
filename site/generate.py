@@ -415,10 +415,48 @@ DOWNLOADS = {
     "ripd-simplificado": {
         "arquivo": "ripd-simplificado-template.docx",
         "rotulo": "Baixar versão editável (Word)",
+        "formato": ".docx",
     },
     "model-card-educacional": {
         "arquivo": "model-card-educacional-template.docx",
         "rotulo": "Baixar versão editável (Word)",
+        "formato": ".docx",
+    },
+    # Checklists em planilha (gerados por site/gerar_checklists_xlsx.py)
+    "checklist-gestores": {
+        "arquivo": "checklist-jornada-gestores.xlsx",
+        "rotulo": "Baixar este checklist em Excel",
+        "formato": ".xlsx",
+        "nota": "É a versão em planilha dos itens abaixo — marque o que já foi feito, "
+                "anote responsáveis e prazos e salve o seu progresso.",
+    },
+    "antes-da-contratacao": {
+        "arquivo": "checklist-jornada-gestores.xlsx",
+        "rotulo": "Baixar este checklist em Excel",
+        "formato": ".xlsx",
+        "nota": "Planilha com o checklist completo da jornada (todas as fases), "
+                "incluindo os itens da fase abaixo, para preencher e salvar.",
+    },
+    "durante-a-contratacao": {
+        "arquivo": "checklist-jornada-gestores.xlsx",
+        "rotulo": "Baixar este checklist em Excel",
+        "formato": ".xlsx",
+        "nota": "Planilha com o checklist completo da jornada (todas as fases), "
+                "incluindo os itens da fase abaixo, para preencher e salvar.",
+    },
+    "apos-da-contratacao": {
+        "arquivo": "checklist-jornada-gestores.xlsx",
+        "rotulo": "Baixar este checklist em Excel",
+        "formato": ".xlsx",
+        "nota": "Planilha com o checklist completo da jornada (todas as fases), "
+                "incluindo os itens da fase abaixo, para preencher e salvar.",
+    },
+    "checklist-edtechs": {
+        "arquivo": "checklist-edtechs.xlsx",
+        "rotulo": "Baixar este checklist em Excel",
+        "formato": ".xlsx",
+        "nota": "É a versão em planilha dos itens abaixo — marque o que já foi feito, "
+                "anote responsáveis e prazos e salve o seu progresso.",
     },
 }
 
@@ -476,14 +514,36 @@ def md_to_html(text: str) -> str:
     # Converte task list items (GFM-style checkboxes)
     html = re.sub(
         r"<li>\s*\[ \]\s*",
-        '<li class="task-item"><input type="checkbox" disabled> ',
+        '<li class="task-item"><input type="checkbox"> ',
         html,
     )
     html = re.sub(
         r"<li>\s*\[x\]\s*",
-        '<li class="task-item"><input type="checkbox" checked disabled> ',
+        '<li class="task-item"><input type="checkbox" checked> ',
         html,
         flags=re.IGNORECASE,
+    )
+    # Marcadores de prioridade em texto → badge estilizado (apenas em task-items)
+    _PRIO = {
+        "Essencial": "essencial",
+        "Crítico": "critico",
+        "Importante": "importante",
+        "Diferencial": "diferencial",
+    }
+
+    def _prio_badge(m: "re.Match") -> str:
+        rotulo = m.group("rotulo")
+        classe = _PRIO[rotulo]
+        return (
+            f'{m.group("inicio")}'
+            f'<span class="prio prio-{classe}">{rotulo}</span> '
+        )
+
+    html = re.sub(
+        r'(?P<inicio><input type="checkbox"(?: checked)?>)\s*'
+        r"\((?P<rotulo>Essencial|Crítico|Importante|Diferencial)\)\s*",
+        _prio_badge,
+        html,
     )
     return html
 

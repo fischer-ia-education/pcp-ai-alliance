@@ -47,13 +47,13 @@ Quando se aplica: contratações de até R$59.906,02 (atualizado periodicamente)
 
 ## Contrato Público para Solução Inovadora (CPSI)
 
-O que é: instrumento do Marco Legal de CT&I que permite contratar soluções inovadoras para teste. Prazo de até 12 meses (prorrogável por mais 12), valor de até R$1,6 milhão, com possibilidade de contratação do produto final sem nova licitação se o teste for bem-sucedido.
+O que é: instrumento da Lei Complementar 182/2021 (Marco Legal das Startups) que permite contratar soluções inovadoras para teste. Prazo de até 12 meses (prorrogável por mais 12), valor de até R$1,6 milhão, com possibilidade de contratação do produto final sem nova licitação se o teste for bem-sucedido.
 
 Quando se aplica: quando a rede tem um problema definido, mas não há solução pronta, ou quando a solução precisa de adaptação significativa. O CPSI é iniciado pelo poder público. Permite testar antes de escalar.
 
 ## Encomenda Tecnológica (ETEC)
 
-O que é: instrumento do Marco Legal de CT&I para situações de risco tecnológico, em que o poder público encomenda o desenvolvimento de uma solução que ainda não existe. Mais raro e mais complexo que o CPSI.
+O que é: instrumento da Lei Complementar 182/2021 (Marco Legal das Startups) para situações de risco tecnológico, em que o poder público encomenda o desenvolvimento de uma solução que ainda não existe. Mais raro e mais complexo que o CPSI.
 
 ## Quadro-resumo
 
@@ -64,3 +64,11 @@ O que é: instrumento do Marco Legal de CT&I para situações de risco tecnológ
 | Primeiro contrato, valor pequeno, piloto | Dispensa por valor | Dispensa via intermediário |
 | Produto precisa de adaptação ao contexto da rede | CPSI | ETEC (se em fase de P&D) |
 | Parceria com intermediário (fundação, Sebrae, universidade) | Dispensa (art. 75, XV) | |
+
+---
+
+**Quer entender como as redes públicas estão contratando hoje?** Acesse [Como as Redes Estão Contratando](/contexto-politica/como-redes-contratam.html) para ver casos reais e padrões observados.
+
+---
+
+*Aliança de IA para a Educação | Instituto Jataí | 2026*

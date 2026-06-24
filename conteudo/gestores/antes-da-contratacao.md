@@ -30,11 +30,13 @@ A fase *Antes da Contratação* compreende cinco eixos de preparação:
 A contratação responsável começa com uma pergunta pedagógica, não tecnológica.
 
 **O que você precisa definir:**
+
 - Qual **problema educacional** você quer resolver? (Ex.: alta evasão no 6º ano; baixo desempenho em matemática no ensino médio)
 - Qual é a **hipótese de impacto**? Por que você acredita que a IA ajudará a resolver esse problema?
 - Quais **indicadores** mostrarão que a solução funcionou?
 
 **Perguntas-guia:**
+
 - [ ] Existe evidência de que a IA é mais eficaz que outras intervenções para esse problema?
 - [ ] O problema é realmente pedagógico, ou é organizacional (falta de formação docente, infraestrutura inadequada)?
 - [ ] Os professores e coordenadores foram consultados sobre o problema e as possíveis soluções?
@@ -57,6 +59,7 @@ Antes de contratar, a rede precisa saber se tem condições de adotar, acompanha
 | **Governança institucional** | Há coordenação entre as áreas (pedagógica, TI, jurídica, financeira)? |
 
 **Perguntas-guia:**
+
 - [ ] Pelo menos 80% das escolas têm conectividade adequada para a solução prevista?
 - [ ] Temos um DPO (Encarregado de Dados) designado conforme a LGPD?
 - [ ] A equipe pedagógica foi incluída no processo de seleção da solução?
@@ -68,6 +71,7 @@ Antes de contratar, a rede precisa saber se tem condições de adotar, acompanha
 Antes de lançar um edital, é fundamental conhecer o que existe no mercado: o que as soluções oferecem, como funcionam e o que custa.
 
 **O que fazer nesta etapa:**
+
 - **Mapeamento de fornecedores:** Pesquise soluções disponíveis, casos de uso em outras redes e referências de implementação
 - **RFI (Request for Information):** Publique uma consulta pública de mercado para receber informações de fornecedores sem comprometer a licitação
 - **Consulta a outras redes:** Converse com gestores de redes que já implementaram soluções similares
@@ -86,7 +90,7 @@ Toda contratação de IA envolve riscos. Identificá-los antes de contratar perm
 | **Opacidade algorítmica** | Exigir documentação técnica e explicabilidade da IA no TR |
 | **Vieses discriminatórios** | Exigir testes de equidade em diferentes grupos de alunos |
 | **Lock-in tecnológico** | Incluir cláusula de portabilidade de dados e plano de saída |
-| **Privacidade de menores** | Exigir RIPD, LGPD, criptografia, consentimento dos responsáveis |
+| **Privacidade de crianças e adolescentes** | Exigir RIPD, LGPD, criptografia, consentimento dos responsáveis |
 | **Dependência pedagógica** | Definir limites de uso da IA e supervisão humana obrigatória |
 | **Implementação malsucedida** | Exigir piloto antes da implantação total; incluir métricas de sucesso no contrato |
 
@@ -106,6 +110,7 @@ A contratação de IA educacional deve estar alinhada com:
 ## Entregável: Documento de Propósito
 
 Ao final da fase *Antes*, você deve ter um **Documento de Propósito** com:
+
 - Problema pedagógico identificado e fundamentado
 - Hipótese de impacto
 - Diagnóstico de capacidade institucional
@@ -113,6 +118,38 @@ Ao final da fase *Antes*, você deve ter um **Documento de Propósito** com:
 - Alinhamento com políticas públicas
 
 Esse documento será a base para o Termo de Referência.
+
+---
+
+## Checklist da Fase "Antes"
+
+> Se você tem recursos limitados, foque primeiro nos itens marcados como **essencial**. Os demais fortalecem o processo e podem ser incorporados gradualmente.
+
+### 1.1 Preparação Institucional
+
+- [ ] (Essencial) **Problema pedagógico definido:** Identificamos o desafio educacional que queremos resolver *antes* de pensar na tecnologia
+- [ ] **Resultados esperados claros:** Sabemos quais resultados educacionais queremos alcançar com a solução
+- [ ] (Essencial) **IA é necessária?** Verificamos se o problema realmente exige IA ou se uma solução convencional seria suficiente
+- [ ] **Capacidade institucional diagnosticada:** Avaliamos se a rede tem pessoal, conhecimento e infraestrutura para contratar, implementar e monitorar a solução
+- [ ] (Essencial) **Equipe multissetorial composta:** Há profissionais de TI, jurídico e pedagógico envolvidos no processo
+- [ ] **Letramento algorítmico iniciado:** A equipe responsável tem formação básica sobre o que é IA, como funciona e quais são os riscos
+- [ ] (Essencial) **Infraestrutura mapeada:** Sabemos qual é a conectividade e o hardware disponível nas escolas-alvo
+- [ ] **Dados disponíveis identificados:** Temos clareza sobre quais dados existem na rede e como isso afeta a estratégia de compra
+
+### 1.2 Reconhecimento de Mercado
+
+- [ ] **Mercado mapeado:** Conhecemos as soluções disponíveis e seus modelos de funcionamento
+- [ ] **Fornecedores potenciais engajados:** Buscamos inputs do mercado para refinar as especificações
+- [ ] **Evidências pedagógicas buscadas:** Verificamos se há evidências empíricas de que as soluções melhoram a aprendizagem
+- [ ] **Estratégia de teste definida:** Planejamos uma fase piloto ou sandbox antes de contratar em larga escala
+
+### 1.3 Análise de Riscos e Alinhamento
+
+- [ ] **Avaliação de impacto algorítmico iniciada:** Identificamos os potenciais impactos da IA sobre diferentes grupos (alunos, professores, comunidades)
+- [ ] **Cenários adversos mapeados:** Consideramos o que pode dar errado (vieses, vazamento de dados, falhas de sistema)
+- [ ] **Critérios de falha definidos:** Sabemos quais danos devem ser evitados a todo custo
+- [ ] **Legislação revisada:** Consultamos LGPD, ECA, Lei 14.133/2021 e demais normas pertinentes
+- [ ] **Alinhamento com estratégias governamentais:** Verificamos conformidade com PBIA, estratégias estaduais/municipais de educação e tecnologia
 
 ---
 

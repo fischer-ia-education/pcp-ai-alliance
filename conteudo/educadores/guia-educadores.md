@@ -9,8 +9,6 @@ tipo: guia
 
 # IA na Sala de Aula: Guia Prático para Educadores
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
-
 ---
 
 ## Para quem é este guia
@@ -172,7 +170,7 @@ A turma parou de pensar por conta própria e só cola o que a IA sugere. **O que
 
 1. **Qual problema pedagógico essa ferramenta resolve?** Se não houver resposta clara, a tecnologia pode ser um fim em si mesma
 2. **Que dados dos alunos são coletados e para onde vão?** Você tem direito de saber
-3. **Houve consentimento dos pais/responsáveis?** É obrigatório para dados de menores
+3. **Houve consentimento dos pais/responsáveis?** É obrigatório para dados de crianças e adolescentes
 4. **Como posso anular ou corrigir as sugestões da IA?** Se não for possível, a ferramenta não respeita a supervisão humana
 5. **Existe treinamento previsto para os professores?** Não é aceitável receber uma ferramenta complexa sem capacitação
 6. **Como a escola vai monitorar se a IA está funcionando bem?** Deve haver acompanhamento, não apenas instalação
@@ -219,5 +217,7 @@ Mas a IA **nunca substitui**:
 **O melhor uso da IA é aquele que libera mais tempo para o que só você pode fazer: ensinar com presença, intenção e humanidade.**
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

@@ -9,8 +9,6 @@ tipo: faq
 
 # Perguntas Frequentes para EdTechs
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
-
 ---
 
 ## Sobre o Mercado Público
@@ -39,7 +37,7 @@ O Brasil tem **5.570 municípios**, todos potenciais contratantes. A TIC Educaç
 
 ### 4. O que é um CPSI e como posso participar?
 
-O **Contrato Público para Solução Inovadora (CPSI)**, previsto na Lei 14.133/2021, permite ao poder público contratar soluções que ainda não existem no mercado. O foco é no problema, não na solução. É um caminho para edtechs com soluções inovadoras que não se encaixam nas modalidades tradicionais.
+O **Contrato Público para Solução Inovadora (CPSI)**, previsto na Lei Complementar 182/2021 (Marco Legal das Startups), permite ao poder público contratar soluções que ainda não existem no mercado. O foco é no problema, não na solução. É um caminho para edtechs com soluções inovadoras que não se encaixam nas modalidades tradicionais.
 
 ---
 
@@ -223,5 +221,7 @@ Sim, é uma estratégia comum e eficaz. Porém, atenção:
 - Verifique com o jurídico da rede se a participação no piloto não impede sua participação na licitação posterior (art. 14, Lei 14.133/2021)
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

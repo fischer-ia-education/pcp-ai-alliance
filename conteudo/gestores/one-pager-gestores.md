@@ -9,8 +9,6 @@ tipo: one-pager
 
 # Contratação de IA na Educação: O Essencial para Gestores
 
-> Material derivado da publicação *"Contratação Pública de Soluções de IA na Educação"*, da Aliança de IA para a Educação, em parceria com o Instituto Jataí.
-
 ---
 
 ## O Problema
@@ -18,6 +16,8 @@ tipo: one-pager
 A IA já está nas escolas brasileiras: **37% dos alunos** e **43% dos professores** usam ferramentas de IA. Mas essa adoção é, em grande parte, **invisível**: plataformas educacionais embarcam IA sem declarar, sem salvaguardas e sem intencionalidade pedagógica. Os contratos tratam a IA como software convencional. Das 15 contratações mapeadas no PNCP (2024–2026), **nenhuma** trouxe documentação específica sobre IA.
 
 **A forma como o poder público compra tecnologia é determinante para reduzir, ou aprofundar, desigualdades.**
+
+> **Vale lembrar:** Plataformas amplamente contratadas e em uso pelas redes públicas, como Google Workspace for Education e Microsoft 365, também disponibilizam funcionalidades de inteligência artificial. Essas funcionalidades chegam embutidas em contratos já existentes, muitas vezes sem que haja uma decisão explícita sobre seu uso no contexto educacional. O gestor também deve estar atento a elas — as recomendações deste guia se aplicam a essas ferramentas, sobretudo no que diz respeito ao impacto pedagógico do seu uso. Especialmente quando utilizadas por estudantes e professores, é necessário ter clareza das autorizações, incentivos e da supervisão intencional sobre esse uso no contexto escolar.
 
 ## Os Riscos que Você Precisa Conhecer
 
@@ -48,7 +48,7 @@ A boa notícia: esses riscos podem ser **mitigados por meio do processo de contr
 
 1. **Explicação clara** de como a IA funciona, que dados usa e quais são seus limites
 2. **Alinhamento pedagógico** com o currículo (BNCC) e com os problemas reais da rede
-3. **Proteção de dados de menores:** LGPD, RIPD, criptografia, consentimento dos pais
+3. **Proteção de dados de crianças e adolescentes:** LGPD, RIPD, criptografia, consentimento dos pais
 4. **Mecanismos de supervisão:** dashboards, logs, possibilidade de anular decisões da IA
 5. **Portabilidade e plano de saída:** dados pertencem à rede, não ao fornecedor
 
@@ -63,5 +63,7 @@ Consulte o **Guia Completo**, o **Checklist da Jornada** e o **Framework de Deci
 **Precisa de ajuda?** Acesse [iaparaeducacao.org.br](http://iaparaeducacao.org.br) ou conecte-se com a Undime regional.
 
 ---
+
+*Material derivado da publicação "Contratação Pública de Soluções de IA na Educação", da Aliança de IA para a Educação, em parceria com o Instituto Jataí.*
 
 *Aliança de IA para a Educação | Instituto Jataí | 2026*

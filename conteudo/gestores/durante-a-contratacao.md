@@ -72,13 +72,56 @@ Cada critério indica **onde incluir** (Termo de Referência, edital ou minuta) 
 
 ## Checklist da Fase "Durante"
 
-- [ ] As 8 perguntas fundamentais respondidas no contrato ou anexos
-- [ ] Modalidade de contratação definida e justificada
-- [ ] Critérios de Especificação Técnica (ET) incluídos no Termo de Referência
-- [ ] Documentos de Aceitabilidade da Proposta (AP) exigidos no edital
-- [ ] Cláusulas Contratuais (CC) previstas na minuta e no plano de fiscalização
-- [ ] Equipe pedagógica envolvida na avaliação das propostas
-- [ ] Responsável pela fiscalização e periodicidade de verificação definidos
+> Se você tem recursos limitados, foque primeiro nos itens marcados como **essencial**. Os demais fortalecem o processo e podem ser incorporados gradualmente.
+
+### 2.1 Modelagem e Critérios Técnicos
+
+- [ ] **Estudo Técnico Preliminar (ETP) elaborado:** Consolidamos as informações levantadas na fase anterior
+- [ ] **Modalidade de licitação definida:** Escolhemos a modalidade mais adequada (inexigibilidade, pregão, CPSI, parceria intermediada)
+- [ ] (Essencial) **Termo de Referência (TR) com critérios de IA:** O TR não trata a solução como software convencional; inclui requisitos específicos de IA
+- [ ] **Critérios técnicos detalhados**:
+  - [ ] Tipo de modelo e grau de autonomia
+  - [ ] Fontes de dados e critérios de treinamento
+  - [ ] Métodos de validação e métricas de desempenho
+  - [ ] Mecanismos de mitigação de vieses
+  - [ ] Treinamentos que o fornecedor deve oferecer
+- [ ] **Modelo econômico-financeiro definido:** Valor estimado, formas de remuneração (considerar vínculo ao desempenho pedagógico)
+- [ ] **Matriz de riscos elaborada**
+
+### 2.2 Salvaguardas no Contrato
+
+**Transparência e explicabilidade:**
+
+- [ ] (Essencial) Exigida documentação técnica (fontes de dados, lógica do algoritmo, limitações)
+- [ ] Exigida rotulagem clara: o sistema informa que o usuário interage com IA
+- [ ] Exigida informação sobre riscos de "alucinação" ou erro factual
+
+**Governança de dados e privacidade de crianças e adolescentes:**
+
+- [ ] (Essencial) Consentimento explícito dos pais/responsáveis previsto
+- [ ] Relatório de Impacto à Proteção de Dados (RIPD) exigido
+- [ ] Avaliação de Impacto Algorítmico exigida
+- [ ] (Essencial) Dados pertencem à rede de ensino (não ao fornecedor)
+- [ ] Direito à portabilidade e exclusão segura de dados ao fim do contrato
+
+**Supervisão humana:**
+
+- [ ] O sistema não toma decisões de alto impacto de forma autônoma (aprovação, reprovação, sanções)
+- [ ] (Essencial) Professores têm ferramentas para anular ou corrigir sugestões da IA
+- [ ] Logs de IA e painel de observabilidade previstos
+- [ ] Prazos e condições de auditorias definidos
+
+**Equidade e prevenção de vieses:**
+
+- [ ] Fornecedor deve comprovar testes contra discriminação algorítmica (raça, gênero, regionalismo)
+- [ ] Modelos treinados com dados que reflitam a realidade brasileira e a língua portuguesa
+
+**Reversibilidade e interoperabilidade:**
+
+- [ ] (Essencial) Portabilidade de dados garantida (API, padrões abertos)
+- [ ] Plano de saída contratual definido
+- [ ] Cláusulas de descontinuação caso a solução apresente falhas sistêmicas ou perca valor pedagógico
+- [ ] Exclusão segura de dados após encerramento do contrato
 
 ---
 

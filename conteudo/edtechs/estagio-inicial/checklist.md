@@ -16,7 +16,7 @@ Use este checklist para avaliar em que ponto está sua prontidão para o setor p
 
 - [ ] CNPJ ativo (Essencial)
 - [ ] Certidões de regularidade fiscal e trabalhista em dia (Essencial)
-- [ ] Política de privacidade publicada, com menção explícita a dados de menores (Essencial)
+- [ ] Política de privacidade publicada, com menção explícita a dados de crianças e adolescentes (Essencial)
 - [ ] Conhecimento básico da Lei 14.133/2021 e suas modalidades de contratação (Essencial)
 - [ ] Encarregado de dados (DPO) nomeado (Importante)
 - [ ] Política de retenção e exclusão de dados documentada com prazos e critérios (Importante)
